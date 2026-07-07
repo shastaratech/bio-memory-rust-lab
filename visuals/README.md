@@ -29,6 +29,7 @@ Text diagrams are good teaching material because students can:
 | What to teach | Best format | Example |
 | --- | --- | --- |
 | Course path | Mermaid flowchart | `mermaid/course-map.md` |
+| Course path fallback | SVG | `rendered/course-map.svg` |
 | Data model quick view | Mermaid class/state/flowchart | `mermaid/model-contracts-flows.md` |
 | Traits and functions | Mermaid class/flowchart | `mermaid/traits-and-functions.md` |
 | CLI flow | Mermaid flowchart | `mermaid/cli-flow.md` |
@@ -63,6 +64,10 @@ Options:
 
 For now, the `.puml` files are the source of truth. Mermaid diagrams render directly
 inside GitHub Markdown.
+
+Some browsers, extensions, and GitHub contexts may show Mermaid as a code block
+instead of rendering it. When a diagram is important for teaching, keep a rendered
+fallback in `visuals/rendered/` and embed it above the editable source.
 
 ## Mermaid vs PlantUML
 

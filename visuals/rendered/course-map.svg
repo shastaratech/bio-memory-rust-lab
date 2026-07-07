@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+  <title id="title">Bio Memory Rust Lab course map</title>
+  <desc id="desc">A six lesson path with school activities on the left and university activities on the right.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .subtitle { font: 400 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+      .lane { font: 700 16px system-ui, -apple-system, Segoe UI, sans-serif; fill: #253247; }
+      .box { stroke-width: 2; rx: 12; ry: 12; }
+      .lesson { fill: #ffffff; stroke: #355070; }
+      .school { fill: #fff4df; stroke: #d9902f; }
+      .university { fill: #eaf7f1; stroke: #2f946d; }
+      .text { font: 600 14px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #3b4658; }
+      .arrow { stroke: #355070; stroke-width: 2.5; fill: none; marker-end: url(#arrow); }
+      .soft-arrow { stroke: #8391a4; stroke-width: 1.8; fill: none; marker-end: url(#arrow); opacity: 0.8; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1180" height="760" />
+  <text class="title" x="48" y="54">Bio Memory Rust Lab Course Map</text>
+  <text class="subtitle" x="48" y="80">A path from concrete molecule cards to Rust data structures, graph algorithms, traits, and quantum-state thinking.</text>
+
+  <text class="lane" x="96" y="124">School studio lane</text>
+  <text class="lane" x="470" y="124">Core lesson path</text>
+  <text class="lane" x="890" y="124">University lab lane</text>
+
+  <rect class="box lesson" x="430" y="150" width="320" height="62" />
+  <text class="text" x="454" y="176">Start</text>
+  <text class="small" x="454" y="198">What is structure?</text>
+
+  <rect class="box lesson" x="430" y="240" width="320" height="62" />
+  <text class="text" x="454" y="266">Lesson 01</text>
+  <text class="small" x="454" y="288">Atoms, Memory, and Types</text>
+
+  <rect class="box lesson" x="430" y="330" width="320" height="62" />
+  <text class="text" x="454" y="356">Lesson 02</text>
+  <text class="small" x="454" y="378">Molecules as Graphs</text>
+
+  <rect class="box lesson" x="430" y="420" width="320" height="62" />
+  <text class="text" x="454" y="446">Lesson 03</text>
+  <text class="small" x="454" y="468">Ownership and Borrowing</text>
+
+  <rect class="box lesson" x="430" y="510" width="320" height="62" />
+  <text class="text" x="454" y="536">Lesson 04</text>
+  <text class="small" x="454" y="558">Quantum State and Simulation</text>
+
+  <rect class="box lesson" x="430" y="600" width="320" height="62" />
+  <text class="text" x="454" y="626">Lesson 05</text>
+  <text class="small" x="454" y="648">Rust Data Structures for Molecules</text>
+
+  <rect class="box lesson" x="430" y="690" width="320" height="52" />
+  <text class="text" x="454" y="713">Lesson 06</text>
+  <text class="small" x="454" y="733">Traits and Functions</text>
+
+  <path class="arrow" d="M590 212 L590 236" />
+  <path class="arrow" d="M590 302 L590 326" />
+  <path class="arrow" d="M590 392 L590 416" />
+  <path class="arrow" d="M590 482 L590 506" />
+  <path class="arrow" d="M590 572 L590 596" />
+  <path class="arrow" d="M590 662 L590 686" />
+
+  <rect class="box school" x="70" y="242" width="260" height="54" />
+  <text class="text" x="92" y="265">Atom cards</text>
+  <text class="small" x="92" y="286">turn properties into types</text>
+
+  <rect class="box school" x="70" y="332" width="260" height="54" />
+  <text class="text" x="92" y="355">Human bond graph</text>
+  <text class="small" x="92" y="376">students become atoms</text>
+
+  <rect class="box school" x="70" y="422" width="260" height="54" />
+  <text class="text" x="92" y="445">Owner / reader / editor</text>
+  <text class="small" x="92" y="466">act out borrowing rules</text>
+
+  <rect class="box school" x="70" y="512" width="260" height="54" />
+  <text class="text" x="92" y="535">Quantum wave cards</text>
+  <text class="small" x="92" y="556">measurement as outcome</text>
+
+  <rect class="box school" x="70" y="602" width="260" height="54" />
+  <text class="text" x="92" y="625">Container choice game</text>
+  <text class="small" x="92" y="646">enum, struct, vector, graph</text>
+
+  <rect class="box school" x="70" y="690" width="260" height="52" />
+  <text class="text" x="92" y="713">Capability role cards</text>
+  <text class="small" x="92" y="733">Describe, Formula, Graph</text>
+
+  <path class="soft-arrow" d="M430 271 L334 271" />
+  <path class="soft-arrow" d="M430 361 L334 361" />
+  <path class="soft-arrow" d="M430 451 L334 451" />
+  <path class="soft-arrow" d="M430 541 L334 541" />
+  <path class="soft-arrow" d="M430 631 L334 631" />
+  <path class="soft-arrow" d="M430 716 L334 716" />
+
+  <rect class="box university" x="850" y="242" width="270" height="54" />
+  <text class="text" x="872" y="265">Type invariants</text>
+  <text class="small" x="872" y="286">what should be impossible?</text>
+
+  <rect class="box university" x="850" y="332" width="270" height="54" />
+  <text class="text" x="872" y="355">Adjacency lists and BFS</text>
+  <text class="small" x="872" y="376">neighbors, paths, fragments</text>
+
+  <rect class="box university" x="850" y="422" width="270" height="54" />
+  <text class="text" x="872" y="445">API design and clone cost</text>
+  <text class="small" x="872" y="466">borrow, mutate, or copy?</text>
+
+  <rect class="box university" x="850" y="512" width="270" height="54" />
+  <text class="text" x="872" y="535">VQE intuition</text>
+  <text class="small" x="872" y="556">quantum-classical loop</text>
+
+  <rect class="box university" x="850" y="602" width="270" height="54" />
+  <text class="text" x="872" y="625">Representation tradeoffs</text>
+  <text class="small" x="872" y="646">storage vs query speed</text>
+
+  <rect class="box university" x="850" y="690" width="270" height="52" />
+  <text class="text" x="872" y="713">Trait-based APIs</text>
+  <text class="small" x="872" y="733">program against behavior</text>
+
+  <path class="soft-arrow" d="M750 271 L846 271" />
+  <path class="soft-arrow" d="M750 361 L846 361" />
+  <path class="soft-arrow" d="M750 451 L846 451" />
+  <path class="soft-arrow" d="M750 541 L846 541" />
+  <path class="soft-arrow" d="M750 631 L846 631" />
+  <path class="soft-arrow" d="M750 716 L846 716" />
+</svg>

@@ -1,6 +1,10 @@
 # Mermaid: Course Map
 
-This diagram renders directly on GitHub.
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Bio Memory Rust Lab course map](../rendered/course-map.svg)
+
+The editable Mermaid source is below.
 
 ```mermaid
 flowchart TD
