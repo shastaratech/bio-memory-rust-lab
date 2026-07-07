@@ -140,3 +140,24 @@ University extension:
 
 Explain the runtime tradeoff between scanning all bonds with `neighbors` and building
 an adjacency list with `adjacency_list`.
+
+## Exercise 8: Traits as Molecular Capabilities
+
+Open:
+
+```text
+rust-molecule-model/src/molecule.rs
+```
+
+Find these traits:
+
+- `Describe`
+- `ChemicalFormula`
+- `MolecularGraph`
+
+Tasks:
+
+1. Add `Describe` for `BondOrder`.
+2. Write `fn degree(graph: &impl MolecularGraph, atom_id: usize) -> usize`.
+3. Write `fn is_isolated(graph: &impl MolecularGraph, atom_id: usize) -> bool`.
+4. Explain why `formula()` can be a default trait method.

@@ -46,12 +46,53 @@ impl fmt::Display for Element {
     }
 }
 
+pub trait Describe {
+    fn describe(&self) -> String;
+}
+
+pub trait ChemicalFormula {
+    fn formula_counts(&self) -> Vec<(Element, usize)>;
+
+    fn formula(&self) -> String {
+        self.formula_counts()
+            .into_iter()
+            .map(|(element, count)| {
+                if count == 1 {
+                    element.to_string()
+                } else {
+                    format!("{element}{count}")
+                }
+            })
+            .collect()
+    }
+}
+
+pub trait MolecularGraph {
+    fn atom_count(&self) -> usize;
+    fn bond_count(&self) -> usize;
+    fn neighbors(&self, atom_id: usize) -> Vec<usize>;
+    fn shortest_path(&self, start: usize, goal: usize) -> Option<Vec<usize>>;
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum BondOrder {
     Single,
     Double,
     Triple,
     Aromatic,
+}
+
+impl fmt::Display for BondOrder {
+    fn fmt(&self, formatter: &mut fmt::Formatter<'_>) -> fmt::Result {
+        let label = match self {
+            BondOrder::Single => "single",
+            BondOrder::Double => "double",
+            BondOrder::Triple => "triple",
+            BondOrder::Aromatic => "aromatic",
+        };
+
+        formatter.write_str(label)
+    }
 }
 
 #[derive(Debug, Clone, PartialEq, Eq)]
@@ -87,6 +128,22 @@ impl Atom {
     }
 }
 
+impl Describe for Atom {
+    fn describe(&self) -> String {
+        let charge = match self.formal_charge {
+            0 => "neutral".to_string(),
+            charge if charge > 0 => format!("+{charge}"),
+            charge => charge.to_string(),
+        };
+
+        if self.aromatic {
+            format!("aromatic {} atom ({charge})", self.element)
+        } else {
+            format!("{} atom ({charge})", self.element)
+        }
+    }
+}
+
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct Bond {
     pub from: usize,
@@ -97,6 +154,15 @@ pub struct Bond {
 impl Bond {
     pub fn new(from: usize, to: usize, order: BondOrder) -> Self {
         Self { from, to, order }
+    }
+}
+
+impl Describe for Bond {
+    fn describe(&self) -> String {
+        format!(
+            "{} bond: atom {} <-> atom {}",
+            self.order, self.from, self.to
+        )
     }
 }
 
@@ -161,27 +227,7 @@ impl Molecule {
     }
 
     pub fn formula(&self) -> String {
-        let mut counts: Vec<(Element, usize)> = Vec::new();
-
-        for atom in &self.atoms {
-            match counts.iter_mut().find(|(element, _)| *element == atom.element) {
-                Some((_, count)) => *count += 1,
-                None => counts.push((atom.element, 1)),
-            }
-        }
-
-        counts.sort_by_key(|(element, _)| element.sort_key());
-
-        counts
-            .into_iter()
-            .map(|(element, count)| {
-                if count == 1 {
-                    element.to_string()
-                } else {
-                    format!("{element}{count}")
-                }
-            })
-            .collect()
+        <Self as ChemicalFormula>::formula(self)
     }
 
     pub fn shortest_path(&self, start: usize, goal: usize) -> Option<Vec<usize>> {
@@ -261,6 +307,54 @@ impl Molecule {
     }
 }
 
+impl ChemicalFormula for Molecule {
+    fn formula_counts(&self) -> Vec<(Element, usize)> {
+        let mut counts: Vec<(Element, usize)> = Vec::new();
+
+        for atom in &self.atoms {
+            match counts
+                .iter_mut()
+                .find(|(element, _)| *element == atom.element)
+            {
+                Some((_, count)) => *count += 1,
+                None => counts.push((atom.element, 1)),
+            }
+        }
+
+        counts.sort_by_key(|(element, _)| element.sort_key());
+        counts
+    }
+}
+
+impl Describe for Molecule {
+    fn describe(&self) -> String {
+        format!(
+            "{} molecule with {} atoms and {} bonds",
+            self.formula(),
+            self.atom_count(),
+            self.bond_count()
+        )
+    }
+}
+
+impl MolecularGraph for Molecule {
+    fn atom_count(&self) -> usize {
+        Molecule::atom_count(self)
+    }
+
+    fn bond_count(&self) -> usize {
+        Molecule::bond_count(self)
+    }
+
+    fn neighbors(&self, atom_id: usize) -> Vec<usize> {
+        Molecule::neighbors(self, atom_id)
+    }
+
+    fn shortest_path(&self, start: usize, goal: usize) -> Option<Vec<usize>> {
+        Molecule::shortest_path(self, start, goal)
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -337,13 +431,50 @@ mod tests {
     fn builds_adjacency_list() {
         let molecule = water();
 
-        assert_eq!(molecule.adjacency_list(), vec![vec![1, 2], vec![0], vec![0]]);
+        assert_eq!(
+            molecule.adjacency_list(),
+            vec![vec![1, 2], vec![0], vec![0]]
+        );
     }
 
     #[test]
     fn writes_formula() {
         assert_eq!(water().formula(), "H2O");
         assert_eq!(ethanol().formula(), "C2H6O");
+    }
+
+    #[test]
+    fn exposes_formula_counts() {
+        assert_eq!(
+            ethanol().formula_counts(),
+            vec![(Element::C, 2), (Element::H, 6), (Element::O, 1)]
+        );
+    }
+
+    #[test]
+    fn describes_atoms_bonds_and_molecules() {
+        let oxygen = Atom::neutral(Element::O);
+        let bond = Bond::new(0, 1, BondOrder::Single);
+        let molecule = water();
+
+        assert_eq!(oxygen.describe(), "O atom (neutral)");
+        assert_eq!(bond.describe(), "single bond: atom 0 <-> atom 1");
+        assert_eq!(molecule.describe(), "H2O molecule with 3 atoms and 2 bonds");
+    }
+
+    #[test]
+    fn can_use_molecular_graph_trait() {
+        fn degree(graph: &impl MolecularGraph, atom_id: usize) -> usize {
+            graph.neighbors(atom_id).len()
+        }
+
+        let molecule = water();
+
+        assert_eq!(degree(&molecule, 0), 2);
+        assert_eq!(
+            MolecularGraph::shortest_path(&molecule, 1, 2),
+            Some(vec![1, 0, 2])
+        );
     }
 
     #[test]

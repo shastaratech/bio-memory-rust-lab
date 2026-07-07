@@ -52,11 +52,35 @@ classDiagram
         +connected_components() Components
     }
 
+    class Describe {
+        <<trait>>
+        +describe() String
+    }
+
+    class ChemicalFormula {
+        <<trait>>
+        +formula_counts() Counts
+        +formula() String
+    }
+
+    class MolecularGraph {
+        <<trait>>
+        +atom_count() usize
+        +bond_count() usize
+        +neighbors(atom_id) Vec
+        +shortest_path(start, goal) Option
+    }
+
     Atom --> Element
     Bond --> BondOrder
     Molecule *-- Atom : owns many
     Molecule *-- Bond : owns many
     Bond ..> Atom : refers by index
+    Atom ..|> Describe
+    Bond ..|> Describe
+    Molecule ..|> Describe
+    Molecule ..|> ChemicalFormula
+    Molecule ..|> MolecularGraph
 ```
 
 ## Ownership Contract

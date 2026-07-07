@@ -45,6 +45,8 @@ cargo run
 | [02: Molecules as Graphs](lessons/02-molecules-as-graphs.md) | Students become atoms in a human graph. | Adjacency lists, traversal, connected components, and paths. |
 | [03: Ownership and Borrowing Through Molecule Design](lessons/03-ownership-borrowing-design.md) | "Who owns the molecule?" lab roles and safe sharing. | Ownership, borrowing, mutation, clone cost, and API design. |
 | [04: Quantum State and Molecular Simulation](lessons/04-quantum-state-and-simulation.md) | Wave cards and measurement games. | Amplitudes, Hamiltonians, VQE intuition, and simulation limits. |
+| [05: Rust Data Structures for Molecules](lessons/05-rust-data-structures-for-molecules.md) | Pick the right container for atom cards and bond strings. | Representation choices: enums, structs, vectors, graphs, and counts. |
+| [06: Traits and Functions for Molecular Behavior](lessons/06-traits-functions-molecular-behavior.md) | Role cards for shared capabilities. | Traits, default methods, function contracts, and generic graph APIs. |
 
 ## Classroom Energy
 
@@ -60,7 +62,9 @@ Visuals live in [visuals/](visuals/README.md):
 - [Course map](visuals/mermaid/course-map.md)
 - [Graph algorithms](visuals/mermaid/graph-algorithms.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
+- [Traits and functions](visuals/mermaid/traits-and-functions.md)
 - [Molecule data model](visuals/plantuml/molecule-data-model.puml)
+- [Traits and molecular behavior](visuals/plantuml/traits-and-functions.puml)
 - [Ownership and borrowing contract](visuals/plantuml/ownership-borrowing-contract.puml)
 - [Molecule design flow](visuals/plantuml/molecule-design-flow.puml)
 - [Quantum simulation loop](visuals/plantuml/quantum-simulation-loop.puml)

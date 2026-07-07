@@ -1,0 +1,43 @@
+@startuml
+title Traits and Molecular Behavior
+
+skinparam classAttributeIconSize 0
+
+interface Describe {
+  +describe(): String
+}
+
+interface ChemicalFormula {
+  +formula_counts(): Vec<(Element, usize)>
+  +formula(): String
+}
+
+interface MolecularGraph {
+  +atom_count(): usize
+  +bond_count(): usize
+  +neighbors(atom_id: usize): Vec<usize>
+  +shortest_path(start: usize, goal: usize): Option<Vec<usize>>
+}
+
+class Atom
+class Bond
+class Molecule
+
+Atom ..|> Describe
+Bond ..|> Describe
+Molecule ..|> Describe
+Molecule ..|> ChemicalFormula
+Molecule ..|> MolecularGraph
+
+note right of ChemicalFormula
+  formula() can be a default method
+  built from formula_counts().
+end note
+
+note bottom of MolecularGraph
+  A function can accept &impl MolecularGraph
+  instead of only &Molecule.
+end note
+
+@enduml
+

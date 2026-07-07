@@ -25,6 +25,8 @@ Use the wiki for classroom operations:
 2. [Molecules as Graphs](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/02-molecules-as-graphs.md)
 3. [Ownership and Borrowing Through Molecule Design](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/03-ownership-borrowing-design.md)
 4. [Quantum State and Molecular Simulation](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/04-quantum-state-and-simulation.md)
+5. [Rust Data Structures for Molecules](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/05-rust-data-structures-for-molecules.md)
+6. [Traits and Functions for Molecular Behavior](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/06-traits-functions-molecular-behavior.md)
 
 ## Audience Paths
 
@@ -34,6 +36,8 @@ Use the wiki for classroom operations:
   Rust API design, graph algorithms, constrained search, and quantum simulation context.
 - [Activity pack](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/activities/classroom-games.md):
   classroom games that make types, memory, and graphs tangible.
+- [Visual language](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/README.md):
+  Mermaid and PlantUML diagrams for structures, algorithms, contracts, and flows.
 
 ## Project Links
 

@@ -81,5 +81,15 @@ Build water, methane, or ethanol in Rust. Then answer:
 - [Course map](../visuals/mermaid/course-map.md)
 - [Graph algorithms](../visuals/mermaid/graph-algorithms.md)
 - [Molecule design flow](../visuals/plantuml/molecule-design-flow.puml)
+- [Traits and functions](../visuals/mermaid/traits-and-functions.md)
 
 For school students, show the diagram first, then act it out, then show code.
+
+## Extra Lesson Pair
+
+Use Lessons 05 and 06 as a studio day:
+
+1. Students choose containers for atom cards, bond strings, and formula counts.
+2. Students act out traits as role cards: `Describe`, `ChemicalFormula`, and
+   `MolecularGraph`.
+3. Students run the Rust crate and find the matching code.

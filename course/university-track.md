@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Four-Session Seminar
+## Six-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -78,6 +78,40 @@ Implementation focus:
 - classical scoring vs quantum energy estimation
 - limits of toy models
 
+### Session 05: Rust Data Structures for Molecules
+
+Core questions:
+
+- What should be stored as an enum, struct, vector, graph, or count table?
+- What questions should be cheap to answer?
+- What invalid states can the representation prevent?
+
+Implementation focus:
+
+- `Element`
+- `Atom`
+- `Bond`
+- `Molecule`
+- formula counts
+- storage representation vs graph view
+
+### Session 06: Traits and Functions for Molecular Behavior
+
+Core questions:
+
+- Which behaviors belong in traits?
+- Which methods should have default implementations?
+- What does a function promise through its parameters and return type?
+- How can algorithms accept `&impl MolecularGraph` instead of only `&Molecule`?
+
+Implementation focus:
+
+- `Describe`
+- `ChemicalFormula`
+- `MolecularGraph`
+- `Option<Vec<usize>>`
+- generic functions over molecular graph behavior
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -100,6 +134,14 @@ Implementation focus:
 - [Ownership and borrowing contract](../visuals/plantuml/ownership-borrowing-contract.puml)
 - [Memory address flow](../visuals/plantuml/memory-address-flow.puml)
 - [Quantum simulation loop](../visuals/plantuml/quantum-simulation-loop.puml)
+- [Traits and molecular behavior](../visuals/plantuml/traits-and-functions.puml)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.
+
+## Implementation Lab
+
+1. Refactor a concrete molecule API into traits.
+2. Write generic functions over `&impl MolecularGraph`.
+3. Compare returning owned `Vec<usize>` with iterator-based APIs.
+4. Decide which methods deserve default trait implementations.

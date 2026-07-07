@@ -11,7 +11,7 @@ Both lanes teach the same durable idea:
 > A good model keeps enough structure to answer the question, and enough rules to
 > prevent nonsense.
 
-## Suggested Four-Session Arc
+## Suggested Six-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -19,6 +19,8 @@ Both lanes teach the same durable idea:
 | 02 | How does a molecule become a network? | graph traversal | neighbors, paths, fragments |
 | 03 | Who is allowed to change the molecule? | ownership and borrowing | design pipelines and constraints |
 | 04 | Why is a molecule not just a graph? | limits of representation | quantum state and simulation |
+| 05 | Which data structure fits each molecule question? | representation choice | molecular records, graphs, counts |
+| 06 | What can molecule-like things do? | traits and functions | shared behavior and contracts |
 
 ## School Lane
 
@@ -66,3 +68,5 @@ Use [visuals/](../visuals/README.md) throughout the course:
 - use the [graph algorithms](../visuals/mermaid/graph-algorithms.md) for Lesson 02
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
+- use [traits and functions](../visuals/mermaid/traits-and-functions.md)
+  when introducing reusable behavior

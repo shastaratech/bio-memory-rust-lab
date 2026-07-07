@@ -19,3 +19,5 @@ Explore:
 - molecular formulas as a small formatting problem
 - adjacency lists as a graph representation
 - shortest paths and connected components
+- traits as reusable molecular capabilities
+- functions as contracts over borrowed molecule data

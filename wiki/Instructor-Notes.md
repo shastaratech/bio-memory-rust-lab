@@ -46,6 +46,23 @@ Length: 90 minutes.
 5. Run `cargo test` and inspect the graph tests.
 6. Discuss what graph models leave out: 3D shape, energy, and electron density.
 
+## Diagram Routine
+
+Use this three-step loop:
+
+1. Show the diagram.
+2. Act it out or trace it by hand.
+3. Open the Rust code or lesson text that implements the same idea.
+
+Best starting diagrams:
+
+- Course map
+- Molecule data model
+- Graph algorithms
+- Ownership and borrowing contract
+- Traits and functions
+- Quantum simulation loop
+
 ## Good Discussion Prompts
 
 - What does the compiler prevent when we use `Element::Cl` instead of `"cl"`?
