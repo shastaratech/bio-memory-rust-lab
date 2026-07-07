@@ -118,3 +118,25 @@ Answer in two sentences:
 1. Why is a quantum state not the same as a classical memory value?
 2. Why are quantum computers interesting for molecular simulation?
 
+## Exercise 7: Graph Explorer
+
+Run the Rust molecule model:
+
+```bash
+cd rust-molecule-model
+cargo run
+```
+
+Then modify `src/main.rs` so it builds methane or ethanol.
+
+Questions:
+
+1. What is the formula?
+2. Which atom has the most neighbors?
+3. What is the shortest path between two hydrogens?
+4. How many connected components does the molecule have?
+
+University extension:
+
+Explain the runtime tradeoff between scanning all bonds with `neighbors` and building
+an adjacency list with `adjacency_list`.

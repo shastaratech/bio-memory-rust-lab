@@ -17,7 +17,9 @@ fn main() {
 
     println!("water atoms: {}", water.atom_count());
     println!("water bonds: {}", water.bond_count());
+    println!("water formula: {}", water.formula());
     println!("oxygen neighbors: {:?}", water.neighbors(0));
+    println!("water adjacency list: {:?}", water.adjacency_list());
+    println!("path H -> H: {:?}", water.shortest_path(1, 2));
     println!("bond indices valid: {}", water.validate_bond_indices());
 }
-

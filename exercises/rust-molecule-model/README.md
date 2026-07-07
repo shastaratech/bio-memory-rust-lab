@@ -16,4 +16,6 @@ Explore:
 - `Molecule` as an owner of vectors
 - borrowed reads through `&self`
 - graph neighbors as a simple algorithm
-
+- molecular formulas as a small formatting problem
+- adjacency lists as a graph representation
+- shortest paths and connected components
