@@ -41,6 +41,14 @@ Add:
 - two baskets labeled stack and heap
 - colored cards labeled owner, immutable borrower, mutable borrower
 
+Printable worksheets:
+
+- [Atom Cards](../worksheets/school-atom-cards.md)
+- [Formula To Graph](../worksheets/school-formula-to-graph.md)
+- [DNA, Memory, and Data Structures](../worksheets/dna-memory-data-structures.md)
+- [Visualizing Molecules and Data Algorithms](../worksheets/visualizing-data-algorithms.md)
+- [Molecule Design As Data Search](../worksheets/molecule-design-data-search.md)
+
 ## Code Moment
 
 Show this small example and ask students what could go wrong if `Element` were a
@@ -98,3 +106,30 @@ Use Lessons 05 and 06 as a studio day:
 
 Use the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md) when students
 are ready to run commands. Let them predict the output before pressing Enter.
+
+Use [Lesson 07](../lessons/07-molecule-explorer-cli-capstone.md) and the
+[CLI handout](../handouts/molecule-explorer-cli.md) as the project day structure.
+Keep the first extension to `degree` unless the group is ready to add a new
+molecule.
+
+## Biological Memory Extension
+
+Use [Lesson 08](../lessons/08-dna-biological-memory-data-structures.md) when the
+class is ready to compare molecule graphs with sequence data. Have students build
+base cards for `A`, `C`, `G`, and `T`, group codons into three-card chunks, and
+mark a borrowed gene region with start/end sticky notes.
+
+## Visualization And Algorithm Extension
+
+Use [Lesson 09](../lessons/09-visualizing-molecules-and-data-algorithms.md) when
+students are ready to compare data structures. Put atom cards in rows for vectors,
+arrow-linked cards for lists, alphabetized cards for sorted lists, and element
+buckets for hash maps. Then open the [3D viewer](../visuals/html/molecule-3d-viewer.html)
+to compare data records with shape.
+
+## Molecule Design Extension
+
+Use [Lesson 10](../lessons/10-designing-molecules-as-data-search.md) when students
+are ready to design candidates. Run scaffold, option, validation, scoring, and
+ranking stations with cards. Keep the scores playful and make the safety limit
+explicit: this is data-structure practice, not real molecule recommendation.

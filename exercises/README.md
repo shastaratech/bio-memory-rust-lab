@@ -123,6 +123,9 @@ Answer in two sentences:
 
 ## Exercise 7: Graph Explorer
 
+For a printable student worksheet, use the
+[Molecule Explorer CLI handout](../handouts/molecule-explorer-cli.md).
+
 Run the Rust molecule model:
 
 ```bash
@@ -166,3 +169,49 @@ Tasks:
 2. Write `fn degree(graph: &impl MolecularGraph, atom_id: usize) -> usize`.
 3. Write `fn is_isolated(graph: &impl MolecularGraph, atom_id: usize) -> bool`.
 4. Explain why `formula()` can be a default trait method.
+
+## Exercise 9: DNA As Typed Sequence Data
+
+Open:
+
+```text
+rust-molecule-model/src/dna.rs
+```
+
+Find:
+
+- `Base`
+- `DnaStrand`
+- `Mutation`
+
+Tasks:
+
+1. Parse `ACGTTAGC` into a `DnaStrand`.
+2. Compute its complement.
+3. Borrow a gene region as a slice.
+4. Apply one substitution, one insertion, and one deletion.
+5. Explain which values are stack-friendly, heap-backed, or borrowed.
+
+## Exercise 10: Molecule Design As Search
+
+Open:
+
+```text
+rust-molecule-model/src/design.rs
+```
+
+Find:
+
+- `Substituent`
+- `Candidate`
+- `generate_design_round`
+- `score_candidates`
+- `rank_candidates`
+
+Tasks:
+
+1. Generate candidates from water or ethanol.
+2. Score each candidate.
+3. Build a score lookup map.
+4. Rank candidates by score.
+5. Keep the top candidates as the next search frontier.

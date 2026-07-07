@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Six-Session Seminar
+## Ten-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -112,12 +112,86 @@ Implementation focus:
 - `Option<Vec<usize>>`
 - generic functions over molecular graph behavior
 
+### Session 07: Molecule Explorer CLI Capstone
+
+Core questions:
+
+- Where is the boundary between the library and the binary?
+- Which failures should return `Result`, `Option`, or a printed message?
+- How do command strings become testable command data?
+- Which behavior belongs in unit tests before the CLI prints anything?
+
+Implementation focus:
+
+- command parsing
+- molecule lookup
+- CLI error handling
+- `degree` command
+- new toy molecule plus formula test
+
+### Session 08: DNA, Biological Memory, and Data Structures
+
+Core questions:
+
+- When is a DNA sequence best represented as `String`, `Vec<Base>`, or `&[Base]`?
+- Which values are stack-friendly, heap-backed, or borrowed?
+- How do codons, gene regions, and mutations map to arrays, slices, and enums?
+- Where does the DNA-as-code analogy help, and where does it break?
+
+Implementation focus:
+
+- `Base` enum
+- `[Base; 3]` codon type
+- `DnaStrand { bases: Vec<Base> }`
+- borrowed gene regions as slices
+- `Mutation` enum for substitutions, insertions, and deletions
+
+### Session 09: Visualizing Molecules and Data Algorithms
+
+Core questions:
+
+- When should molecule data use `Vec`, sorted `Vec`, `HashMap`, graph adjacency,
+  or 3D coordinates?
+- Which algorithmic operations are sorting, merging, counting, and lookup?
+- Why is a 3D visualization useful even when graph algorithms use atom indices?
+- What does each representation make cheap or expensive?
+
+Implementation focus:
+
+- atom vectors and bond vectors
+- sorted formula-count output
+- `HashMap<Element, usize>` for counting
+- merge-on-key workflows for labels or scores
+- 3D teaching coordinates for visualization
+
+### Session 10: Designing Molecules as Data Search
+
+Core questions:
+
+- How do scaffold, substituent, candidate, constraint, feature, score, and ranking
+  map to data structures?
+- When should candidates be cloned, borrowed, filtered, indexed, or sorted?
+- Which stage needs a graph, hash map, sorted vector, or queue?
+- Why does a toy score not establish real chemical usefulness?
+
+Implementation focus:
+
+- `Substituent` enum
+- `Candidate` struct
+- validation filters
+- `HashMap<String, f64>` score lookup
+- sorted `Vec<Candidate>` ranking
+- queue/frontier for iterative search
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
 - Algorithm lab: implement shortest path and connected components.
 - Design memo: compare string-based element labels with enum-based labels.
 - Reflection: explain why quantum state cannot be copied and read like normal data.
+- Design memo: compare DNA sequence as `String`, `Vec<Base>`, and borrowed slices.
+- Design memo: choose data structures for visualization, lookup, ranking, and merging.
+- Design memo: choose data structures for a scaffold-to-analog design round.
 
 ## Capstone Rubric
 
@@ -146,8 +220,41 @@ forces into the model and what it hides.
 3. Compare returning owned `Vec<usize>` with iterator-based APIs.
 4. Decide which methods deserve default trait implementations.
 
+Use the [Traits API Design worksheet](../worksheets/university-traits-api-design.md)
+for this lab.
+
 ## First Project
 
 Use the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md) as the first
 capstone. Have students refactor the argument parsing into testable `Result`-based
 functions.
+
+Use [Lesson 07](../lessons/07-molecule-explorer-cli-capstone.md) for the in-class
+capstone sequence.
+
+Use the [CLI Extension worksheet](../worksheets/university-cli-extension.md) for
+the implementation lab.
+
+## Biological Memory Lab
+
+Use [Lesson 08](../lessons/08-dna-biological-memory-data-structures.md), the
+[DNA handout](../handouts/dna-memory-data-structures.md), and the
+[DNA worksheet](../worksheets/dna-memory-data-structures.md). Ask students to
+defend each memory choice: stack-friendly enum, fixed codon array, heap-backed
+strand vector, borrowed slice, or owned mutation log.
+
+## Visualization And Algorithms Lab
+
+Use [Lesson 09](../lessons/09-visualizing-molecules-and-data-algorithms.md), the
+[3D molecule viewer](../visuals/html/molecule-3d-viewer.html), and the
+[visual data algorithms worksheet](../worksheets/visualizing-data-algorithms.md).
+Ask students to design one storage representation, one lookup representation, one
+sorted report, and one merge operation for the same molecule.
+
+## Molecule Design Lab
+
+Use [Lesson 10](../lessons/10-designing-molecules-as-data-search.md), the
+[molecule design worksheet](../worksheets/molecule-design-data-search.md), and the
+[molecule design algorithms diagram](../visuals/mermaid/molecule-design-algorithms.md).
+Ask students to model one full round: scaffold, options, candidates, constraints,
+features, scores, ranked list, and next frontier.

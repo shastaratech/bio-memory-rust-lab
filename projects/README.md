@@ -5,6 +5,10 @@ For guided project instructions with commands and checkpoints, start with
 
 Projects turn the lessons into things students can run, modify, and explain.
 
+For an instructor-led capstone session, use
+[Lesson 07](../lessons/07-molecule-explorer-cli-capstone.md) and the
+[student CLI handout](../handouts/molecule-explorer-cli.md).
+
 ## Suggested Path
 
 1. [Molecule Explorer CLI](molecule-explorer-cli.md)

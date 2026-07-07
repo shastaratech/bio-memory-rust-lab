@@ -46,6 +46,55 @@ Length: 90 minutes.
 5. Run `cargo test` and inspect the graph tests.
 6. Discuss what graph models leave out: 3D shape, energy, and electron density.
 
+## Suggested Capstone Session
+
+Length: 90 minutes.
+
+1. Start with `cargo run -- list` and have students predict available molecules.
+2. Run `summary`, `atoms`, `bonds`, `neighbors`, `path`, `components`, and
+   `validate` on water, methane, and ethanol.
+3. Draw the CLI flow from terminal input to molecule function.
+4. Add the `degree` command as the smallest extension.
+5. Add ammonia only if the group is ready to edit molecule lookup and tests.
+6. Close with presentations: command, Rust function, molecule question, and model
+   limitation.
+
+## Suggested Biological Memory Session
+
+Length: 75-90 minutes.
+
+1. Start with `ACGTTAGC` and ask whether it is chemistry, data, or both.
+2. Convert base cards into a Rust `Base` enum.
+3. Compare `Base`, `[Base; 3]`, `Vec<Base>`, `String`, `&DnaStrand`, and `&[Base]`.
+4. Use sticky notes to mark a borrowed gene region inside a longer strand.
+5. Model substitutions, insertions, and deletions as enum variants.
+6. Close by naming where the DNA-as-code analogy helps and where it breaks.
+
+## Suggested Visualization And Algorithms Session
+
+Length: 75 minutes.
+
+1. Open the local 3D molecule viewer and rotate ethanol.
+2. Ask what the 3D view shows that a formula does not.
+3. Put atom cards in a row to represent a vector.
+4. Use buckets labeled `C`, `H`, `O`, and `N` to represent hash-map counting.
+5. Sort formula-count cards into stable output order.
+6. Merge atom-ID cards with label cards and discuss missing IDs.
+7. Close by asking which representation makes each molecule question cheap.
+
+## Suggested Molecule Design Session
+
+Length: 90 minutes.
+
+1. Choose one scaffold card and one attachment atom.
+2. Put substituent cards in a vector-like row.
+3. Generate candidate cards by combining scaffold plus substituent.
+4. Apply validation rule cards and reject invalid candidates.
+5. Compute one toy feature and one toy score for each valid candidate.
+6. Sort candidates into a ranked list.
+7. Choose the top candidates as the next search frontier.
+8. Close by naming why a toy score is not real-world molecule evidence.
+
 ## Diagram Routine
 
 Use this three-step loop:

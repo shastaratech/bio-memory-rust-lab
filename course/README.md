@@ -14,7 +14,9 @@ Both lanes teach the same durable idea:
 For self-study, use the [book](../book/README.md). It gives students step-by-step
 reading, commands, expected outputs, and checkpoints.
 
-## Suggested Six-Session Arc
+For printable labs, use the [worksheet pack](../worksheets/README.md).
+
+## Suggested Ten-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -24,6 +26,10 @@ reading, commands, expected outputs, and checkpoints.
 | 04 | Why is a molecule not just a graph? | limits of representation | quantum state and simulation |
 | 05 | Which data structure fits each molecule question? | representation choice | molecular records, graphs, counts |
 | 06 | What can molecule-like things do? | traits and functions | shared behavior and contracts |
+| 07 | How does a model become a tool? | CLI commands and tests | inspectable toy molecule queries |
+| 08 | How can a molecule carry information? | sequence data, references, heap storage | DNA bases, codons, genes, mutations |
+| 09 | Which data shape fits this question? | arrays, lists, maps, sorting, merging | 3D views and molecular records |
+| 10 | How do we explore possible molecules? | search, filters, ranking, queues | scaffolds, substituents, constraints, scores |
 
 ## School Lane
 
@@ -50,14 +56,23 @@ Best outcomes:
 - Students can explain why Rust references are not the same thing as chemical bonds.
 - Students can connect molecule design to constrained search and scoring.
 - Students can describe why quantum simulation is useful and hard.
+- Students can compare DNA sequence representations with Rust data structures.
+- Students can choose arrays, lists, sorted lists, hash maps, graphs, and 3D
+  coordinates for different molecule questions.
+- Students can describe molecule design as a constrained search over candidate
+  data.
 
 ## Capstone Ideas
 
 - Build the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md).
+- Complete the [CLI extension worksheet](../worksheets/university-cli-extension.md).
 - Compare `Vec<Bond>` scanning with an adjacency list.
 - Write a simple analog generator for a toy scaffold.
 - Add a scoring function for "drug-like toy molecules."
 - Make a poster explaining "atoms are not bytes, but both need structure."
+- Model DNA bases, codons, gene slices, and mutations in Rust.
+- Build a visual data-structure report for one molecule.
+- Run a toy scaffold/substituent design round and rank candidates.
 
 ## Visual Support
 
@@ -69,7 +84,12 @@ Use [visuals/](../visuals/README.md) throughout the course:
 - use the [ownership contract](../visuals/plantuml/ownership-borrowing-contract.puml)
   before borrow-checker examples
 - use the [graph algorithms](../visuals/mermaid/graph-algorithms.md) for Lesson 02
+- use the [data algorithms](../visuals/mermaid/data-algorithms.md) for Lesson 09
+- use the [molecule design algorithms](../visuals/mermaid/molecule-design-algorithms.md)
+  for Lesson 10
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)
   when introducing reusable behavior
+- open the [3D molecule viewer](../visuals/html/molecule-3d-viewer.html) when
+  comparing graph connectivity with spatial views

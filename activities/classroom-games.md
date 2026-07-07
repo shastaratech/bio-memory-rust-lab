@@ -122,3 +122,92 @@ Important caution:
 Do not tell students a qubit "stores both 0 and 1 like a bigger bit." That shortcut
 creates confusion later.
 
+## 7. DNA Sequence Memory
+
+Give students cards labeled `A`, `C`, `G`, and `T`.
+
+Activities:
+
+- build a DNA strand as a line of base cards
+- group every three cards into codons
+- mark a gene region with two sticky notes labeled `start` and `end`
+- copy a short region onto a whiteboard as a borrowed slice
+- apply one mutation card: substitute, insert, or delete
+
+Rust reveal:
+
+```rust
+enum Base {
+    A,
+    C,
+    G,
+    T,
+}
+
+type Codon = [Base; 3];
+```
+
+Memory prompt:
+
+- one base is like a small stack-friendly enum value
+- one codon is like a fixed-size array
+- a long strand is like heap-backed `Vec<Base>`
+- a gene region is like a borrowed slice `&[Base]`
+
+Important caution:
+
+DNA is chemical information, not software source code. A Rust model can represent
+the sequence, but not the whole physical biology.
+
+## 8. Molecule Design Stations
+
+Create five stations around the room:
+
+1. scaffold
+2. substituent options
+3. validation
+4. scoring
+5. ranking
+
+Students move candidate cards through the stations.
+
+At the scaffold station, students choose a starter graph.
+
+At the substituent station, students draw one option from a vector-like row of
+cards.
+
+At the validation station, students apply rule cards:
+
+- supported element
+- valid bond indices
+- one connected graph
+- atom count under the class limit
+
+At the scoring station, students compute a toy score.
+
+At the ranking station, students sort candidate cards from best to worst.
+
+Rust reveal:
+
+```rust
+struct Candidate {
+    name: String,
+    molecule: Molecule,
+    valid: bool,
+    score: Option<f64>,
+}
+```
+
+Data-structure prompt:
+
+- vector: store substituent options
+- graph: store scaffold connectivity
+- filter: reject invalid candidates
+- hash map: look up scores by name
+- sorted list: rank candidates
+- queue: hold candidates for the next design round
+
+Important caution:
+
+This is a toy design workflow. Real molecule design needs chemistry, synthesis,
+measurement, biological context, and safety review.

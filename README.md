@@ -30,6 +30,9 @@ cargo run -- water summary
 10. Open the [visual language guide](visuals/README.md) and compare a diagram with
    the Rust code it describes.
 11. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
+12. Use the [Molecule Explorer CLI handout](handouts/molecule-explorer-cli.md) for
+    the capstone lab.
+13. Print or assign the [worksheet pack](worksheets/README.md) for classroom labs.
 
 ## Self-Study Book
 
@@ -41,6 +44,7 @@ Book chapters:
 
 - [Setup](book/00-setup.md)
 - [00: Atoms, Elements, Bonds, Molecules, And Formulas](book/00-chemistry-primer.md)
+- [00b: How Formulas Become Graphs](book/00b-how-formulas-become-graphs.md)
 - [01: Atoms, Memory, and Types](book/01-atoms-memory-types.md)
 - [02: Molecules as Graphs](book/02-molecules-as-graphs.md)
 - [03: Ownership and Borrowing](book/03-ownership-borrowing-design.md)
@@ -48,6 +52,9 @@ Book chapters:
 - [05: Data Structures](book/05-data-structures.md)
 - [06: Traits and Functions](book/06-traits-functions.md)
 - [07: Molecule Explorer CLI Project](book/07-molecule-explorer-project.md)
+- [08: DNA, Biological Memory, and Data Structures](book/08-dna-biological-memory-data-structures.md)
+- [09: Visualizing Molecules and Data Algorithms](book/09-visualizing-molecules-and-data-algorithms.md)
+- [10: Designing Molecules as Data Search](book/10-designing-molecules-as-data-search.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -69,6 +76,10 @@ Book chapters:
 | [04: Quantum State and Molecular Simulation](lessons/04-quantum-state-and-simulation.md) | Wave cards and measurement games. | Amplitudes, Hamiltonians, VQE intuition, and simulation limits. |
 | [05: Rust Data Structures for Molecules](lessons/05-rust-data-structures-for-molecules.md) | Pick the right container for atom cards and bond strings. | Representation choices: enums, structs, vectors, graphs, and counts. |
 | [06: Traits and Functions for Molecular Behavior](lessons/06-traits-functions-molecular-behavior.md) | Role cards for shared capabilities. | Traits, default methods, function contracts, and generic graph APIs. |
+| [07: Molecule Explorer CLI Capstone](lessons/07-molecule-explorer-cli-capstone.md) | Predict terminal output, then run molecule commands. | CLI boundaries, command parsing, graph queries, tests, and project explanation. |
+| [08: DNA, Biological Memory, and Data Structures](lessons/08-dna-biological-memory-data-structures.md) | Base cards, codon chunks, and borrowed gene regions. | DNA sequence modeling, stack/heap tradeoffs, references, slices, and mutation enums. |
+| [09: Visualizing Molecules and Data Algorithms](lessons/09-visualizing-molecules-and-data-algorithms.md) | Use 3D views, buckets, cards, and sorted rows. | Arrays, vectors, lists, sorted lists, hash maps, sorting, merging, and 3D coordinates. |
+| [10: Designing Molecules as Data Search](lessons/10-designing-molecules-as-data-search.md) | Move candidate cards through scaffold, validate, score, and rank stations. | Scaffold states, substituent vectors, filters, hash maps, sorted rankings, queues, and search loops. |
 
 ## Classroom Energy
 
@@ -76,6 +87,17 @@ The [activity pack](activities/classroom-games.md) turns abstract ideas into
 movement: atom cards, bond strings, a human stack and heap, graph traversal races,
 and a quantum measurement game. The point is not to make chemistry cute; it is to
 give students a body-level memory of why structure, constraints, and state matter.
+
+Use the [worksheet pack](worksheets/README.md) when students need a concrete page
+to fill in during atom-card, formula-to-graph, trait-design, or CLI-extension labs.
+Use the [DNA handout](handouts/dna-memory-data-structures.md) and
+[DNA worksheet](worksheets/dna-memory-data-structures.md) for the biological memory
+extension.
+Use the [3D molecule viewer](visuals/html/molecule-3d-viewer.html) and
+[visual data algorithms worksheet](worksheets/visualizing-data-algorithms.md) when
+teaching arrays, lists, sorted lists, hash maps, sorting, and merging.
+Use the [molecule design worksheet](worksheets/molecule-design-data-search.md) for
+the scaffold-to-candidate search lab.
 
 ## Projects
 
@@ -95,7 +117,10 @@ Visuals live in [visuals/](visuals/README.md):
 
 - [Course map](visuals/mermaid/course-map.md)
 - [Graph algorithms](visuals/mermaid/graph-algorithms.md)
+- [Data algorithms](visuals/mermaid/data-algorithms.md)
+- [Molecule design algorithms](visuals/mermaid/molecule-design-algorithms.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
+- [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)
 - [Molecule data model](visuals/plantuml/molecule-data-model.puml)
 - [Traits and molecular behavior](visuals/plantuml/traits-and-functions.puml)

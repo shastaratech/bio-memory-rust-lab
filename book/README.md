@@ -10,15 +10,17 @@ open and the exact commands to run.
 
 1. Start with [Setup](00-setup.md).
 2. Read the [chemistry notation primer](00-chemistry-primer.md).
-3. Read one chapter at a time.
-4. Run every command.
-5. Edit one small thing before moving on.
-6. Answer the checkpoint questions out loud or in a notebook.
+3. Read [how formulas become graphs](00b-how-formulas-become-graphs.md).
+4. Read one chapter at a time.
+5. Run every command.
+6. Edit one small thing before moving on.
+7. Answer the checkpoint questions out loud or in a notebook.
 
 ## Table Of Contents
 
 - [Setup](00-setup.md)
 - [Chapter 00: Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
+- [Chapter 00b: How Formulas Become Graphs](00b-how-formulas-become-graphs.md)
 - [Chapter 01: Atoms, Memory, and Types](01-atoms-memory-types.md)
 - [Chapter 02: Molecules as Graphs](02-molecules-as-graphs.md)
 - [Chapter 03: Ownership and Borrowing Through Molecule Design](03-ownership-borrowing-design.md)
@@ -26,6 +28,9 @@ open and the exact commands to run.
 - [Chapter 05: Rust Data Structures for Molecules](05-data-structures.md)
 - [Chapter 06: Traits and Functions for Molecular Behavior](06-traits-functions.md)
 - [Chapter 07: Molecule Explorer CLI Project](07-molecule-explorer-project.md)
+- [Chapter 08: DNA, Biological Memory, and Data Structures](08-dna-biological-memory-data-structures.md)
+- [Chapter 09: Visualizing Molecules and Data Algorithms](09-visualizing-molecules-and-data-algorithms.md)
+- [Chapter 10: Designing Molecules as Data Search](10-designing-molecules-as-data-search.md)
 - [Appendix: Command Reference](appendix-command-reference.md)
 
 ## Repo Map
