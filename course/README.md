@@ -54,3 +54,15 @@ Best outcomes:
 - Add a scoring function for "drug-like toy molecules."
 - Make a poster explaining "atoms are not bytes, but both need structure."
 
+## Visual Support
+
+Use [visuals/](../visuals/README.md) throughout the course:
+
+- start each session with the [course map](../visuals/mermaid/course-map.md)
+- use the [molecule data model](../visuals/plantuml/molecule-data-model.puml)
+  when introducing Rust structs
+- use the [ownership contract](../visuals/plantuml/ownership-borrowing-contract.puml)
+  before borrow-checker examples
+- use the [graph algorithms](../visuals/mermaid/graph-algorithms.md) for Lesson 02
+- use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
+  when diagrams need to render directly on GitHub

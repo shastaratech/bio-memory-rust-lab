@@ -5,6 +5,11 @@
 Students learn Rust ownership and borrowing through a molecule-design workflow:
 who owns a molecule, who may inspect it, and who may change it.
 
+## Visuals
+
+- [Ownership and borrowing contract](../visuals/plantuml/ownership-borrowing-contract.puml)
+- [Molecule design flow](../visuals/plantuml/molecule-design-flow.puml)
+
 ## Hook
 
 Put one molecule card on a table. Give students role cards:
@@ -99,4 +104,3 @@ Write a function signature for each task:
 2. Add a bond to an existing molecule.
 3. Create a new analog while preserving the original scaffold.
 4. Score a molecule without taking ownership.
-

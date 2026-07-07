@@ -76,3 +76,10 @@ Build water, methane, or ethanol in Rust. Then answer:
 2. How do we find an atom's neighbors?
 3. What invalid bond should the program reject?
 
+## Visuals to Use
+
+- [Course map](../visuals/mermaid/course-map.md)
+- [Graph algorithms](../visuals/mermaid/graph-algorithms.md)
+- [Molecule design flow](../visuals/plantuml/molecule-design-flow.puml)
+
+For school students, show the diagram first, then act it out, then show code.

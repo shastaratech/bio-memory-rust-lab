@@ -1,0 +1,20 @@
+@startuml
+title From Rust Value to Memory Location
+
+start
+:Student writes Rust value;
+:Compiler assigns type and layout rules;
+:Program uses variable name or reference;
+:Runtime uses virtual memory address;
+:OS and CPU map to physical memory;
+:Hardware reads or writes bytes;
+stop
+
+note right
+  The variable name is not the cell.
+  The reference is not the molecule.
+  Each layer is a representation.
+end note
+
+@enduml
+

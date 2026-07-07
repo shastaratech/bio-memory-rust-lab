@@ -94,3 +94,12 @@ Implementation focus:
 | Scientific humility | The project states what its model leaves out. |
 | Communication | Code, diagrams, and explanation agree with each other. |
 
+## Visuals to Use
+
+- [Molecule data model](../visuals/plantuml/molecule-data-model.puml)
+- [Ownership and borrowing contract](../visuals/plantuml/ownership-borrowing-contract.puml)
+- [Memory address flow](../visuals/plantuml/memory-address-flow.puml)
+- [Quantum simulation loop](../visuals/plantuml/quantum-simulation-loop.puml)
+
+For university students, treat diagrams as design artifacts. Ask what each diagram
+forces into the model and what it hides.

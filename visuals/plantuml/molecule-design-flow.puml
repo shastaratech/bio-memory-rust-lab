@@ -1,0 +1,29 @@
+@startuml
+title Molecule Design as a Constrained Search Flow
+
+start
+:Choose scaffold;
+:Generate small analog candidates;
+
+repeat
+  :Validate atom labels and bond indices;
+  if (valid toy molecule?) then (yes)
+    :Build graph representation;
+    :Compute features;
+    :Score candidate;
+    if (score good enough?) then (yes)
+      :Keep candidate;
+    else (no)
+      :Discard or mutate later;
+    endif
+  else (no)
+    :Reject invalid candidate;
+  endif
+repeat while (more candidates?)
+
+:Rank kept candidates;
+:Choose next design round;
+stop
+
+@enduml
+

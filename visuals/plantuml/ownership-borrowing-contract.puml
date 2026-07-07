@@ -1,0 +1,40 @@
+@startuml
+title Ownership and Borrowing Contract
+
+[*] --> Owned
+
+Owned --> SharedBorrowed : &Molecule
+SharedBorrowed --> Owned : readers finish
+SharedBorrowed --> SharedBorrowed : add another &Molecule
+
+Owned --> MutablyBorrowed : &mut Molecule
+MutablyBorrowed --> Owned : editor finishes
+
+SharedBorrowed --> Forbidden : request &mut Molecule
+MutablyBorrowed --> Forbidden : request &Molecule or &mut Molecule
+Forbidden --> Owned : compiler rejects code path
+
+state Owned {
+  [*] --> Stable
+  Stable : molecule has one owner
+}
+
+state SharedBorrowed {
+  [*] --> ReadOnly
+  ReadOnly : many readers allowed
+  ReadOnly : no mutation allowed
+}
+
+state MutablyBorrowed {
+  [*] --> Editing
+  Editing : one editor allowed
+  Editing : no other readers or editors
+}
+
+note right of Forbidden
+  This is the teaching contract:
+  many readers OR one writer.
+end note
+
+@enduml
+

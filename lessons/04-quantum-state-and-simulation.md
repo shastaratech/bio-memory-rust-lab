@@ -5,6 +5,11 @@
 Students learn why a molecule is not fully described by a graph and why quantum
 state matters for molecular simulation.
 
+## Visuals
+
+- [Quantum simulation loop](../visuals/plantuml/quantum-simulation-loop.puml)
+- [Course map](../visuals/mermaid/course-map.md)
+
 ## Hook
 
 Show two representations:
@@ -93,4 +98,3 @@ Every representation is a deal:
 - keep enough detail to answer the question
 - drop enough detail to compute
 - be honest about what was dropped
-

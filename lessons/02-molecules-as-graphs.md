@@ -6,6 +6,11 @@ Students learn that a molecule can be represented as a graph: atoms are nodes an
 bonds are edges. This unlocks algorithms such as neighbor lookup, traversal,
 connected-component detection, and shortest paths.
 
+## Visuals
+
+- [Graph algorithms](../visuals/mermaid/graph-algorithms.md)
+- [Molecule data model](../visuals/plantuml/molecule-data-model.puml)
+
 ## Hook
 
 Draw ethanol as a chemical sketch. Then redraw it as numbered dots and lines.
@@ -101,4 +106,3 @@ This is like exploring a molecule shell by shell from a starting atom.
 A graph is powerful because it is smaller than reality. It is dangerous for the same
 reason. A graph can answer connectivity questions, but it cannot fully answer shape,
 energy, or reactivity questions.
-

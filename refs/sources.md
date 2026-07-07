@@ -49,6 +49,15 @@ Lesson alignment:
 - qubits are not taught as ordinary memory upgrades
 - molecular simulation is presented as a natural reason to care about quantum state
 
+## Diagramming References
+
+- PlantUML: [official site](https://plantuml.com/)
+
+Lesson alignment:
+
+- Mermaid is used for diagrams that render directly in GitHub Markdown.
+- PlantUML is used for UML-style source files covering structures, contracts, and flows.
+
 ## Project Context References
 
 Local project references:
@@ -59,4 +68,3 @@ Local project references:
 
 This lesson should not include raw molecular datasets, proprietary structures,
 credentials, or assay results. It is safe to keep as public educational material.
-

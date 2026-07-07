@@ -25,6 +25,9 @@ cargo test
 cargo run
 ```
 
+8. Open the [visual language guide](visuals/README.md) and compare a diagram with
+   the Rust code it describes.
+
 ## What Students Learn
 
 - Rust scalar and compound data types
@@ -49,6 +52,19 @@ The [activity pack](activities/classroom-games.md) turns abstract ideas into
 movement: atom cards, bond strings, a human stack and heap, graph traversal races,
 and a quantum measurement game. The point is not to make chemistry cute; it is to
 give students a body-level memory of why structure, constraints, and state matter.
+
+## Visual Learning
+
+Visuals live in [visuals/](visuals/README.md):
+
+- [Course map](visuals/mermaid/course-map.md)
+- [Graph algorithms](visuals/mermaid/graph-algorithms.md)
+- [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
+- [Molecule data model](visuals/plantuml/molecule-data-model.puml)
+- [Ownership and borrowing contract](visuals/plantuml/ownership-borrowing-contract.puml)
+- [Molecule design flow](visuals/plantuml/molecule-design-flow.puml)
+- [Quantum simulation loop](visuals/plantuml/quantum-simulation-loop.puml)
+- [Memory address flow](visuals/plantuml/memory-address-flow.puml)
 
 ## Repository Policy
 

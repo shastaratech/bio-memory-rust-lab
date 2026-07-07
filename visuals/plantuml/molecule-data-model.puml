@@ -1,0 +1,68 @@
+@startuml
+title Rust Molecule Data Model
+
+skinparam classAttributeIconSize 0
+
+enum Element {
+  H
+  C
+  N
+  O
+  F
+  Cl
+  Br
+}
+
+enum BondOrder {
+  Single
+  Double
+  Triple
+  Aromatic
+}
+
+class Atom {
+  +element: Element
+  +formal_charge: i8
+  +aromatic: bool
+  +neutral(element: Element): Atom
+  +charged(element: Element, formal_charge: i8): Atom
+  +aromatic(element: Element): Atom
+}
+
+class Bond {
+  +from: usize
+  +to: usize
+  +order: BondOrder
+  +new(from: usize, to: usize, order: BondOrder): Bond
+}
+
+class Molecule {
+  -atoms: Vec<Atom>
+  -bonds: Vec<Bond>
+  +atom_count(): usize
+  +bond_count(): usize
+  +validate_bond_indices(): bool
+  +neighbors(atom_id: usize): Vec<usize>
+  +adjacency_list(): Vec<Vec<usize>>
+  +shortest_path(start: usize, goal: usize): Option<Vec<usize>>
+  +connected_components(): Vec<Vec<usize>>
+}
+
+Atom --> Element
+Bond --> BondOrder
+Molecule "1" *-- "many" Atom : owns
+Molecule "1" *-- "many" Bond : owns
+Bond ..> Atom : refers by index
+
+note right of Bond
+  A bond stores atom indices.
+  It does not store Rust references.
+end note
+
+note bottom of Molecule
+  The molecule owns vectors.
+  Algorithms usually borrow &self.
+end note
+
+@enduml
+

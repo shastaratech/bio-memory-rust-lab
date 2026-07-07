@@ -12,6 +12,12 @@ molecules. They will compare three forms of state:
 By the end, students should be able to explain why Rust cares about type, ownership,
 and borrowing using molecule-design language.
 
+## Visuals
+
+- [Molecule data model](../visuals/plantuml/molecule-data-model.puml)
+- [Memory address flow](../visuals/plantuml/memory-address-flow.puml)
+- [Course map](../visuals/mermaid/course-map.md)
+
 ## Learning Outcomes
 
 Students can:
@@ -260,4 +266,3 @@ Implement the molecule structs and add:
 3. `fn neighbors(&self, atom_id: usize) -> Vec<usize>`
 4. `fn validate_bond_indices(&self) -> bool`
 5. Optional: `fn formula(&self) -> String`
-

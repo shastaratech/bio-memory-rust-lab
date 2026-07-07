@@ -1,0 +1,26 @@
+@startuml
+title Quantum-Classical Simulation Loop
+
+start
+:Choose molecular problem;
+:Build simplified Hamiltonian;
+:Choose parameterized trial state;
+
+repeat
+  :Prepare quantum state;
+  :Measure energy terms;
+  :Send measurements to classical optimizer;
+  :Update parameters;
+repeat while (energy still improving?)
+
+:Return estimated low-energy state;
+stop
+
+note right
+  This is VQE intuition.
+  It is not a promise that quantum
+  computers solve all chemistry.
+end note
+
+@enduml
+
