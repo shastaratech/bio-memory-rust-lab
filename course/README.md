@@ -11,6 +11,9 @@ Both lanes teach the same durable idea:
 > A good model keeps enough structure to answer the question, and enough rules to
 > prevent nonsense.
 
+For self-study, use the [book](../book/README.md). It gives students step-by-step
+reading, commands, expected outputs, and checkpoints.
+
 ## Suggested Six-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |

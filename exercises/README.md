@@ -1,5 +1,8 @@
 # Exercises
 
+For step-by-step self-study, use the [book](../book/README.md). This file is the
+shorter exercise list.
+
 ## Exercise 1: Element Enum
 
 Create an enum for the elements needed to represent water, methane, ethanol, and

@@ -1,5 +1,8 @@
 # Projects
 
+For guided project instructions with commands and checkpoints, start with
+[Chapter 07](../book/07-molecule-explorer-project.md).
+
 Projects turn the lessons into things students can run, modify, and explain.
 
 ## Suggested Path
@@ -32,4 +35,3 @@ Students should be able to explain:
 2. What functions answer which questions.
 3. What traits describe shared behavior.
 4. What their model leaves out.
-

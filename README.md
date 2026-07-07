@@ -11,13 +11,15 @@ computer science. It does not assume production chemistry software experience.
 
 ## Start Here
 
-1. Pick a path in the [course map](course/README.md).
-2. For younger students, start with the [school track](course/school-track.md).
-3. For university students, start with the [university track](course/university-track.md).
-4. Read [Lesson 01: Atoms, Memory, and Types](lessons/01-atoms-memory-types.md).
-5. Use the [student handout](handouts/atoms-memory-rust.md) during class.
-6. Try the [exercise guide](exercises/README.md).
-7. Compile the runnable Rust exercise:
+1. Start with the [self-study book](book/README.md).
+2. Use [Setup](book/00-setup.md) to compile and run the project.
+3. Pick a path in the [course map](course/README.md).
+4. For younger students, start with the [school track](course/school-track.md).
+5. For university students, start with the [university track](course/university-track.md).
+6. Read [Lesson 01: Atoms, Memory, and Types](lessons/01-atoms-memory-types.md).
+7. Use the [student handout](handouts/atoms-memory-rust.md) during class.
+8. Try the [exercise guide](exercises/README.md).
+9. Compile the runnable Rust exercise:
 
 ```bash
 cd exercises/rust-molecule-model
@@ -25,9 +27,27 @@ cargo test
 cargo run -- water summary
 ```
 
-8. Open the [visual language guide](visuals/README.md) and compare a diagram with
+10. Open the [visual language guide](visuals/README.md) and compare a diagram with
    the Rust code it describes.
-9. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
+11. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
+
+## Self-Study Book
+
+The [book](book/README.md) is the best entry point for students working alone. It
+contains chapter-by-chapter reading, repo links, compile commands, run commands,
+expected output, exercises, and checkpoint questions.
+
+Book chapters:
+
+- [Setup](book/00-setup.md)
+- [01: Atoms, Memory, and Types](book/01-atoms-memory-types.md)
+- [02: Molecules as Graphs](book/02-molecules-as-graphs.md)
+- [03: Ownership and Borrowing](book/03-ownership-borrowing-design.md)
+- [04: Quantum State and Simulation](book/04-quantum-state-simulation.md)
+- [05: Data Structures](book/05-data-structures.md)
+- [06: Traits and Functions](book/06-traits-functions.md)
+- [07: Molecule Explorer CLI Project](book/07-molecule-explorer-project.md)
+- [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
 
