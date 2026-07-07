@@ -18,6 +18,7 @@ flowchart TD
     H --> I["Lesson 08: DNA, Biological Memory, and Data Structures"]
     I --> J["Lesson 09: Visualizing Molecules and Data Algorithms"]
     J --> K["Lesson 10: Designing Molecules as Data Search"]
+    K --> L["Lesson 11: Molecular Libraries and Search Indexes"]
 
     B --> S1["School: atom cards"]
     C --> S2["School: human bond graph"]
@@ -27,6 +28,7 @@ flowchart TD
     I --> S8["School: DNA base cards"]
     J --> S9["School: data structure stations"]
     K --> S10["School: design stations"]
+    L --> S11["School: library index cards"]
 
     B --> U1["University: type invariants"]
     C --> U2["University: adjacency lists and BFS"]
@@ -38,6 +40,7 @@ flowchart TD
     I --> U8["University: sequence memory models"]
     J --> U9["University: sorting, merging, maps"]
     K --> U10["University: constrained search"]
+    L --> U11["University: hash indexes and binary search"]
 ```
 
 Teaching prompt:

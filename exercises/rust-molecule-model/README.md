@@ -27,6 +27,8 @@ Explore:
 - DNA bases, codons, slices, and mutation edits in `src/dna.rs`
 - scaffold design, candidate scoring, hash maps, ranking, and frontiers in
   `src/design.rs`
+- molecule library records, hash indexes, formula buckets, sorted lists, merge,
+  and binary search in `src/index.rs`
 
 Commands:
 
@@ -48,3 +50,4 @@ Library-only exercises:
 | --- | --- |
 | `dna` | typed DNA sequence representation and mutation operations |
 | `design` | toy scaffold/substituent candidate generation, scoring, and ranking |
+| `index` | toy molecule library indexing, sorting, merging, and range search |

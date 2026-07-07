@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Ten-Session Arc
+## Suggested Eleven-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -30,6 +30,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 08 | How can a molecule carry information? | sequence data, references, heap storage | DNA bases, codons, genes, mutations |
 | 09 | Which data shape fits this question? | arrays, lists, maps, sorting, merging | 3D views and molecular records |
 | 10 | How do we explore possible molecules? | search, filters, ranking, queues | scaffolds, substituents, constraints, scores |
+| 11 | How do we search a molecule library? | hash indexes, sorted lists, binary search | compound records, formula buckets, library queries |
 
 ## School Lane
 
@@ -61,6 +62,8 @@ Best outcomes:
   coordinates for different molecule questions.
 - Students can describe molecule design as a constrained search over candidate
   data.
+- Students can build molecule library indexes for direct lookup, grouped formula
+  lookup, sorted range search, and merge.
 
 ## Capstone Ideas
 
@@ -73,6 +76,8 @@ Best outcomes:
 - Model DNA bases, codons, gene slices, and mutations in Rust.
 - Build a visual data-structure report for one molecule.
 - Run a toy scaffold/substituent design round and rank candidates.
+- Build a toy molecule library index and explain which queries each structure
+  makes cheap.
 
 ## Visual Support
 
@@ -87,6 +92,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
 - use the [data algorithms](../visuals/mermaid/data-algorithms.md) for Lesson 09
 - use the [molecule design algorithms](../visuals/mermaid/molecule-design-algorithms.md)
   for Lesson 10
+- use the [molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
+  for Lesson 11
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

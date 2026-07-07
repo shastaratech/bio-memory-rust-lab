@@ -215,3 +215,31 @@ Tasks:
 3. Build a score lookup map.
 4. Rank candidates by score.
 5. Keep the top candidates as the next search frontier.
+
+## Exercise 11: Molecular Library Indexes
+
+Open:
+
+```text
+rust-molecule-model/src/index.rs
+```
+
+Find:
+
+- `MoleculeRecord`
+- `MoleculeLibrary`
+- `lookup_by_name`
+- `formula_index`
+- `sorted_by_atom_count`
+- `merge_by_atom_count`
+- `first_with_at_least_atoms`
+
+Tasks:
+
+1. Build the toy library.
+2. List molecule names from the vector view.
+3. Find ethanol through the name hash map.
+4. Group records by formula.
+5. Sort records by atom count.
+6. Merge two already sorted record lists.
+7. Use binary search to find where `atom_count >= 5` begins.

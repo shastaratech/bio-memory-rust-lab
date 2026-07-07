@@ -20,6 +20,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Molecule Design As Data Search](molecule-design-data-search.md): move from a
   scaffold to candidate generation, validation, scoring, ranking, and the next
   design round.
+- [Molecular Library Indexes](molecular-library-indexes.md): organize molecule
+  records as vectors, hash maps, formula buckets, sorted lists, merged lists, and
+  binary-searchable ranges.
 
 ## University Worksheets
 
@@ -39,6 +42,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 08 | DNA, Memory, and Data Structures |
 | Lesson 09 | Visualizing Molecules and Data Algorithms |
 | Lesson 10 | Molecule Design As Data Search |
+| Lesson 11 | Molecular Library Indexes |
 
 ## Instructor Rule
 

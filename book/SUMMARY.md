@@ -14,4 +14,5 @@
 - [Chapter 08: DNA, Biological Memory, and Data Structures](08-dna-biological-memory-data-structures.md)
 - [Chapter 09: Visualizing Molecules and Data Algorithms](09-visualizing-molecules-and-data-algorithms.md)
 - [Chapter 10: Designing Molecules as Data Search](10-designing-molecules-as-data-search.md)
+- [Chapter 11: Molecular Libraries And Search Indexes](11-molecular-libraries-and-search-indexes.md)
 - [Appendix: Command Reference](appendix-command-reference.md)

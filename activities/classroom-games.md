@@ -211,3 +211,40 @@ Important caution:
 
 This is a toy design workflow. Real molecule design needs chemistry, synthesis,
 measurement, biological context, and safety review.
+
+## 9. Molecule Library Index Cards
+
+Give students molecule cards for water, methane, and ethanol.
+
+Activities:
+
+- place cards on a shelf to represent `Vec<MoleculeRecord>`
+- make name labels that point directly to one card
+- make formula buckets, including two water cards in the `H2O` bucket
+- sort cards by atom count
+- find where `atom_count >= 5` begins
+- merge two already sorted student lists
+
+Rust reveal:
+
+```rust
+struct MoleculeRecord {
+    id: String,
+    common_name: String,
+    molecule: Molecule,
+}
+```
+
+Data-structure prompt:
+
+- vector: ordered record shelf
+- hash map: direct name lookup
+- hash map of vectors: formula buckets
+- sorted list: range and ranking questions
+- binary search: find a boundary in sorted data
+- merge: combine sorted library outputs
+
+Important caution:
+
+A molecule library is a computational model. It can search encoded records, but it
+does not prove chemical usefulness or biological behavior.

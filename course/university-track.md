@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Ten-Session Seminar
+## Eleven-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -183,6 +183,24 @@ Implementation focus:
 - sorted `Vec<Candidate>` ranking
 - queue/frontier for iterative search
 
+### Session 11: Molecular Libraries And Search Indexes
+
+Core questions:
+
+- When should a molecule library scan a vector, use a hash map, or sort records?
+- How should one-key-to-many-record relationships be represented?
+- What must be true before binary search is valid?
+- When is merging sorted library outputs better than sorting from scratch?
+
+Implementation focus:
+
+- `MoleculeRecord` struct
+- `MoleculeLibrary` vector storage
+- `HashMap<String, MoleculeRecord>` name lookup
+- `HashMap<String, Vec<String>>` formula buckets
+- sorted `Vec<MoleculeRecord>` by atom count
+- merge and binary-search boundary functions
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -192,6 +210,7 @@ Implementation focus:
 - Design memo: compare DNA sequence as `String`, `Vec<Base>`, and borrowed slices.
 - Design memo: choose data structures for visualization, lookup, ranking, and merging.
 - Design memo: choose data structures for a scaffold-to-analog design round.
+- Design memo: choose indexes for a toy molecule library and justify query costs.
 
 ## Capstone Rubric
 
@@ -209,6 +228,7 @@ Implementation focus:
 - [Memory address flow](../visuals/plantuml/memory-address-flow.puml)
 - [Quantum simulation loop](../visuals/plantuml/quantum-simulation-loop.puml)
 - [Traits and molecular behavior](../visuals/plantuml/traits-and-functions.puml)
+- [Molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

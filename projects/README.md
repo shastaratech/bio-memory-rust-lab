@@ -16,6 +16,7 @@ For an instructor-led capstone session, use
 3. Graph path finder
 4. Molecule validator
 5. Toy analog generator
+6. Molecule library indexer
 
 The first project is already backed by runnable code in:
 

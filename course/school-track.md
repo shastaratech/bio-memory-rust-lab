@@ -48,6 +48,7 @@ Printable worksheets:
 - [DNA, Memory, and Data Structures](../worksheets/dna-memory-data-structures.md)
 - [Visualizing Molecules and Data Algorithms](../worksheets/visualizing-data-algorithms.md)
 - [Molecule Design As Data Search](../worksheets/molecule-design-data-search.md)
+- [Molecular Library Indexes](../worksheets/molecular-library-indexes.md)
 
 ## Code Moment
 
@@ -133,3 +134,10 @@ Use [Lesson 10](../lessons/10-designing-molecules-as-data-search.md) when studen
 are ready to design candidates. Run scaffold, option, validation, scoring, and
 ranking stations with cards. Keep the scores playful and make the safety limit
 explicit: this is data-structure practice, not real molecule recommendation.
+
+## Molecular Library Index Extension
+
+Use [Lesson 11](../lessons/11-molecular-libraries-and-search-indexes.md) when
+students are ready to search a library of molecule cards. Put cards on a shelf for
+the vector view, make name labels for hash-map lookup, make formula buckets for
+grouped lookup, sort by atom count, and merge two sorted class lists.

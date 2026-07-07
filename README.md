@@ -55,6 +55,7 @@ Book chapters:
 - [08: DNA, Biological Memory, and Data Structures](book/08-dna-biological-memory-data-structures.md)
 - [09: Visualizing Molecules and Data Algorithms](book/09-visualizing-molecules-and-data-algorithms.md)
 - [10: Designing Molecules as Data Search](book/10-designing-molecules-as-data-search.md)
+- [11: Molecular Libraries And Search Indexes](book/11-molecular-libraries-and-search-indexes.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -80,6 +81,7 @@ Book chapters:
 | [08: DNA, Biological Memory, and Data Structures](lessons/08-dna-biological-memory-data-structures.md) | Base cards, codon chunks, and borrowed gene regions. | DNA sequence modeling, stack/heap tradeoffs, references, slices, and mutation enums. |
 | [09: Visualizing Molecules and Data Algorithms](lessons/09-visualizing-molecules-and-data-algorithms.md) | Use 3D views, buckets, cards, and sorted rows. | Arrays, vectors, lists, sorted lists, hash maps, sorting, merging, and 3D coordinates. |
 | [10: Designing Molecules as Data Search](lessons/10-designing-molecules-as-data-search.md) | Move candidate cards through scaffold, validate, score, and rank stations. | Scaffold states, substituent vectors, filters, hash maps, sorted rankings, queues, and search loops. |
+| [11: Molecular Libraries And Search Indexes](lessons/11-molecular-libraries-and-search-indexes.md) | Arrange molecule cards as shelves, labels, buckets, and sorted rows. | Library records, hash indexes, grouped formula lookup, merge, and binary search. |
 
 ## Classroom Energy
 
@@ -98,6 +100,9 @@ Use the [3D molecule viewer](visuals/html/molecule-3d-viewer.html) and
 teaching arrays, lists, sorted lists, hash maps, sorting, and merging.
 Use the [molecule design worksheet](worksheets/molecule-design-data-search.md) for
 the scaffold-to-candidate search lab.
+Use the [molecular library indexes handout](handouts/molecular-library-indexes.md)
+and [worksheet](worksheets/molecular-library-indexes.md) to teach searchable
+compound libraries with vectors, hash maps, sorted lists, merge, and binary search.
 
 ## Projects
 
@@ -119,6 +124,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Graph algorithms](visuals/mermaid/graph-algorithms.md)
 - [Data algorithms](visuals/mermaid/data-algorithms.md)
 - [Molecule design algorithms](visuals/mermaid/molecule-design-algorithms.md)
+- [Molecular library indexes](visuals/mermaid/molecular-library-indexes.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)
