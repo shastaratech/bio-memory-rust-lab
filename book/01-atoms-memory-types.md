@@ -13,6 +13,7 @@ what a hydrogen atom, oxygen atom, bond, and molecule are inside a program.
 ## Read First
 
 - Primer: [Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
+- Bridge: [How Formulas Become Graphs](00b-how-formulas-become-graphs.md)
 - Lesson: [Atoms, Memory, and Types](../lessons/01-atoms-memory-types.md)
 - Handout: [Student Handout](../handouts/atoms-memory-rust.md)
 - Visual: [Course Map](../visuals/mermaid/course-map.md)

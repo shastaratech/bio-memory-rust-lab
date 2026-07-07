@@ -24,6 +24,9 @@ Explore:
 - shortest paths and connected components
 - traits as reusable molecular capabilities
 - functions as contracts over borrowed molecule data
+- DNA bases, codons, slices, and mutation edits in `src/dna.rs`
+- scaffold design, candidate scoring, hash maps, ranking, and frontiers in
+  `src/design.rs`
 
 Commands:
 
@@ -38,3 +41,10 @@ Commands:
 | `<molecule> path <start> <goal>` | print shortest path if one exists |
 | `<molecule> components` | print connected components |
 | `<molecule> validate` | check bond indices |
+
+Library-only exercises:
+
+| Module | Meaning |
+| --- | --- |
+| `dna` | typed DNA sequence representation and mutation operations |
+| `design` | toy scaffold/substituent candidate generation, scoring, and ranking |
