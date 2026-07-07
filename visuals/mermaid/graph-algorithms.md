@@ -1,5 +1,11 @@
 # Mermaid: Graph Algorithms
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Graph algorithms](../rendered/graph-algorithms.svg)
+
+The editable Mermaid source is below.
+
 ## Neighbor Lookup
 
 ```mermaid
@@ -45,4 +51,3 @@ Teaching prompt:
 
 Have students run the same algorithm by hand with string bonds before they read the
 Rust function.
-

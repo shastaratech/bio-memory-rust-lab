@@ -1,5 +1,11 @@
 # Mermaid: Molecule Explorer CLI Flow
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Molecule Explorer CLI flow](../rendered/cli-flow.svg)
+
+The editable Mermaid source is below.
+
 ```mermaid
 flowchart TD
     A["student types command"] --> B["read command-line args"]
@@ -20,4 +26,3 @@ Teaching prompt:
 
 Ask students which commands use the molecule as a record and which commands use the
 molecule as a graph.
-

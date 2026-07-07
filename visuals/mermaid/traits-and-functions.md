@@ -1,5 +1,11 @@
 # Mermaid: Traits and Functions
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Traits and functions](../rendered/traits-and-functions.svg)
+
+The editable Mermaid source is below.
+
 ## Behavior Layers
 
 ```mermaid
@@ -68,4 +74,3 @@ classDiagram
     Molecule ..|> ChemicalFormula
     Molecule ..|> MolecularGraph
 ```
-

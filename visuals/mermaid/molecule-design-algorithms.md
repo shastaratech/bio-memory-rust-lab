@@ -1,5 +1,11 @@
 # Mermaid: Molecule Design Algorithms
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Molecule design algorithms](../rendered/molecule-design-algorithms.svg)
+
+The editable Mermaid source is below.
+
 ## Design Round
 
 ```mermaid

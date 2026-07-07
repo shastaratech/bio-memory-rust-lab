@@ -2,6 +2,12 @@
 
 These diagrams render directly on GitHub.
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Models, contracts, and flows](../rendered/model-contracts-flows.svg)
+
+The editable Mermaid source is below.
+
 ## Molecule Data Model
 
 ```mermaid

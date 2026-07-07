@@ -1,5 +1,11 @@
 # Mermaid: Data Algorithms
 
+If GitHub Mermaid rendering is unavailable in your browser, use this rendered SVG:
+
+![Data algorithms](../rendered/data-algorithms.svg)
+
+The editable Mermaid source is below.
+
 ## Count Elements With A Hash Map
 
 ```mermaid

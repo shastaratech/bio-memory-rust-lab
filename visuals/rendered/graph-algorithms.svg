@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="376" viewBox="0 0 1180 376" role="img" aria-labelledby="title desc">
+<title id="title">Graph Algorithms</title>
+<desc id="desc">Neighbor lookup, breadth-first search, and connected components.</desc>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#355070" /></marker><style>
+
+  .bg { fill: #f8fafc; }
+  .title { font: 700 27px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+  .subtitle { font: 400 14px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+  .section { fill: #ffffff; stroke: #355070; stroke-width: 2; rx: 10; ry: 10; }
+  .section-title { font: 700 16px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+  .item { font: 500 13px system-ui, -apple-system, Segoe UI, sans-serif; fill: #2d3748; }
+  .arrow { stroke: #355070; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+  .soft { stroke: #8391a4; stroke-width: 1.7; fill: none; marker-end: url(#arrow); }
+
+</style></defs>
+<rect class="bg" width="1180" height="376" />
+<text class="title" x="48" y="52">Graph Algorithms</text>
+<text class="subtitle" x="48" y="78">Neighbor lookup, breadth-first search, and connected components.</text>
+<rect class="section" x="48" y="120" width="340" height="170" />
+<text class="section-title" x="70" y="154">Neighbor Lookup</text>
+<text class="item" x="72" y="188">start with atom_id</text>
+<text class="item" x="72" y="216">scan every bond</text>
+<text class="item" x="72" y="244">keep touching bonds</text>
+<text class="item" x="72" y="272">return other endpoints</text>
+<rect class="section" x="420" y="120" width="340" height="170" />
+<text class="section-title" x="442" y="154">Breadth-First Search</text>
+<text class="item" x="444" y="188">queue starts with atom</text>
+<text class="item" x="444" y="216">pop front</text>
+<text class="item" x="444" y="244">visit unvisited neighbors</text>
+<text class="item" x="444" y="272">record previous atom</text>
+<rect class="section" x="792" y="120" width="340" height="170" />
+<text class="section-title" x="814" y="154">Components</text>
+<text class="item" x="816" y="188">pick unvisited atom</text>
+<text class="item" x="816" y="216">run BFS</text>
+<text class="item" x="816" y="244">collect reached atoms</text>
+<text class="item" x="816" y="272">repeat until done</text>
+<path class="arrow" d="M364.0 205.0 L444.0 205.0" />
+<path class="arrow" d="M736.0 205.0 L816.0 205.0" />
+</svg>
