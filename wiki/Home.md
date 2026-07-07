@@ -38,6 +38,8 @@ Use the wiki for classroom operations:
   classroom games that make types, memory, and graphs tangible.
 - [Visual language](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/README.md):
   Mermaid and PlantUML diagrams for structures, algorithms, contracts, and flows.
+- [Molecule Explorer CLI](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/projects/molecule-explorer-cli.md):
+  first capstone project for running molecule graph commands.
 
 ## Project Links
 

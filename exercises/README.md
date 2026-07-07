@@ -124,7 +124,9 @@ Run the Rust molecule model:
 
 ```bash
 cd rust-molecule-model
-cargo run
+cargo run -- water summary
+cargo run -- ethanol neighbors 1
+cargo run -- ethanol path 3 8
 ```
 
 Then modify `src/main.rs` so it builds methane or ethanol.

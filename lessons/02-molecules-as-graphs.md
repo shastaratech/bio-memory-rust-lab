@@ -80,7 +80,8 @@ Students run:
 ```bash
 cd exercises/rust-molecule-model
 cargo test
-cargo run
+cargo run -- ethanol neighbors 1
+cargo run -- ethanol path 3 8
 ```
 
 Then inspect:

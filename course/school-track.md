@@ -21,7 +21,7 @@ refuses to let you write "chlorene" when you meant chlorine.
 | 15-25 | Type spell | Turn atom facts into `u8`, `i8`, `bool`, and enum variants. |
 | 25-35 | Bond string graph | Stand up as atoms and connect with string as bonds. |
 | 35-45 | Human memory | Act out stack, heap, owner, and borrower roles. |
-| 45-55 | Tiny Rust | Read or edit the molecule model and run `cargo run`. |
+| 45-55 | Tiny Rust | Read or edit the molecule model and run `cargo run -- water summary`. |
 | 55-60 | Exit ticket | One good analogy, one place the analogy breaks. |
 
 ## 90-Minute Version
@@ -93,3 +93,8 @@ Use Lessons 05 and 06 as a studio day:
 2. Students act out traits as role cards: `Describe`, `ChemicalFormula`, and
    `MolecularGraph`.
 3. Students run the Rust crate and find the matching code.
+
+## First Project
+
+Use the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md) when students
+are ready to run commands. Let them predict the output before pressing Enter.

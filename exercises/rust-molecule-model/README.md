@@ -6,7 +6,10 @@ Run:
 
 ```bash
 cargo test
-cargo run
+cargo run -- list
+cargo run -- water summary
+cargo run -- ethanol neighbors 1
+cargo run -- ethanol path 3 8
 ```
 
 Explore:
@@ -21,3 +24,17 @@ Explore:
 - shortest paths and connected components
 - traits as reusable molecular capabilities
 - functions as contracts over borrowed molecule data
+
+Commands:
+
+| Command | Meaning |
+| --- | --- |
+| `list` | show toy molecules |
+| `<molecule> summary` | show formula, atom count, bond count, validation |
+| `<molecule> formula` | print formula |
+| `<molecule> atoms` | print atoms |
+| `<molecule> bonds` | print bonds |
+| `<molecule> neighbors <atom_id>` | print bonded neighbors |
+| `<molecule> path <start> <goal>` | print shortest path if one exists |
+| `<molecule> components` | print connected components |
+| `<molecule> validate` | check bond indices |

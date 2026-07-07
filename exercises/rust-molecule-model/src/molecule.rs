@@ -355,49 +355,80 @@ impl MolecularGraph for Molecule {
     }
 }
 
+pub fn water() -> Molecule {
+    Molecule::new(
+        vec![
+            Atom::neutral(Element::O),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+        ],
+        vec![
+            Bond::new(0, 1, BondOrder::Single),
+            Bond::new(0, 2, BondOrder::Single),
+        ],
+    )
+}
+
+pub fn methane() -> Molecule {
+    Molecule::new(
+        vec![
+            Atom::neutral(Element::C),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+        ],
+        vec![
+            Bond::new(0, 1, BondOrder::Single),
+            Bond::new(0, 2, BondOrder::Single),
+            Bond::new(0, 3, BondOrder::Single),
+            Bond::new(0, 4, BondOrder::Single),
+        ],
+    )
+}
+
+pub fn ethanol() -> Molecule {
+    Molecule::new(
+        vec![
+            Atom::neutral(Element::C),
+            Atom::neutral(Element::C),
+            Atom::neutral(Element::O),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+            Atom::neutral(Element::H),
+        ],
+        vec![
+            Bond::new(0, 1, BondOrder::Single),
+            Bond::new(1, 2, BondOrder::Single),
+            Bond::new(0, 3, BondOrder::Single),
+            Bond::new(0, 4, BondOrder::Single),
+            Bond::new(0, 5, BondOrder::Single),
+            Bond::new(1, 6, BondOrder::Single),
+            Bond::new(1, 7, BondOrder::Single),
+            Bond::new(2, 8, BondOrder::Single),
+        ],
+    )
+}
+
+pub fn molecule_by_name(name: &str) -> Option<Molecule> {
+    match name {
+        "water" => Some(water()),
+        "methane" => Some(methane()),
+        "ethanol" => Some(ethanol()),
+        _ => None,
+    }
+}
+
+pub fn molecule_names() -> &'static [&'static str] {
+    &["water", "methane", "ethanol"]
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
-
-    fn water() -> Molecule {
-        Molecule::new(
-            vec![
-                Atom::neutral(Element::O),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-            ],
-            vec![
-                Bond::new(0, 1, BondOrder::Single),
-                Bond::new(0, 2, BondOrder::Single),
-            ],
-        )
-    }
-
-    fn ethanol() -> Molecule {
-        Molecule::new(
-            vec![
-                Atom::neutral(Element::C),
-                Atom::neutral(Element::C),
-                Atom::neutral(Element::O),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-                Atom::neutral(Element::H),
-            ],
-            vec![
-                Bond::new(0, 1, BondOrder::Single),
-                Bond::new(1, 2, BondOrder::Single),
-                Bond::new(0, 3, BondOrder::Single),
-                Bond::new(0, 4, BondOrder::Single),
-                Bond::new(0, 5, BondOrder::Single),
-                Bond::new(1, 6, BondOrder::Single),
-                Bond::new(1, 7, BondOrder::Single),
-                Bond::new(2, 8, BondOrder::Single),
-            ],
-        )
-    }
 
     #[test]
     fn counts_atoms_and_bonds() {
@@ -440,7 +471,18 @@ mod tests {
     #[test]
     fn writes_formula() {
         assert_eq!(water().formula(), "H2O");
+        assert_eq!(methane().formula(), "CH4");
         assert_eq!(ethanol().formula(), "C2H6O");
+    }
+
+    #[test]
+    fn gets_molecule_by_name() {
+        assert_eq!(
+            molecule_by_name("water").map(|m| m.formula()),
+            Some("H2O".to_string())
+        );
+        assert!(molecule_by_name("unknown").is_none());
+        assert_eq!(molecule_names(), &["water", "methane", "ethanol"]);
     }
 
     #[test]

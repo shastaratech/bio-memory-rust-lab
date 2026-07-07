@@ -145,3 +145,9 @@ forces into the model and what it hides.
 2. Write generic functions over `&impl MolecularGraph`.
 3. Compare returning owned `Vec<usize>` with iterator-based APIs.
 4. Decide which methods deserve default trait implementations.
+
+## First Project
+
+Use the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md) as the first
+capstone. Have students refactor the argument parsing into testable `Result`-based
+functions.

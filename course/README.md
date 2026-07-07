@@ -50,7 +50,7 @@ Best outcomes:
 
 ## Capstone Ideas
 
-- Build a command-line molecule explorer.
+- Build the [Molecule Explorer CLI](../projects/molecule-explorer-cli.md).
 - Compare `Vec<Bond>` scanning with an adjacency list.
 - Write a simple analog generator for a toy scaffold.
 - Add a scoring function for "drug-like toy molecules."

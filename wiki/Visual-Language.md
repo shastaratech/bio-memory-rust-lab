@@ -7,6 +7,7 @@ The course uses diagrams as editable teaching artifacts.
 - Visual guide: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/README.md
 - Mermaid course map: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/mermaid/course-map.md
 - Mermaid graph algorithms: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/mermaid/graph-algorithms.md
+- Mermaid CLI flow: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/mermaid/cli-flow.md
 - Mermaid models, contracts, and flows: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/mermaid/model-contracts-flows.md
 - Mermaid traits and functions: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/mermaid/traits-and-functions.md
 - PlantUML molecule data model: https://github.com/shastaratech/bio-memory-rust-lab/blob/main/visuals/plantuml/molecule-data-model.puml

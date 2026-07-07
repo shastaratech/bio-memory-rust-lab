@@ -22,11 +22,12 @@ computer science. It does not assume production chemistry software experience.
 ```bash
 cd exercises/rust-molecule-model
 cargo test
-cargo run
+cargo run -- water summary
 ```
 
 8. Open the [visual language guide](visuals/README.md) and compare a diagram with
    the Rust code it describes.
+9. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
 
 ## What Students Learn
 
@@ -54,6 +55,18 @@ The [activity pack](activities/classroom-games.md) turns abstract ideas into
 movement: atom cards, bond strings, a human stack and heap, graph traversal races,
 and a quantum measurement game. The point is not to make chemistry cute; it is to
 give students a body-level memory of why structure, constraints, and state matter.
+
+## Projects
+
+Start with the [Molecule Explorer CLI](projects/molecule-explorer-cli.md). It turns
+the molecule model into commands students can run:
+
+```bash
+cd exercises/rust-molecule-model
+cargo run -- ethanol summary
+cargo run -- ethanol neighbors 1
+cargo run -- ethanol path 3 8
+```
 
 ## Visual Learning
 

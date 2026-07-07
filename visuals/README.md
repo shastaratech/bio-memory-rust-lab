@@ -31,6 +31,7 @@ Text diagrams are good teaching material because students can:
 | Course path | Mermaid flowchart | `mermaid/course-map.md` |
 | Data model quick view | Mermaid class/state/flowchart | `mermaid/model-contracts-flows.md` |
 | Traits and functions | Mermaid class/flowchart | `mermaid/traits-and-functions.md` |
+| CLI flow | Mermaid flowchart | `mermaid/cli-flow.md` |
 | Rust data model | PlantUML class diagram | `plantuml/molecule-data-model.puml` |
 | Rust trait contracts | PlantUML class diagram | `plantuml/traits-and-functions.puml` |
 | Borrowing contract | PlantUML state diagram | `plantuml/ownership-borrowing-contract.puml` |

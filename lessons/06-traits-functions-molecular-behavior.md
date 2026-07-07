@@ -156,7 +156,7 @@ Run:
 ```bash
 cd exercises/rust-molecule-model
 cargo test
-cargo run
+cargo run -- water summary
 ```
 
 Find tests for:
@@ -180,4 +180,3 @@ Data types describe what a molecule is.
 Functions describe what questions we can ask.
 
 Traits describe shared behavior across types.
-
