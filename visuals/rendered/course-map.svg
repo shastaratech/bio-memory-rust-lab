@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="760" viewBox="0 0 1180 760" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1120" viewBox="0 0 1180 1120" role="img" aria-labelledby="title desc">
   <title id="title">Bio Memory Rust Lab course map</title>
-  <desc id="desc">A six lesson path with school activities on the left and university activities on the right.</desc>
+  <desc id="desc">A ten lesson path with school activities on the left and university activities on the right.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
@@ -21,9 +21,9 @@
     </style>
   </defs>
 
-  <rect class="bg" width="1180" height="760" />
+  <rect class="bg" width="1180" height="1120" />
   <text class="title" x="48" y="54">Bio Memory Rust Lab Course Map</text>
-  <text class="subtitle" x="48" y="80">A path from concrete molecule cards to Rust data structures, graph algorithms, traits, and quantum-state thinking.</text>
+  <text class="subtitle" x="48" y="80">A path from molecule cards to Rust data structures, graph algorithms, traits, quantum state, CLI tools, DNA memory, visual algorithms, and design search.</text>
 
   <text class="lane" x="96" y="124">School studio lane</text>
   <text class="lane" x="470" y="124">Core lesson path</text>
@@ -57,12 +57,32 @@
   <text class="text" x="454" y="713">Lesson 06</text>
   <text class="small" x="454" y="733">Traits and Functions</text>
 
+  <rect class="box lesson" x="430" y="778" width="320" height="52" />
+  <text class="text" x="454" y="801">Lesson 07</text>
+  <text class="small" x="454" y="821">Molecule Explorer CLI Capstone</text>
+
+  <rect class="box lesson" x="430" y="866" width="320" height="52" />
+  <text class="text" x="454" y="889">Lesson 08</text>
+  <text class="small" x="454" y="909">DNA and Biological Memory</text>
+
+  <rect class="box lesson" x="430" y="954" width="320" height="52" />
+  <text class="text" x="454" y="977">Lesson 09</text>
+  <text class="small" x="454" y="997">Visual Data Algorithms</text>
+
+  <rect class="box lesson" x="430" y="1042" width="320" height="52" />
+  <text class="text" x="454" y="1065">Lesson 10</text>
+  <text class="small" x="454" y="1085">Molecule Design Search</text>
+
   <path class="arrow" d="M590 212 L590 236" />
   <path class="arrow" d="M590 302 L590 326" />
   <path class="arrow" d="M590 392 L590 416" />
   <path class="arrow" d="M590 482 L590 506" />
   <path class="arrow" d="M590 572 L590 596" />
   <path class="arrow" d="M590 662 L590 686" />
+  <path class="arrow" d="M590 742 L590 774" />
+  <path class="arrow" d="M590 830 L590 862" />
+  <path class="arrow" d="M590 918 L590 950" />
+  <path class="arrow" d="M590 1006 L590 1038" />
 
   <rect class="box school" x="70" y="242" width="260" height="54" />
   <text class="text" x="92" y="265">Atom cards</text>
@@ -88,12 +108,32 @@
   <text class="text" x="92" y="713">Capability role cards</text>
   <text class="small" x="92" y="733">Describe, Formula, Graph</text>
 
+  <rect class="box school" x="70" y="778" width="260" height="52" />
+  <text class="text" x="92" y="801">Command prediction lab</text>
+  <text class="small" x="92" y="821">predict, run, explain output</text>
+
+  <rect class="box school" x="70" y="866" width="260" height="52" />
+  <text class="text" x="92" y="889">DNA base cards</text>
+  <text class="small" x="92" y="909">bases, codons, gene slices</text>
+
+  <rect class="box school" x="70" y="954" width="260" height="52" />
+  <text class="text" x="92" y="977">Data structure stations</text>
+  <text class="small" x="92" y="997">arrays, lists, maps, sorting</text>
+
+  <rect class="box school" x="70" y="1042" width="260" height="52" />
+  <text class="text" x="92" y="1065">Design stations</text>
+  <text class="small" x="92" y="1085">generate, validate, score, rank</text>
+
   <path class="soft-arrow" d="M430 271 L334 271" />
   <path class="soft-arrow" d="M430 361 L334 361" />
   <path class="soft-arrow" d="M430 451 L334 451" />
   <path class="soft-arrow" d="M430 541 L334 541" />
   <path class="soft-arrow" d="M430 631 L334 631" />
   <path class="soft-arrow" d="M430 716 L334 716" />
+  <path class="soft-arrow" d="M430 804 L334 804" />
+  <path class="soft-arrow" d="M430 892 L334 892" />
+  <path class="soft-arrow" d="M430 980 L334 980" />
+  <path class="soft-arrow" d="M430 1068 L334 1068" />
 
   <rect class="box university" x="850" y="242" width="270" height="54" />
   <text class="text" x="872" y="265">Type invariants</text>
@@ -119,10 +159,30 @@
   <text class="text" x="872" y="713">Trait-based APIs</text>
   <text class="small" x="872" y="733">program against behavior</text>
 
+  <rect class="box university" x="850" y="778" width="270" height="52" />
+  <text class="text" x="872" y="801">Command parsing and tests</text>
+  <text class="small" x="872" y="821">library boundary and Result</text>
+
+  <rect class="box university" x="850" y="866" width="270" height="52" />
+  <text class="text" x="872" y="889">Sequence memory models</text>
+  <text class="small" x="872" y="909">String, Vec, slice, mutation log</text>
+
+  <rect class="box university" x="850" y="954" width="270" height="52" />
+  <text class="text" x="872" y="977">Sorting, merging, maps</text>
+  <text class="small" x="872" y="997">visualization and lookup</text>
+
+  <rect class="box university" x="850" y="1042" width="270" height="52" />
+  <text class="text" x="872" y="1065">Constrained search</text>
+  <text class="small" x="872" y="1085">scaffolds, filters, ranking</text>
+
   <path class="soft-arrow" d="M750 271 L846 271" />
   <path class="soft-arrow" d="M750 361 L846 361" />
   <path class="soft-arrow" d="M750 451 L846 451" />
   <path class="soft-arrow" d="M750 541 L846 541" />
   <path class="soft-arrow" d="M750 631 L846 631" />
   <path class="soft-arrow" d="M750 716 L846 716" />
+  <path class="soft-arrow" d="M750 804 L846 804" />
+  <path class="soft-arrow" d="M750 892 L846 892" />
+  <path class="soft-arrow" d="M750 980 L846 980" />
+  <path class="soft-arrow" d="M750 1068 L846 1068" />
 </svg>

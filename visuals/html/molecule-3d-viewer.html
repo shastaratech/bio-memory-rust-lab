@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bio Memory Rust Lab 3D Molecule Viewer</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f9fb;
+      --panel: #ffffff;
+      --text: #18202f;
+      --muted: #5d6b7a;
+      --line: #d8e0e8;
+      --accent: #176b87;
+      --accent-strong: #0f4c5c;
+      --carbon: #343a40;
+      --oxygen: #d62828;
+      --hydrogen: #f1f5f9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+
+    main {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: minmax(280px, 360px) 1fr;
+    }
+
+    aside {
+      background: var(--panel);
+      border-right: 1px solid var(--line);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.5;
+      font-size: 14px;
+    }
+
+    label {
+      display: grid;
+      gap: 8px;
+      font-weight: 650;
+      font-size: 13px;
+    }
+
+    select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--text);
+      padding: 0 12px;
+      font: inherit;
+    }
+
+    button {
+      min-height: 42px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      background: var(--accent);
+      color: #fff;
+      font: inherit;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-strong);
+    }
+
+    dl {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 8px 12px;
+      margin: 0;
+      font-size: 14px;
+    }
+
+    dt {
+      color: var(--muted);
+    }
+
+    dd {
+      margin: 0;
+      font-weight: 700;
+    }
+
+    .legend {
+      display: grid;
+      gap: 8px;
+    }
+
+    .legend-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .swatch {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      flex: 0 0 auto;
+    }
+
+    .stage {
+      position: relative;
+      min-width: 0;
+      min-height: 100vh;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, #eef5f6 0%, #f7f9fb 58%, #e8eef2 100%);
+    }
+
+    #viewer {
+      width: 100%;
+      height: 100%;
+      min-height: 100vh;
+      display: block;
+    }
+
+    .caption {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      max-width: 720px;
+      padding: 14px 16px;
+      border: 1px solid rgba(24, 32, 47, 0.12);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.86);
+      color: var(--text);
+      backdrop-filter: blur(8px);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 820px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .stage,
+      #viewer {
+        min-height: 62vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <aside>
+      <div>
+        <h1>3D Molecule Viewer</h1>
+        <p>Rotate the model to compare a molecular graph with a spatial view.</p>
+      </div>
+
+      <label>
+        Molecule
+        <select id="molecule">
+          <option value="water">Water</option>
+          <option value="methane">Methane</option>
+          <option value="ethanol" selected>Ethanol</option>
+        </select>
+      </label>
+
+      <button id="reset" type="button">Reset View</button>
+
+      <dl>
+        <dt>Atoms</dt>
+        <dd id="atom-count">0</dd>
+        <dt>Bonds</dt>
+        <dd id="bond-count">0</dd>
+        <dt>Storage</dt>
+        <dd>array of atoms, array of bonds</dd>
+        <dt>View</dt>
+        <dd>3D coordinates plus graph edges</dd>
+      </dl>
+
+      <div class="legend">
+        <div class="legend-row"><span class="swatch" style="background: var(--carbon)"></span>Carbon</div>
+        <div class="legend-row"><span class="swatch" style="background: var(--oxygen)"></span>Oxygen</div>
+        <div class="legend-row"><span class="swatch" style="background: var(--hydrogen)"></span>Hydrogen</div>
+      </div>
+    </aside>
+
+    <section class="stage" aria-label="Interactive 3D molecule scene">
+      <canvas id="viewer"></canvas>
+      <div class="caption">
+        A molecule graph stores atoms and bonds. A 3D view adds coordinates so
+        students can see that the same connectivity can also have shape.
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    import * as THREE from "https://unpkg.com/three@0.165.0/build/three.module.js";
+
+    const molecules = {
+      water: {
+        atoms: [
+          { element: "O", position: [0, 0, 0] },
+          { element: "H", position: [-0.85, -0.55, 0] },
+          { element: "H", position: [0.85, -0.55, 0] }
+        ],
+        bonds: [[0, 1], [0, 2]]
+      },
+      methane: {
+        atoms: [
+          { element: "C", position: [0, 0, 0] },
+          { element: "H", position: [1, 1, 1] },
+          { element: "H", position: [-1, -1, 1] },
+          { element: "H", position: [-1, 1, -1] },
+          { element: "H", position: [1, -1, -1] }
+        ],
+        bonds: [[0, 1], [0, 2], [0, 3], [0, 4]]
+      },
+      ethanol: {
+        atoms: [
+          { element: "C", position: [-1.45, 0, 0] },
+          { element: "C", position: [0, 0, 0] },
+          { element: "O", position: [1.25, 0.6, 0] },
+          { element: "H", position: [-1.9, 0.95, 0.2] },
+          { element: "H", position: [-1.9, -0.45, 0.85] },
+          { element: "H", position: [-1.9, -0.5, -0.85] },
+          { element: "H", position: [0.15, -1.05, 0.2] },
+          { element: "H", position: [0.15, 0.45, -0.95] },
+          { element: "H", position: [1.95, 0.05, 0] }
+        ],
+        bonds: [[0, 1], [1, 2], [0, 3], [0, 4], [0, 5], [1, 6], [1, 7], [2, 8]]
+      }
+    };
+
+    const colors = {
+      C: 0x343a40,
+      O: 0xd62828,
+      H: 0xf1f5f9
+    };
+
+    const radii = {
+      C: 0.25,
+      O: 0.28,
+      H: 0.17
+    };
+
+    const canvas = document.querySelector("#viewer");
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      antialias: true,
+      preserveDrawingBuffer: true
+    });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 100);
+    camera.position.set(0, 1.3, 6);
+
+    const root = new THREE.Group();
+    scene.add(root);
+
+    scene.add(new THREE.HemisphereLight(0xffffff, 0x9aa8b3, 2.3));
+    const key = new THREE.DirectionalLight(0xffffff, 2.1);
+    key.position.set(3, 5, 4);
+    scene.add(key);
+
+    const atomCount = document.querySelector("#atom-count");
+    const bondCount = document.querySelector("#bond-count");
+    const moleculeSelect = document.querySelector("#molecule");
+    const resetButton = document.querySelector("#reset");
+
+    let drag = false;
+    let previousX = 0;
+    let previousY = 0;
+
+    function makeBond(start, end) {
+      const midpoint = new THREE.Vector3().addVectors(start, end).multiplyScalar(0.5);
+      const direction = new THREE.Vector3().subVectors(end, start);
+      const length = direction.length();
+      const geometry = new THREE.CylinderGeometry(0.055, 0.055, length, 24);
+      const material = new THREE.MeshStandardMaterial({ color: 0x8a98a8, roughness: 0.44 });
+      const cylinder = new THREE.Mesh(geometry, material);
+      cylinder.position.copy(midpoint);
+      cylinder.quaternion.setFromUnitVectors(new THREE.Vector3(0, 1, 0), direction.normalize());
+      return cylinder;
+    }
+
+    function clearRoot() {
+      while (root.children.length > 0) {
+        const child = root.children.pop();
+        child.geometry?.dispose();
+        child.material?.dispose();
+      }
+    }
+
+    function loadMolecule(name) {
+      clearRoot();
+      root.rotation.set(-0.28, 0.45, 0);
+
+      const molecule = molecules[name];
+      const positions = molecule.atoms.map((atom) => new THREE.Vector3(...atom.position));
+
+      for (const [from, to] of molecule.bonds) {
+        root.add(makeBond(positions[from], positions[to]));
+      }
+
+      for (const atom of molecule.atoms) {
+        const geometry = new THREE.SphereGeometry(radii[atom.element], 32, 24);
+        const material = new THREE.MeshStandardMaterial({
+          color: colors[atom.element],
+          roughness: 0.36,
+          metalness: 0.02
+        });
+        const sphere = new THREE.Mesh(geometry, material);
+        sphere.position.set(...atom.position);
+        root.add(sphere);
+      }
+
+      atomCount.textContent = molecule.atoms.length.toString();
+      bondCount.textContent = molecule.bonds.length.toString();
+    }
+
+    function resize() {
+      const { clientWidth, clientHeight } = canvas;
+      renderer.setSize(clientWidth, clientHeight, false);
+      camera.aspect = clientWidth / Math.max(clientHeight, 1);
+      camera.updateProjectionMatrix();
+    }
+
+    function animate() {
+      resize();
+      if (!drag) {
+        root.rotation.y += 0.006;
+      }
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+
+    canvas.addEventListener("pointerdown", (event) => {
+      drag = true;
+      previousX = event.clientX;
+      previousY = event.clientY;
+      canvas.setPointerCapture(event.pointerId);
+    });
+
+    canvas.addEventListener("pointermove", (event) => {
+      if (!drag) return;
+      const deltaX = event.clientX - previousX;
+      const deltaY = event.clientY - previousY;
+      root.rotation.y += deltaX * 0.01;
+      root.rotation.x += deltaY * 0.01;
+      previousX = event.clientX;
+      previousY = event.clientY;
+    });
+
+    canvas.addEventListener("pointerup", (event) => {
+      drag = false;
+      canvas.releasePointerCapture(event.pointerId);
+    });
+
+    moleculeSelect.addEventListener("change", () => loadMolecule(moleculeSelect.value));
+    resetButton.addEventListener("click", () => loadMolecule(moleculeSelect.value));
+
+    loadMolecule(moleculeSelect.value);
+    animate();
+  </script>
+</body>
+</html>

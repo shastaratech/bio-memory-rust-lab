@@ -31,8 +31,11 @@ Text diagrams are good teaching material because students can:
 | Course path | Mermaid flowchart | `mermaid/course-map.md` |
 | Course path fallback | SVG | `rendered/course-map.svg` |
 | Data model quick view | Mermaid class/state/flowchart | `mermaid/model-contracts-flows.md` |
+| Data algorithms | Mermaid flowchart | `mermaid/data-algorithms.md` |
+| Molecule design algorithms | Mermaid flowchart | `mermaid/molecule-design-algorithms.md` |
 | Traits and functions | Mermaid class/flowchart | `mermaid/traits-and-functions.md` |
 | CLI flow | Mermaid flowchart | `mermaid/cli-flow.md` |
+| 3D molecule teaching view | HTML / Three.js | `html/molecule-3d-viewer.html` |
 | Rust data model | PlantUML class diagram | `plantuml/molecule-data-model.puml` |
 | Rust trait contracts | PlantUML class diagram | `plantuml/traits-and-functions.puml` |
 | Borrowing contract | PlantUML state diagram | `plantuml/ownership-borrowing-contract.puml` |
@@ -74,3 +77,7 @@ fallback in `visuals/rendered/` and embed it above the editable source.
 Use Mermaid when the diagram must be visible immediately on GitHub. Use PlantUML
 when the lesson needs formal UML syntax, richer state/activity diagrams, or students
 are practicing text-to-diagram modeling as a design skill.
+
+Use the standalone HTML viewer when the lesson needs interactive spatial intuition.
+The viewer is a teaching model with simplified coordinates, not a chemistry-grade
+geometry engine.
