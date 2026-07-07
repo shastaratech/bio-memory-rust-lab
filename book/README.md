@@ -9,14 +9,16 @@ open and the exact commands to run.
 ## How To Use This Book
 
 1. Start with [Setup](00-setup.md).
-2. Read one chapter at a time.
-3. Run every command.
-4. Edit one small thing before moving on.
-5. Answer the checkpoint questions out loud or in a notebook.
+2. Read the [chemistry notation primer](00-chemistry-primer.md).
+3. Read one chapter at a time.
+4. Run every command.
+5. Edit one small thing before moving on.
+6. Answer the checkpoint questions out loud or in a notebook.
 
 ## Table Of Contents
 
 - [Setup](00-setup.md)
+- [Chapter 00: Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
 - [Chapter 01: Atoms, Memory, and Types](01-atoms-memory-types.md)
 - [Chapter 02: Molecules as Graphs](02-molecules-as-graphs.md)
 - [Chapter 03: Ownership and Borrowing Through Molecule Design](03-ownership-borrowing-design.md)
@@ -41,4 +43,3 @@ open and the exact commands to run.
 
 This course uses toy molecules encoded directly in Rust source code. It does not
 use raw molecular datasets, assay data, proprietary compounds, or docking outputs.
-

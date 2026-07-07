@@ -7,8 +7,12 @@ facts: element, charge, aromaticity, atom count, bond order, and formula.
 
 Rust makes those rules explicit.
 
+If `H2O` tells us "two hydrogen atoms and one oxygen atom," Rust types help us say
+what a hydrogen atom, oxygen atom, bond, and molecule are inside a program.
+
 ## Read First
 
+- Primer: [Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
 - Lesson: [Atoms, Memory, and Types](../lessons/01-atoms-memory-types.md)
 - Handout: [Student Handout](../handouts/atoms-memory-rust.md)
 - Visual: [Course Map](../visuals/mermaid/course-map.md)
@@ -124,4 +128,3 @@ cargo run -- methane bonds
 2. Why is `formal_charge` signed?
 3. What does `Atom::neutral(Element::O)` create?
 4. Which atom ID is oxygen in water?
-

@@ -25,6 +25,7 @@ Self-study book:
 
 - [Bio Memory Rust Lab Book](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/book/README.md)
 - [Setup and command reference](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/book/00-setup.md)
+- [Chemistry notation primer](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/book/00-chemistry-primer.md)
 
 1. [Atoms, Memory, and Types](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/01-atoms-memory-types.md)
 2. [Molecules as Graphs](https://github.com/shastaratech/bio-memory-rust-lab/blob/main/lessons/02-molecules-as-graphs.md)

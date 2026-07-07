@@ -40,6 +40,7 @@ expected output, exercises, and checkpoint questions.
 Book chapters:
 
 - [Setup](book/00-setup.md)
+- [00: Atoms, Elements, Bonds, Molecules, And Formulas](book/00-chemistry-primer.md)
 - [01: Atoms, Memory, and Types](book/01-atoms-memory-types.md)
 - [02: Molecules as Graphs](book/02-molecules-as-graphs.md)
 - [03: Ownership and Borrowing](book/03-ownership-borrowing-design.md)
