@@ -56,6 +56,11 @@ language, valence is like a maximum degree rule for an atom node, but it belongs
 atoms, not quarks. Quarks have properties such as electric charge, flavor, spin, and
 color charge; they do not have chemical valence.
 
+Use hydrogen and chlorine to show the limit. Both commonly form one bond, but
+hydrogen has one proton and one electron while chlorine has 17 protons and 17
+electrons. Same valence does not mean same behavior. It means one shared connection
+constraint, not identical internal state.
+
 Now look at a program. A Rust program also stores facts in structured ways. An atom
 can be represented by fields such as element, charge, and aromaticity. A molecule
 can own a list of atoms and a list of bonds. A graph algorithm can ask which atoms

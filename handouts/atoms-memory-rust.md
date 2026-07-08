@@ -87,6 +87,11 @@ oxygen two, nitrogen three, and carbon four. In graph language, valence is like 
 limit on how many bond edges an atom node should have. Quarks do not have chemical
 valence; valence belongs to atoms because atom-level electrons form chemical bonds.
 
+Valence is not the whole identity of an atom. Hydrogen and chlorine both commonly
+form one bond, but hydrogen has 1 proton and 1 electron while chlorine has 17
+protons and 17 electrons across more shells. They can share one interface-like
+constraint while behaving differently because their internal structure differs.
+
 Aromaticity is a special bonding pattern in some rings, such as benzene. The
 electrons are spread across the ring instead of belonging to one exact single or
 double bond. In this toy Rust model, we store that beginner idea with

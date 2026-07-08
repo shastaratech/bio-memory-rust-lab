@@ -94,6 +94,7 @@ that density; it records the connection as data.
 - Valence is how many bonds an atom commonly forms.
 - Hydrogen usually forms 1, oxygen 2, nitrogen 3, carbon 4.
 - In a graph, valence is like a degree limit for an atom node.
+- Hydrogen and chlorine both form 1 bond, but differ internally.
 - Quarks do not have chemical valence.
 
 Visual direction: show methane with carbon connected to four hydrogens.
@@ -104,6 +105,10 @@ Valence is a beginner rule for how many bonds an atom commonly forms. It is usef
 when checking whether a molecular graph looks plausible. It belongs to atoms
 because atom-level electrons make chemical bonds. Quarks sit inside protons and
 neutrons, so they have different properties, such as color charge, not valence.
+
+Valence also has limits. Hydrogen and chlorine both commonly form one bond, but
+hydrogen has one proton and one electron while chlorine has 17 of each in a neutral
+atom. Same connection count does not mean same chemical behavior.
 
 #### Slide 6: What Is Aromaticity?
 
@@ -323,6 +328,10 @@ one, oxygen two, nitrogen three, and carbon four. In a molecular graph, this act
 like a degree rule for atom nodes. Quarks do not have chemical valence; they belong
 to a deeper level of matter and have properties such as electric charge, flavor,
 spin, and color charge.
+
+This rule is not enough to identify an element. Hydrogen and chlorine can both form
+one bond, yet chlorine has many more protons, electrons, shells, and a stronger pull
+on shared electron density.
 
 Aromaticity is another important chemistry word. It does not mean smell here. It
 means a special delocalized bonding pattern in some rings. Software often stores

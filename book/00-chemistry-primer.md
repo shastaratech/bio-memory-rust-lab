@@ -480,6 +480,107 @@ Common beginner valences:
 | Carbon (`C`) | 4 bonds |
 | Chlorine (`Cl`) | 1 bond |
 
+### Same Valence, Different Elements
+
+Hydrogen and chlorine both commonly form one bond, but they are not chemically
+similar in every way. This is the point where valence shows its limits.
+
+| Property | Hydrogen (`H`) | Chlorine (`Cl`) |
+| --- | --- | --- |
+| Common beginner valence | 1 | 1 |
+| Protons in nucleus | 1 | 17 |
+| Electrons in neutral atom | 1 | 17 |
+| Electron shells | 1 | 3 |
+| Approximate atomic mass | about 1 atomic mass unit | about 35.5 atomic mass units |
+
+Why can both form one bond?
+
+For hydrogen, the reason is smallness. Hydrogen has one proton and one electron.
+The first electron shell can hold two electrons, so hydrogen commonly shares one
+more electron through one chemical bond.
+
+```text
+nucleus (+)
+    ●
+ electron
+    ○
+```
+
+For chlorine, the reason is different. Chlorine has 17 electrons arranged, in a
+simple shell model, as:
+
+```text
+2, 8, 7
+```
+
+That means chlorine has seven electrons in its outer shell. The common beginner
+rule says that this outer shell is close to a stable count of eight, so chlorine
+often forms one bond to complete that outer-shell pattern.
+
+Money analogy:
+
+```text
+hydrogen: I have 1 dollar and want 2.
+chlorine: I have 999,999 dollars and want 1,000,000.
+```
+
+Both need "one more," but they are in very different starting states.
+
+The real chemical differences are large:
+
+- hydrogen is very small
+- chlorine is larger
+- chlorine has many more protons
+- chlorine has more electron shells
+- chlorine attracts shared electrons more strongly than hydrogen
+- chlorine is much heavier
+
+This matters in hydrogen chloride:
+
+```text
+H - Cl
+```
+
+Hydrogen and chlorine share one pair of electrons, but chlorine attracts that shared
+electron density more strongly:
+
+```text
+H ----> Cl
+```
+
+So the bond is polar. Chlorine carries a small partial negative charge, written
+`δ-`, and hydrogen carries a small partial positive charge, written `δ+`.
+
+```text
+H(δ+) - Cl(δ-)
+```
+
+That polarity is one reason hydrogen chloride behaves very differently from a
+simple "one bond plus one bond" graph picture. For example, when hydrogen chloride
+dissolves in water, it forms hydrochloric acid.
+
+Key point:
+
+> Valence answers: how many bonds does an atom commonly form?
+
+Valence does not answer:
+
+- how large the atom is
+- how strongly it attracts electrons
+- how heavy it is
+- how many electron shells it has
+- how reactive it is
+- what substances it forms
+
+Rust analogy:
+
+> Two objects can satisfy the same interface constraint but behave differently
+> because their internal state is different.
+
+In this analogy, valence is like an interface limit: how many connections an atom
+node commonly supports. Properties such as nuclear charge, mass, electron shells,
+and electron attraction are internal state that changes behavior.
+
 ### Double And Triple Bonds
 
 Valence counts bond order, not only the number of neighboring atoms.
