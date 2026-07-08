@@ -33,6 +33,8 @@ cargo run -- water summary
 12. Use the [Molecule Explorer CLI handout](handouts/molecule-explorer-cli.md) for
     the capstone lab.
 13. Print or assign the [worksheet pack](worksheets/README.md) for classroom labs.
+14. Use the [course production prompts](prompts/README.md) when asking an assistant
+    to review lessons or draft tutor and video materials.
 
 ## Self-Study Book
 
