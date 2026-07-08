@@ -17,4 +17,5 @@
 - [Chapter 11: Molecular Libraries And Search Indexes](11-molecular-libraries-and-search-indexes.md)
 - [Chapter 12: Toy Fingerprints And Similarity Search](12-toy-fingerprints-and-similarity-search.md)
 - [Chapter 13: Screening Results And Feedback Loops](13-screening-results-and-feedback-loops.md)
+- [Chapter 14: Serialization And Reproducible Lab Records](14-serialization-and-reproducible-lab-records.md)
 - [Appendix: Command Reference](appendix-command-reference.md)

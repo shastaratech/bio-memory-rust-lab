@@ -329,3 +329,44 @@ Important caution:
 
 Experimental labels are evidence from a specific setup. They should be interpreted
 with controls, uncertainty, and domain knowledge.
+
+## 12. Lab Record Relay
+
+Give each group a molecule summary card.
+
+Activities:
+
+- choose a stable field order
+- write a serialized row with separators
+- swap rows with another group
+- parse the received row into fields
+- check required fields and number fields
+- diagnose one intentionally broken row
+- render one Markdown report row
+
+Rust reveal:
+
+```rust
+struct LabRecord {
+    record_id: String,
+    molecule_name: String,
+    formula: String,
+    atom_count: usize,
+    bond_count: usize,
+    notes: String,
+}
+```
+
+Data-structure prompt:
+
+- struct: typed record in memory
+- text line: stored representation
+- schema: field contract
+- parser: validator and converter
+- error enum: explicit failure
+- round trip: reproducibility check
+
+Important caution:
+
+A record without context is not reproducible enough for real science. Students
+should ask what provenance, units, conditions, and validation are missing.

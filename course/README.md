@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Thirteen-Session Arc
+## Suggested Fourteen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -33,6 +33,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 11 | How do we search a molecule library? | hash indexes, sorted lists, binary search | compound records, formula buckets, library queries |
 | 12 | How can compact feature memory support similarity search? | bitsets, set operations, ranking | fingerprints, shared features, nearest matches |
 | 13 | How do predictions improve after experiments? | optional labels, queues, matrices | screening, assays, uncertainty, feedback |
+| 14 | How do we save records reproducibly? | serialization, parsing, errors | lab records, schemas, provenance |
 
 ## School Lane
 
@@ -70,6 +71,8 @@ Best outcomes:
   library records by feature similarity.
 - Students can evaluate screening predictions with labels, confusion matrices,
   precision, recall, and feedback loops.
+- Students can serialize and parse toy molecule lab records with schema checks,
+  explicit parse errors, and round-trip tests.
 
 ## Capstone Ideas
 
@@ -88,6 +91,8 @@ Best outcomes:
   keeps and discards.
 - Build a screening feedback dashboard that separates predictions, labels, and
   next-round priorities.
+- Build a reproducible lab-record exporter and explain what metadata is still
+  missing from the toy schema.
 
 ## Visual Support
 
@@ -108,6 +113,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 12
 - use the [screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
   for Lesson 13
+- use the [serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
+  for Lesson 14
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

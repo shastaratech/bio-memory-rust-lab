@@ -51,6 +51,7 @@ Printable worksheets:
 - [Molecular Library Indexes](../worksheets/molecular-library-indexes.md)
 - [Toy Fingerprints And Similarity Search](../worksheets/toy-fingerprints-similarity.md)
 - [Screening Results And Feedback Loops](../worksheets/screening-feedback-loops.md)
+- [Serialization And Reproducible Lab Records](../worksheets/serialization-lab-records.md)
 
 ## Code Moment
 
@@ -158,3 +159,10 @@ Use [Lesson 13](../lessons/13-screening-results-and-feedback-loops.md) when
 students are ready to compare predictions with measured labels. Let students sort
 score cards into test/defer piles, add active/inactive labels, fill a confusion
 matrix, and choose which uncertain cards should guide the next round.
+
+## Serialization Extension
+
+Use [Lesson 14](../lessons/14-serialization-and-reproducible-lab-records.md) when
+students are ready to write data down reproducibly. Have them turn molecule
+summary cards into stable text rows, swap rows with another group, parse the rows
+back into fields, and diagnose intentionally broken records.

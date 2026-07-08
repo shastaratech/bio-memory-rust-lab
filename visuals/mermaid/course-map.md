@@ -21,6 +21,7 @@ flowchart TD
     K --> L["Lesson 11: Molecular Libraries and Search Indexes"]
     L --> M["Lesson 12: Toy Fingerprints and Similarity Search"]
     M --> N["Lesson 13: Screening Results and Feedback Loops"]
+    N --> O["Lesson 14: Serialization and Reproducible Lab Records"]
 
     B --> S1["School: atom cards"]
     C --> S2["School: human bond graph"]
@@ -33,6 +34,7 @@ flowchart TD
     L --> S11["School: library index cards"]
     M --> S12["School: feature bit cards"]
     N --> S13["School: screening matrix cards"]
+    O --> S14["School: lab record relay"]
 
     B --> U1["University: type invariants"]
     C --> U2["University: adjacency lists and BFS"]
@@ -47,6 +49,7 @@ flowchart TD
     L --> U11["University: hash indexes and binary search"]
     M --> U12["University: bitsets and similarity ranking"]
     N --> U13["University: metrics and feedback loops"]
+    O --> U14["University: schemas, parsers, provenance"]
 ```
 
 Teaching prompt:

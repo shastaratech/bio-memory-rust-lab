@@ -33,6 +33,8 @@ Explore:
   in `src/fingerprint.rs`
 - screening predictions, thresholds, optional labels, confusion matrices, queues,
   and feedback loops in `src/screening.rs`
+- reproducible lab records, serialization, parsing, round trips, and report rows
+  in `src/lab_record.rs`
 
 Commands:
 
@@ -57,3 +59,4 @@ Library-only exercises:
 | `index` | toy molecule library indexing, sorting, merging, and range search |
 | `fingerprint` | toy feature bitsets and similarity ranking |
 | `screening` | score thresholds, labels, confusion matrices, and feedback queues |
+| `lab_record` | toy record serialization, parsing, validation, and Markdown output |

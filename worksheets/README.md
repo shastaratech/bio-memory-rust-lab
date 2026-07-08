@@ -29,6 +29,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Screening Results And Feedback Loops](screening-feedback-loops.md): turn scores
   into test/defer decisions, compare predictions with experimental labels, and
   compute confusion-matrix metrics.
+- [Serialization And Reproducible Lab Records](serialization-lab-records.md):
+  serialize molecule summaries, parse records back, diagnose bad rows, and explain
+  provenance.
 
 ## University Worksheets
 
@@ -51,6 +54,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 11 | Molecular Library Indexes |
 | Lesson 12 | Toy Fingerprints And Similarity Search |
 | Lesson 13 | Screening Results And Feedback Loops |
+| Lesson 14 | Serialization And Reproducible Lab Records |
 
 ## Instructor Rule
 

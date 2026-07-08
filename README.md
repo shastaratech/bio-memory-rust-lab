@@ -58,6 +58,7 @@ Book chapters:
 - [11: Molecular Libraries And Search Indexes](book/11-molecular-libraries-and-search-indexes.md)
 - [12: Toy Fingerprints And Similarity Search](book/12-toy-fingerprints-and-similarity-search.md)
 - [13: Screening Results And Feedback Loops](book/13-screening-results-and-feedback-loops.md)
+- [14: Serialization And Reproducible Lab Records](book/14-serialization-and-reproducible-lab-records.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -86,6 +87,7 @@ Book chapters:
 | [11: Molecular Libraries And Search Indexes](lessons/11-molecular-libraries-and-search-indexes.md) | Arrange molecule cards as shelves, labels, buckets, and sorted rows. | Library records, hash indexes, grouped formula lookup, merge, and binary search. |
 | [12: Toy Fingerprints And Similarity Search](lessons/12-toy-fingerprints-and-similarity-search.md) | Turn molecule observations into feature-bit cards and compare shared features. | Bitsets, set operations, similarity scoring, and sorted nearest matches. |
 | [13: Screening Results And Feedback Loops](lessons/13-screening-results-and-feedback-loops.md) | Sort score cards into test/defer piles, then compare predictions with labels. | Thresholds, optional labels, queues, confusion matrices, precision, recall, and feedback loops. |
+| [14: Serialization And Reproducible Lab Records](lessons/14-serialization-and-reproducible-lab-records.md) | Turn molecule summary cards into stable text rows and diagnose bad records. | Serialization, parsing, schemas, parse errors, round trips, Markdown rows, and provenance. |
 
 ## Classroom Energy
 
@@ -113,6 +115,9 @@ sets, similarity scoring, and nearest-match ranking.
 Use the [screening feedback handout](handouts/screening-feedback-loops.md) and
 [worksheet](worksheets/screening-feedback-loops.md) to teach thresholds, labels,
 confusion matrices, metrics, and feedback loops.
+Use the [serialization handout](handouts/serialization-lab-records.md) and
+[worksheet](worksheets/serialization-lab-records.md) to teach schemas, parsing,
+round-trip tests, provenance, and reproducible lab records.
 
 ## Projects
 
@@ -137,6 +142,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Molecular library indexes](visuals/mermaid/molecular-library-indexes.md)
 - [Toy fingerprints and similarity search](visuals/mermaid/fingerprint-similarity.md)
 - [Screening feedback loop](visuals/mermaid/screening-feedback-loop.md)
+- [Serialization and lab records](visuals/mermaid/serialization-lab-records.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)

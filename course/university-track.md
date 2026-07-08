@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Thirteen-Session Seminar
+## Fourteen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -238,6 +238,25 @@ Implementation focus:
 - sorted testing queue
 - near-threshold uncertainty selection
 
+### Session 14: Serialization And Reproducible Lab Records
+
+Core questions:
+
+- What is the difference between structured data and serialized data?
+- What schema guarantees does a parser enforce?
+- Which parsing failures should be represented explicitly?
+- What does a round-trip test prove and not prove?
+- Which provenance fields are missing from a toy record?
+
+Implementation focus:
+
+- `LabRecord` struct
+- stable header and field order
+- `to_record_line` serialization
+- `from_record_line` parsing
+- `LabRecordParseError`
+- Markdown report row rendering
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -252,6 +271,8 @@ Implementation focus:
   what each representation can and cannot answer.
 - Design memo: evaluate a toy screen and recommend a next experiment based on
   false positives, false negatives, and uncertain scores.
+- Design memo: design a minimal reproducible record schema and name the metadata
+  required before it could support real lab use.
 
 ## Capstone Rubric
 
@@ -272,6 +293,7 @@ Implementation focus:
 - [Molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
 - [Toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
 - [Screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
+- [Serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

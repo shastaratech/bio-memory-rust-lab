@@ -19,6 +19,7 @@ For an instructor-led capstone session, use
 6. Molecule library indexer
 7. Toy fingerprint similarity search
 8. Screening feedback dashboard
+9. Reproducible lab-record exporter
 
 The first project is already backed by runnable code in:
 

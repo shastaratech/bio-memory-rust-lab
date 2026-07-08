@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="500" viewBox="0 0 1120 500" role="img" aria-labelledby="title desc">
+  <title id="title">Serialization and lab records</title>
+  <desc id="desc">A molecule graph becomes a LabRecord struct, serializes to text, is stored or shared, parsed back with validation, and checked by a round trip.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .subtitle { font: 400 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+      .box { fill: #ffffff; stroke: #355070; stroke-width: 2; rx: 14; ry: 14; }
+      .text { fill: #eaf7f1; stroke: #2f946d; }
+      .error { fill: #fff4df; stroke: #d9902f; }
+      .label { font: 700 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #3b4658; }
+      .mono { font: 700 13px ui-monospace, SFMono-Regular, Menlo, monospace; fill: #172033; }
+      .arrow { stroke: #355070; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .soft { stroke: #8391a4; stroke-width: 2; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1120" height="500" />
+  <text class="title" x="42" y="52">Serialization And Reproducible Lab Records</text>
+  <text class="subtitle" x="42" y="78">Structured molecule summaries become stable text records, then parse back into checked data.</text>
+
+  <rect class="box" x="42" y="152" width="150" height="76" />
+  <text class="label" x="66" y="182">Molecule graph</text>
+  <text class="small" x="66" y="204">atoms + bonds</text>
+
+  <rect class="box" x="230" y="152" width="160" height="76" />
+  <text class="label" x="254" y="182">LabRecord</text>
+  <text class="small" x="254" y="204">schema fields</text>
+
+  <rect class="box text" x="428" y="138" width="232" height="104" />
+  <text class="label" x="452" y="168">Serialize</text>
+  <text class="mono" x="452" y="196">rec-002|ethanol|</text>
+  <text class="mono" x="452" y="216">C2H6O|9|8|demo</text>
+
+  <rect class="box" x="698" y="152" width="150" height="76" />
+  <text class="label" x="722" y="182">Store / share</text>
+  <text class="small" x="722" y="204">note or report</text>
+
+  <rect class="box" x="886" y="152" width="160" height="76" />
+  <text class="label" x="910" y="182">Parse</text>
+  <text class="small" x="910" y="204">split + validate</text>
+
+  <rect class="box" x="706" y="330" width="160" height="76" />
+  <text class="label" x="730" y="360">Read-back record</text>
+  <text class="small" x="730" y="382">structured data</text>
+
+  <rect class="box error" x="922" y="330" width="160" height="76" />
+  <text class="label" x="946" y="360">Parse error</text>
+  <text class="small" x="946" y="382">specific failure</text>
+
+  <rect class="box text" x="420" y="330" width="190" height="76" />
+  <text class="label" x="444" y="360">Round-trip check</text>
+  <text class="small" x="444" y="382">same record?</text>
+
+  <path class="arrow" d="M192 190 L226 190" />
+  <path class="arrow" d="M390 190 L424 190" />
+  <path class="arrow" d="M660 190 L694 190" />
+  <path class="arrow" d="M848 190 L882 190" />
+  <path class="arrow" d="M966 228 C942 288 884 344 870 360" />
+  <path class="arrow" d="M980 228 C1010 280 1004 312 1002 326" />
+  <path class="soft" d="M706 368 L614 368" />
+</svg>

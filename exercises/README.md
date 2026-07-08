@@ -295,3 +295,29 @@ Tasks:
 5. Build a testing queue sorted by score.
 6. Find predictions near the threshold.
 7. Explain why labels are feedback, not just output.
+
+## Exercise 14: Serialization And Reproducible Lab Records
+
+Open:
+
+```text
+rust-molecule-model/src/lab_record.rs
+```
+
+Find:
+
+- `LabRecord`
+- `LabRecordParseError`
+- `to_record_line`
+- `from_record_line`
+- `to_markdown_row`
+
+Tasks:
+
+1. Create a lab record from water or ethanol.
+2. Serialize it into a text line.
+3. Parse the text line back into a record.
+4. Render the record as a Markdown table row.
+5. Trigger one bad field-count error.
+6. Trigger one invalid-number error.
+7. Explain what provenance fields are missing from the toy schema.
