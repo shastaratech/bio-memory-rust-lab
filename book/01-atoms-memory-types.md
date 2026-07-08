@@ -11,6 +11,8 @@ Two beginner chemistry terms matter immediately:
 
 - A bond is a chemical connection between atoms. In a program, we represent it as a
   graph edge between two atom IDs.
+- Valence is the number of bonds an atom commonly forms. In a graph analogy, it is
+  like a limit on how many weighted edges an atom node may have.
 - Aromaticity is a special delocalized bonding pattern in some rings. In this toy
   model, we represent it with a boolean atom flag or an aromatic bond order.
 

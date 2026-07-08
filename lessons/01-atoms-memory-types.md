@@ -52,6 +52,7 @@ Recommended length: 90 minutes.
 | Element symbol | enum variant | A fixed set of named possibilities | The periodic table is physical, not a programming enum. |
 | Atomic number | integer | Countable identity field | Chemical identity is not only an integer in practice. |
 | Charge | signed integer | Positive, zero, negative state | Real charge distribution is richer. |
+| Valence | node degree / invariant | Checks whether an atom has a plausible number of bonds | Simple valence rules fail for many real molecules. |
 | Bond | edge/reference-like relation | Connects two atom indices | A Rust reference has lifetime rules; a bond has chemistry. |
 | Molecule | graph / aggregate type | Nodes plus edges plus metadata | Molecules are 3D quantum systems, not only graphs. |
 | Valence rule | type invariant | Invalid structures should be rejected early | Chemical validity is contextual. |

@@ -20,11 +20,12 @@ tools for representing structure.
 | 0:00-0:30 | Opening question | Ask where information lives in a molecule and a program. |
 | 0:30-1:45 | Physical building blocks | Explain protons, neutrons, nuclei, electrons, and electron clouds. |
 | 1:45-2:45 | Water as a first structure | Show `H2O`, atom cards, and a simple graph. |
-| 2:45-3:45 | Bonds and aromaticity | Explain bond lines, electron density, and aromatic ring flags. |
-| 3:45-4:45 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
-| 4:45-6:00 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
-| 6:00-7:15 | Analogy discipline | State where the analogy works and where it fails. |
-| 7:15-8:00 | First action | Run tests and inspect `water summary`. |
+| 2:45-3:30 | Valence | Explain common bond counts and graph-degree intuition. |
+| 3:30-4:30 | Bonds and aromaticity | Explain bond lines, electron density, and aromatic ring flags. |
+| 4:30-5:30 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
+| 5:30-6:45 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
+| 6:45-7:45 | Analogy discipline | State where the analogy works and where it fails. |
+| 7:45-8:30 | First action | Run tests and inspect `water summary`. |
 
 ### Slide Plan
 
@@ -88,7 +89,23 @@ When chemists draw a line between atoms, the line is a shortcut. The physical
 picture is electron density shared between nuclei. Our Rust model does not simulate
 that density; it records the connection as data.
 
-#### Slide 5: What Is Aromaticity?
+#### Slide 5: What Is Valence?
+
+- Valence is how many bonds an atom commonly forms.
+- Hydrogen usually forms 1, oxygen 2, nitrogen 3, carbon 4.
+- In a graph, valence is like a degree limit for an atom node.
+- Quarks do not have chemical valence.
+
+Visual direction: show methane with carbon connected to four hydrogens.
+
+Narration:
+
+Valence is a beginner rule for how many bonds an atom commonly forms. It is useful
+when checking whether a molecular graph looks plausible. It belongs to atoms
+because atom-level electrons make chemical bonds. Quarks sit inside protons and
+neutrons, so they have different properties, such as color charge, not valence.
+
+#### Slide 6: What Is Aromaticity?
 
 - Aromaticity is not about smell in this lesson.
 - It is a special delocalized bonding pattern in some rings.
@@ -103,7 +120,7 @@ Aromaticity is a special ring-bonding pattern where some electrons are spread
 across the ring. Full aromaticity detection is chemistry. Here, we only need to
 understand why software may store an aromatic flag.
 
-#### Slide 6: Rust Makes Structure Explicit
+#### Slide 7: Rust Makes Structure Explicit
 
 - `enum Element` limits valid labels.
 - `struct Atom` groups atom facts.
@@ -122,7 +139,7 @@ pub struct Atom {
 }
 ```
 
-#### Slide 7: Course Roadmap
+#### Slide 8: Course Roadmap
 
 - Setup and chemistry primer.
 - Atoms, memory, and types.
@@ -132,7 +149,7 @@ pub struct Atom {
 
 Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
-#### Slide 8: Analogy Helps, Precision Finishes
+#### Slide 9: Analogy Helps, Precision Finishes
 
 - Atoms are not bytes.
 - Bonds are not Rust references.
@@ -142,7 +159,7 @@ Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
 Visual direction: warning icon plus "Useful / Limit" columns.
 
-#### Slide 9: Your First Command
+#### Slide 10: Your First Command
 
 - Run tests.
 - List water atoms.
@@ -300,6 +317,12 @@ orbits.
 A chemical bond is a connection between atoms. The line in a molecule drawing is a
 symbol, not a tiny stick. Physically, bonding comes from electron density shared
 between nuclei. In our beginner code, a bond becomes an edge between atom IDs.
+
+Valence tells us how many bonds an atom commonly forms. Hydrogen commonly forms
+one, oxygen two, nitrogen three, and carbon four. In a molecular graph, this acts
+like a degree rule for atom nodes. Quarks do not have chemical valence; they belong
+to a deeper level of matter and have properties such as electric charge, flavor,
+spin, and color charge.
 
 Aromaticity is another important chemistry word. It does not mean smell here. It
 means a special delocalized bonding pattern in some rings. Software often stores

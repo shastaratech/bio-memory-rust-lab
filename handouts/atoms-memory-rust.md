@@ -23,6 +23,7 @@ treated like ordinary stored bits.
 | Graph | Nodes plus edges; useful for atoms plus bonds. |
 | Bond | A chemical connection between two atoms; a graph edge in the toy model. |
 | Bond order | A label such as single, double, triple, or aromatic. |
+| Valence | How many bonds an atom commonly forms; like a graph-degree rule. |
 | Aromaticity | A special delocalized bonding pattern in some rings; not about smell. |
 | Quantum state | A physical state described by amplitudes, not ordinary stored bits. |
 
@@ -80,6 +81,11 @@ struct Molecule {
 A bond is not a tiny stick between atoms. It is a stable chemical relationship that
 comes from electron density shared between nearby atoms. Chemists draw a line
 because the line is a compact way to say "these atoms are connected."
+
+Valence is how many bonds an atom commonly forms. Hydrogen commonly forms one,
+oxygen two, nitrogen three, and carbon four. In graph language, valence is like a
+limit on how many bond edges an atom node should have. Quarks do not have chemical
+valence; valence belongs to atoms because atom-level electrons form chemical bonds.
 
 Aromaticity is a special bonding pattern in some rings, such as benzene. The
 electrons are spread across the ring instead of belonging to one exact single or

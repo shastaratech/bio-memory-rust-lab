@@ -50,6 +50,12 @@ smell here. It means a special delocalized bonding pattern in some rings, such a
 benzene. In our Rust model, aromaticity is stored as a boolean flag or an aromatic
 bond order.
 
+Also define valence. Valence is how many bonds an atom commonly forms. Hydrogen
+usually forms one bond, oxygen two, nitrogen three, and carbon four. In graph
+language, valence is like a maximum degree rule for an atom node, but it belongs to
+atoms, not quarks. Quarks have properties such as electric charge, flavor, spin, and
+color charge; they do not have chemical valence.
+
 Now look at a program. A Rust program also stores facts in structured ways. An atom
 can be represented by fields such as element, charge, and aromaticity. A molecule
 can own a list of atoms and a list of bonds. A graph algorithm can ask which atoms

@@ -14,6 +14,7 @@ This chapter explains:
 - electron clouds
 - atom
 - element
+- valence
 - bond
 - bond order
 - aromaticity
@@ -410,6 +411,189 @@ Why?
 
 Because element symbols are a controlled vocabulary. `Element::Cl` is safer than
 free text such as `"cl"`, `"CL"`, or `"chlorine"`.
+
+## Valence
+
+Valence is the ability of an atom to form a certain number of chemical bonds with
+other atoms.
+
+Beginner analogy:
+
+> Valence tells us how many "hands" an atom usually has for connecting to other
+> atoms.
+
+This is only an analogy, but it is useful for first lessons.
+
+### Hydrogen
+
+Hydrogen usually forms one bond:
+
+```text
+H -
+```
+
+So a beginner valence for hydrogen is `1`.
+
+### Oxygen
+
+Oxygen commonly forms two bonds:
+
+```text
+  |
+O
+  |
+```
+
+Water uses that pattern:
+
+```text
+H - O - H
+```
+
+The oxygen is connected to two hydrogen atoms, so a beginner valence for oxygen is
+`2`.
+
+### Carbon
+
+Carbon commonly forms four bonds, which is one reason carbon can build long chains
+and many different molecular shapes.
+
+Methane is the simplest example:
+
+```text
+     H
+     |
+H - C - H
+     |
+     H
+```
+
+Carbon forms four single bonds here, so a beginner valence for carbon is `4`.
+
+Common beginner valences:
+
+| Element | Common beginner valence |
+| --- | --- |
+| Hydrogen (`H`) | 1 bond |
+| Oxygen (`O`) | 2 bonds |
+| Nitrogen (`N`) | 3 bonds |
+| Carbon (`C`) | 4 bonds |
+| Chlorine (`Cl`) | 1 bond |
+
+### Double And Triple Bonds
+
+Valence counts bond order, not only the number of neighboring atoms.
+
+Carbon dioxide is:
+
+```text
+O = C = O
+```
+
+Each double bond counts as two. Carbon has two double bonds:
+
+```text
+2 + 2 = 4
+```
+
+So carbon still has beginner valence `4` in carbon dioxide.
+
+### Why Valence Exists
+
+Valence is related to electrons in the outer electron shell. Atoms form bonds by
+sharing or transferring electrons in ways that can make the overall electron
+configuration more stable.
+
+Beginner pattern:
+
+- hydrogen often needs one shared electron
+- oxygen often forms two bonds
+- nitrogen often forms three bonds
+- carbon often forms four bonds
+
+This pattern is useful, but it is not the whole story.
+
+### Valence As A Graph Rule
+
+If a molecule is a graph:
+
+- an atom is a node
+- a bond is an edge
+
+then valence is similar to a maximum allowed degree for that node, with bond order
+included.
+
+In methane:
+
+```text
+     H
+     |
+H - C - H
+     |
+     H
+```
+
+The carbon node has four single-bond edges. Each hydrogen node has one edge.
+
+Programming analogy:
+
+```rust
+fn allowed_single_bonds(element: Element) -> usize {
+    match element {
+        Element::H => 1,
+        Element::O => 2,
+        Element::N => 3,
+        Element::C => 4,
+        Element::Cl => 1,
+        Element::F | Element::Br => 1,
+    }
+}
+```
+
+This is only a beginner rule. Modern chemistry often uses more precise concepts
+such as valence electrons, oxidation state, formal charge, coordination number, and
+aromaticity. For more complex molecules, simple valence rules may be incomplete or
+misleading.
+
+### Do Quarks Have Valence?
+
+No. Quarks do not have chemical valence.
+
+Valence is a property of atoms because chemical bonds are formed by electrons
+around atomic nuclei. Quarks are deep inside protons and neutrons, and they do not
+directly form chemical bonds.
+
+Different levels have different properties:
+
+| Level | Useful properties |
+| --- | --- |
+| Quark | electric charge, mass, spin, flavor, color charge |
+| Proton | total electric charge `+1` |
+| Neutron | total electric charge `0` |
+| Atom | element identity, valence, formal charge, chemical behavior |
+| Molecule | bonds, shape, graph structure, reactivity |
+
+Quarks have color charge, not chemical valence. Color charge is not real color; it
+is the name physicists use for the charge involved in the strong interaction. A
+proton can be sketched as three quarks with different color charges that combine
+into a color-neutral state.
+
+The useful hierarchy is:
+
+```text
+quark
+  ↓
+proton or neutron
+  ↓
+nucleus
+  ↓
+atom
+  ↓
+molecule
+```
+
+Valence appears at the atom level because atom-level electrons interact with
+electrons from other atoms.
 
 ## Bond
 
