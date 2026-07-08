@@ -476,3 +476,39 @@ Data-structure prompt:
 Important caution:
 
 Toy interpolation teaches data flow. It is not a validated potency estimate.
+
+## 16. Control Window Cards
+
+Give students blank, negative-control, positive-control, and candidate cards.
+
+Activities:
+
+- subtract blank from each raw response
+- compute the control window
+- normalize the candidate response to a fraction
+- convert the fraction to percent
+- reject a positive control lower than the negative control
+- decide whether a control window passes a quality threshold
+
+Rust reveal:
+
+```rust
+struct ControlSet {
+    blank_response: f64,
+    negative_control_response: f64,
+    positive_control_response: f64,
+}
+```
+
+Data-structure prompt:
+
+- struct: controls stay together
+- error enum: invalid control setup
+- subtraction: blank correction
+- division: normalization to a shared scale
+- threshold: quality gate
+
+Important caution:
+
+Controls make response interpretable, but real assay controls need replicates,
+protocol context, plate layout, and domain review.

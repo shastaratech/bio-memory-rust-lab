@@ -41,6 +41,8 @@ Explore:
   variation, and consistency checks in `src/replicate.rs`
 - dose-response points, sorted curves, monotonicity checks, interpolation, and
   optional half-max estimates in `src/dose_response.rs`
+- control sets, blank correction, normalization, percent response, and quality
+  gates in `src/normalization.rs`
 
 Commands:
 
@@ -69,3 +71,4 @@ Library-only exercises:
 | `measurement` | typed units, assay observations, validation, and normalized sorting |
 | `replicate` | repeated response summaries and uncertainty-aware consistency checks |
 | `dose_response` | sorted dose-response curves and toy potency estimates |
+| `normalization` | blank correction, control normalization, and quality windows |

@@ -6,6 +6,7 @@ pub mod index;
 pub mod lab_record;
 pub mod measurement;
 pub mod molecule;
+pub mod normalization;
 pub mod replicate;
 pub mod screening;
 
@@ -19,5 +20,6 @@ pub use measurement::{AssayObservation, Concentration, ConcentrationUnit, Measur
 pub use molecule::{
     Atom, Bond, BondOrder, ChemicalFormula, Describe, Element, MolecularGraph, Molecule,
 };
+pub use normalization::{ControlSet, NormalizationError};
 pub use replicate::{ReplicateError, ReplicateSeries};
 pub use screening::{ConfusionMatrix, ExperimentalLabel, Prediction, ScreeningDecision};

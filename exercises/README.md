@@ -403,3 +403,30 @@ Tasks:
 5. Check monotonicity.
 6. Estimate where the curve crosses `50 percent`.
 7. Explain why the estimate can be `None`.
+
+## Exercise 18: Controls, Baselines, And Normalization
+
+Open:
+
+```text
+rust-molecule-model/src/normalization.rs
+```
+
+Find:
+
+- `ControlSet`
+- `NormalizationError`
+- `blank_correct`
+- `normalize_to_controls`
+- `normalize_percent`
+- `passes_quality_window`
+
+Tasks:
+
+1. Create a control set with blank, negative, and positive values.
+2. Reject bad control order.
+3. Subtract blank response.
+4. Normalize a raw candidate response to a `0..1` fraction.
+5. Convert the normalized fraction to percent.
+6. Check whether the control window passes a quality threshold.
+7. Explain why raw response is not enough.

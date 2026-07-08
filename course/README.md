@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Seventeen-Session Arc
+## Suggested Eighteen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -37,6 +37,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 15 | How do units protect measurement meaning? | typed units, validation, normalization | assay observations and response data |
 | 16 | How do repeated measurements show uncertainty? | vectors, summary stats, Option | replicates, variability, confidence |
 | 17 | How does response change with dose? | sorted vectors, interpolation, Option | dose-response curves and potency |
+| 18 | What makes raw response interpretable? | baseline correction, normalization | controls, blanks, quality windows |
 
 ## School Lane
 
@@ -82,6 +83,8 @@ Best outcomes:
   scientific interpretation.
 - Students can build toy dose-response curves and explain the limits of simple
   interpolation.
+- Students can normalize raw assay response against blank, negative, and positive
+  controls.
 
 ## Capstone Ideas
 
@@ -108,6 +111,7 @@ Best outcomes:
   consistency decisions.
 - Build a dose-response reporter that sorts dose points and estimates target
   crossings.
+- Build a control-normalized assay report with quality-window checks.
 
 ## Visual Support
 
@@ -136,6 +140,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 16
 - use the [dose-response curves](../visuals/mermaid/dose-response-curves.md)
   for Lesson 17
+- use the [controls and normalization](../visuals/mermaid/controls-normalization.md)
+  for Lesson 18
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

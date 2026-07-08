@@ -23,6 +23,7 @@ For an instructor-led capstone session, use
 10. Typed assay measurement table
 11. Replicate variability report
 12. Dose-response curve reporter
+13. Control-normalized assay report
 
 The first project is already backed by runnable code in:
 

@@ -38,6 +38,7 @@ open and the exact commands to run.
 - [Chapter 15: Typed Measurements, Units, And Assay Observations](15-typed-measurements-units-and-assay-observations.md)
 - [Chapter 16: Replicates, Variability, And Uncertainty](16-replicates-variability-and-uncertainty.md)
 - [Chapter 17: Dose-Response Curves And Toy Potency](17-dose-response-curves-and-toy-potency.md)
+- [Chapter 18: Controls, Baselines, And Normalization](18-controls-baselines-and-normalization.md)
 - [Appendix: Command Reference](appendix-command-reference.md)
 
 ## Repo Map

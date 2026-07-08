@@ -25,6 +25,7 @@ flowchart TD
     O --> P["Lesson 15: Typed Measurements, Units, and Assay Observations"]
     P --> Q["Lesson 16: Replicates, Variability, and Uncertainty"]
     Q --> R["Lesson 17: Dose-Response Curves and Toy Potency"]
+    R --> T["Lesson 18: Controls, Baselines, and Normalization"]
 
     B --> S1["School: atom cards"]
     C --> S2["School: human bond graph"]
@@ -41,6 +42,7 @@ flowchart TD
     P --> S15["School: unit conversion relay"]
     Q --> S16["School: replicate spread cards"]
     R --> S17["School: dose-response curve cards"]
+    T --> S18["School: control window cards"]
 
     B --> U1["University: type invariants"]
     C --> U2["University: adjacency lists and BFS"]
@@ -59,6 +61,7 @@ flowchart TD
     P --> U15["University: typed units and assay data"]
     Q --> U16["University: variability and uncertainty"]
     R --> U17["University: interpolation and curve limits"]
+    T --> U18["University: baselines and quality gates"]
 ```
 
 Teaching prompt:

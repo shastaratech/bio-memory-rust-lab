@@ -62,6 +62,7 @@ Book chapters:
 - [15: Typed Measurements, Units, And Assay Observations](book/15-typed-measurements-units-and-assay-observations.md)
 - [16: Replicates, Variability, And Uncertainty](book/16-replicates-variability-and-uncertainty.md)
 - [17: Dose-Response Curves And Toy Potency](book/17-dose-response-curves-and-toy-potency.md)
+- [18: Controls, Baselines, And Normalization](book/18-controls-baselines-and-normalization.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -94,6 +95,7 @@ Book chapters:
 | [15: Typed Measurements, Units, And Assay Observations](lessons/15-typed-measurements-units-and-assay-observations.md) | Convert unit cards, validate response cards, and sort observations by normalized dose. | Unit enums, measurement structs, validation errors, normalized values, and assay observations. |
 | [16: Replicates, Variability, And Uncertainty](lessons/16-replicates-variability-and-uncertainty.md) | Compare replicate response cards and decide whether a result is stable or noisy. | Replicate vectors, mean, range, sample variance, standard deviation, coefficient of variation, and consistency checks. |
 | [17: Dose-Response Curves And Toy Potency](lessons/17-dose-response-curves-and-toy-potency.md) | Sort dose-response cards and estimate where a target response is crossed. | Dose-point structs, sorted vectors, monotonicity, adjacent-pair search, interpolation, and optional estimates. |
+| [18: Controls, Baselines, And Normalization](lessons/18-controls-baselines-and-normalization.md) | Use blank, negative-control, and positive-control cards to normalize raw response. | Control structs, blank correction, control windows, normalized fractions, percent response, and quality gates. |
 
 ## Classroom Energy
 
@@ -133,6 +135,9 @@ variability summaries, and uncertainty-aware feedback decisions.
 Use the [dose-response handout](handouts/dose-response-curves.md) and
 [worksheet](worksheets/dose-response-curves.md) to teach sorted dose points,
 monotonicity, interpolation, and optional half-max estimates.
+Use the [controls handout](handouts/controls-normalization.md) and
+[worksheet](worksheets/controls-normalization.md) to teach blank correction,
+control windows, normalization, percent response, and quality gates.
 
 ## Projects
 
@@ -161,6 +166,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Typed measurements and assay observations](visuals/mermaid/typed-measurements.md)
 - [Replicates and uncertainty](visuals/mermaid/replicates-uncertainty.md)
 - [Dose-response curves](visuals/mermaid/dose-response-curves.md)
+- [Controls and normalization](visuals/mermaid/controls-normalization.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)

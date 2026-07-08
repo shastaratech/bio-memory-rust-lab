@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1060" height="450" viewBox="0 0 1060 450" role="img" aria-labelledby="title desc">
+  <title id="title">Controls and normalization</title>
+  <desc id="desc">Raw response and controls feed blank correction, control-window calculation, normalization, percent response, and a quality gate.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .subtitle { font: 400 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+      .box { fill: #ffffff; stroke: #355070; stroke-width: 2; rx: 14; ry: 14; }
+      .control { fill: #eaf7f1; stroke: #2f946d; }
+      .quality { fill: #fff4df; stroke: #d9902f; }
+      .label { font: 700 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #3b4658; }
+      .arrow { stroke: #355070; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1060" height="450" />
+  <text class="title" x="42" y="52">Controls, Baselines, And Normalization</text>
+  <text class="subtitle" x="42" y="78">Raw response becomes interpretable only after blank correction and control-aware normalization.</text>
+
+  <rect class="box" x="52" y="128" width="150" height="76" />
+  <text class="label" x="76" y="158">Raw response</text>
+  <text class="small" x="76" y="180">candidate signal</text>
+
+  <rect class="box control" x="52" y="258" width="172" height="90" />
+  <text class="label" x="76" y="288">ControlSet</text>
+  <text class="small" x="76" y="310">blank, negative,</text>
+  <text class="small" x="76" y="330">positive</text>
+
+  <rect class="box" x="286" y="190" width="166" height="78" />
+  <text class="label" x="310" y="220">Blank correction</text>
+  <text class="small" x="310" y="242">subtract background</text>
+
+  <rect class="box control" x="514" y="190" width="150" height="78" />
+  <text class="label" x="538" y="220">Control window</text>
+  <text class="small" x="538" y="242">positive - negative</text>
+
+  <rect class="box" x="726" y="128" width="132" height="76" />
+  <text class="label" x="750" y="158">Normalize</text>
+  <text class="small" x="750" y="180">0..1 fraction</text>
+
+  <rect class="box" x="900" y="128" width="122" height="76" />
+  <text class="label" x="924" y="158">Percent</text>
+  <text class="small" x="924" y="180">fraction * 100</text>
+
+  <rect class="box quality" x="726" y="286" width="174" height="76" />
+  <text class="label" x="750" y="316">Quality gate</text>
+  <text class="small" x="750" y="338">window large enough?</text>
+
+  <path class="arrow" d="M202 166 C246 174 262 204 282 222" />
+  <path class="arrow" d="M224 303 C256 292 272 254 282 238" />
+  <path class="arrow" d="M452 229 L510 229" />
+  <path class="arrow" d="M664 218 C690 196 704 176 722 166" />
+  <path class="arrow" d="M858 166 L896 166" />
+  <path class="arrow" d="M664 242 C704 278 710 308 722 324" />
+</svg>

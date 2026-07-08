@@ -55,6 +55,7 @@ Printable worksheets:
 - [Typed Measurements, Units, And Assay Observations](../worksheets/typed-measurements.md)
 - [Replicates, Variability, And Uncertainty](../worksheets/replicates-uncertainty.md)
 - [Dose-Response Curves And Toy Potency](../worksheets/dose-response-curves.md)
+- [Controls, Baselines, And Normalization](../worksheets/controls-normalization.md)
 
 ## Code Moment
 
@@ -190,3 +191,10 @@ Use [Lesson 17](../lessons/17-dose-response-curves-and-toy-potency.md) when
 students are ready to connect dose and response. Give dose-response cards, sort
 them by concentration, check whether the response increases, and estimate where a
 target response is crossed.
+
+## Controls And Normalization Extension
+
+Use [Lesson 18](../lessons/18-controls-baselines-and-normalization.md) when
+students are ready to interpret raw assay response. Give blank, negative-control,
+positive-control, and candidate cards, then normalize the candidate response
+against the control window.

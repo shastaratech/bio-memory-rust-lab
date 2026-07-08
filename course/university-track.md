@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Seventeen-Session Seminar
+## Eighteen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -316,6 +316,25 @@ Implementation focus:
 - monotonicity check
 - linear interpolation for target crossing
 
+### Session 18: Controls, Baselines, And Normalization
+
+Core questions:
+
+- Why is raw response not interpretable by itself?
+- What does blank correction remove?
+- Why must positive control exceed negative control?
+- What does the control window measure?
+- Which control metadata should be serialized?
+
+Implementation focus:
+
+- `ControlSet`
+- `NormalizationError`
+- blank correction
+- normalization to `0..1`
+- percent response
+- control-window quality gates
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -338,6 +357,8 @@ Implementation focus:
   repeat, or deprioritize a candidate.
 - Design memo: compare toy interpolation with real dose-response requirements
   such as replicates, controls, uncertainty, and fitted models.
+- Design memo: design a control-aware assay record and explain how controls change
+  response interpretation.
 
 ## Capstone Rubric
 
@@ -362,6 +383,7 @@ Implementation focus:
 - [Typed measurements](../visuals/mermaid/typed-measurements.md)
 - [Replicates and uncertainty](../visuals/mermaid/replicates-uncertainty.md)
 - [Dose-response curves](../visuals/mermaid/dose-response-curves.md)
+- [Controls and normalization](../visuals/mermaid/controls-normalization.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

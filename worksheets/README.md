@@ -41,6 +41,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Dose-Response Curves And Toy Potency](dose-response-curves.md): sort dose
   points, check monotonicity, estimate target crossings, and explain toy potency
   limits.
+- [Controls, Baselines, And Normalization](controls-normalization.md): subtract
+  blank response, normalize against positive/negative controls, and check control
+  quality windows.
 
 ## University Worksheets
 
@@ -67,6 +70,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 15 | Typed Measurements, Units, And Assay Observations |
 | Lesson 16 | Replicates, Variability, And Uncertainty |
 | Lesson 17 | Dose-Response Curves And Toy Potency |
+| Lesson 18 | Controls, Baselines, And Normalization |
 
 ## Instructor Rule
 
