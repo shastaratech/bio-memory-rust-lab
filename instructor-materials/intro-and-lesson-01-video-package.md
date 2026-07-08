@@ -19,10 +19,11 @@ tools for representing structure.
 | --- | --- | --- |
 | 0:00-0:30 | Opening question | Ask where information lives in a molecule and a program. |
 | 0:30-1:30 | Water as a first structure | Show `H2O`, atom cards, and a simple graph. |
-| 1:30-2:30 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
-| 2:30-3:45 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
-| 3:45-5:00 | Analogy discipline | State where the analogy works and where it fails. |
-| 5:00-6:30 | First action | Run tests and inspect `water summary`. |
+| 1:30-2:30 | Bonds and aromaticity | Explain bond lines, electron density, and aromatic ring flags. |
+| 2:30-3:30 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
+| 3:30-4:45 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
+| 4:45-6:00 | Analogy discipline | State where the analogy works and where it fails. |
+| 6:00-7:00 | First action | Run tests and inspect `water summary`. |
 
 ### Slide Plan
 
@@ -56,7 +57,37 @@ Narration:
 The mapping is not perfect, but it is useful. An atom can become a typed record. A
 bond can become an edge. A molecule can become a graph-like data structure.
 
-#### Slide 3: Rust Makes Structure Explicit
+#### Slide 3: What Is A Bond?
+
+- A bond is a chemical connection between atoms.
+- The drawn line is a symbol, not a physical stick.
+- Physically, bonding comes from electron density between nuclei.
+- In code, the beginner model stores this as an edge.
+
+Visual direction: show `H - O - H` beside a cloudy electron-density sketch.
+
+Narration:
+
+When chemists draw a line between atoms, the line is a shortcut. The physical
+picture is electron density shared between nuclei. Our Rust model does not simulate
+that density; it records the connection as data.
+
+#### Slide 4: What Is Aromaticity?
+
+- Aromaticity is not about smell in this lesson.
+- It is a special delocalized bonding pattern in some rings.
+- Benzene is the standard beginner example.
+- Code often stores it as `aromatic: bool` or `BondOrder::Aromatic`.
+
+Visual direction: show a benzene-like hexagon and a boolean field.
+
+Narration:
+
+Aromaticity is a special ring-bonding pattern where some electrons are spread
+across the ring. Full aromaticity detection is chemistry. Here, we only need to
+understand why software may store an aromatic flag.
+
+#### Slide 5: Rust Makes Structure Explicit
 
 - `enum Element` limits valid labels.
 - `struct Atom` groups atom facts.
@@ -75,7 +106,7 @@ pub struct Atom {
 }
 ```
 
-#### Slide 4: Course Roadmap
+#### Slide 6: Course Roadmap
 
 - Setup and chemistry primer.
 - Atoms, memory, and types.
@@ -85,7 +116,7 @@ pub struct Atom {
 
 Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
-#### Slide 5: Analogy Helps, Precision Finishes
+#### Slide 7: Analogy Helps, Precision Finishes
 
 - Atoms are not bytes.
 - Bonds are not Rust references.
@@ -95,7 +126,7 @@ Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
 Visual direction: warning icon plus "Useful / Limit" columns.
 
-#### Slide 6: Your First Command
+#### Slide 8: Your First Command
 
 - Run tests.
 - List water atoms.
@@ -245,6 +276,14 @@ Programming and chemistry both care about structure. A molecule is not just a ba
 of atoms, and a program is not just a bag of bytes. Structure determines what
 questions we can ask.
 
+A chemical bond is a connection between atoms. The line in a molecule drawing is a
+symbol, not a tiny stick. Physically, bonding comes from electron density shared
+between nuclei. In our beginner code, a bond becomes an edge between atom IDs.
+
+Aromaticity is another important chemistry word. It does not mean smell here. It
+means a special delocalized bonding pattern in some rings. Software often stores
+that feature because search and property algorithms may need it.
+
 In this course, we use molecules to learn Rust. An atom becomes a typed record. A
 bond becomes a graph edge. A molecule becomes an owned structure that contains
 vectors of atoms and bonds.
@@ -348,4 +387,3 @@ That is acceptable because the model is honest and beginner-sized.
 - State analogy limits explicitly.
 - Avoid claiming the toy model validates real chemistry.
 - End with one command students can run immediately.
-

@@ -9,6 +9,8 @@ This chapter explains:
 - atom
 - element
 - bond
+- bond order
+- aromaticity
 - molecule
 - chemical formula
 - why formulas such as `H2O`, `CH4`, and `C2H6O` are useful compact
@@ -98,6 +100,119 @@ pub struct Bond {
 
 `from` and `to` are atom IDs. `order` says whether the bond is single, double,
 triple, or aromatic in the toy model.
+
+## Bond Types
+
+The word bond means "chemical connection between atoms." In diagrams, chemists draw
+bonds as lines:
+
+```text
+H - O - H
+```
+
+That line is a useful symbol. It is not a tiny physical stick between atoms.
+
+In this course, the Rust model uses bond orders:
+
+| Bond order | Drawing shortcut | Beginner meaning |
+| --- | --- | --- |
+| `Single` | `-` | one ordinary connection in the toy graph |
+| `Double` | `=` | a stronger/more electron-rich connection than a single bond |
+| `Triple` | `≡` | a still higher bond order |
+| `Aromatic` | ring notation | a special delocalized bonding pattern in some rings |
+
+For example, ethylene is often drawn as:
+
+```text
+H2C = CH2
+```
+
+The `=` means the two carbon atoms are connected by a double bond.
+
+## What A Bond Means Physically
+
+A chemical bond is not a material string. Atoms contain positively charged nuclei
+and surrounding electron clouds. When atoms come close enough, their outer electron
+clouds can overlap.
+
+For a simple covalent bond, shared electron density between two nuclei helps hold
+the atoms together:
+
+```text
+nucleus (+)    shared electron density    nucleus (+)
+    ●  <------------- cloud ------------->  ●
+```
+
+If we could draw the electron density, we would draw a cloudy region rather than a
+straight line:
+
+```text
+      .:::::::.
+   .::::::::::::.
+ ●::::::::::::::::●
+   '::::::::::::'
+      ':::::::'
+```
+
+Chemists still draw lines because they are compact and useful. A line means:
+
+> These two atoms are chemically connected in this representation.
+
+For programming, this is exactly what the beginner graph needs. The graph edge does
+not model the full quantum electron distribution; it records that two atom records
+are connected.
+
+## Aromaticity
+
+Aromaticity does not mean smell in this course.
+
+Aromaticity is a special electronic state found in some cyclic molecules. Benzene
+is the standard beginner example. It is often drawn as a six-membered ring:
+
+```text
+      C
+   /     \
+  C       C
+  |       |
+  C       C
+   \     /
+      C
+```
+
+In benzene, some electrons are not assigned to one single bond. They are
+delocalized around the ring. Beginner translation:
+
+- the electrons are spread over the ring
+- the bonds are not best described as purely single or purely double
+- the ring has a special stable bonding pattern
+
+That is why chemistry software often stores aromaticity explicitly:
+
+```rust
+pub struct Atom {
+    pub element: Element,
+    pub formal_charge: i8,
+    pub aromatic: bool,
+}
+
+pub enum BondOrder {
+    Single,
+    Double,
+    Triple,
+    Aromatic,
+}
+```
+
+Libraries such as RDKit, Open Babel, and CDK need aromaticity because algorithms
+may use it for similarity search, substructure search, charge handling, and property
+prediction. This course uses the same idea at toy scale: `aromatic: bool` and
+`BondOrder::Aromatic` are fields that make an important chemical feature visible to
+the data structure.
+
+Important limit:
+
+> Aromaticity detection is a real chemistry algorithm. In this course, we store an
+> aromatic flag; we do not teach full aromaticity perception.
 
 ## Molecule
 
@@ -267,4 +382,3 @@ That is why we need both ideas:
 5. What does the `2` mean in `H2O`?
 6. What does `CH4` mean?
 7. What information does `C2H6O` leave out?
-

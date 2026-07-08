@@ -38,6 +38,13 @@ Start with one molecule: water. Water has one oxygen atom and two hydrogen atoms
 That formula, `H2O`, is compact. It tells us counts. It does not tell us the full
 graph unless we add bonds.
 
+Before we code, define two chemistry words. A bond is a chemical connection between
+two atoms. The line we draw is not a tiny stick; it is a symbol for a stable
+relationship caused by electron density between atoms. Aromaticity does not mean
+smell here. It means a special delocalized bonding pattern in some rings, such as
+benzene. In our Rust model, aromaticity is stored as a boolean flag or an aromatic
+bond order.
+
 Now look at a program. A Rust program also stores facts in structured ways. An atom
 can be represented by fields such as element, charge, and aromaticity. A molecule
 can own a list of atoms and a list of bonds. A graph algorithm can ask which atoms
@@ -61,6 +68,7 @@ missing?
 - Visible: two hydrogens and one oxygen.
 - Missing: which atoms are bonded, geometry, charges, electron behavior, physical
   context.
+- A bond line is a drawing shortcut for a chemical connection, not a physical rod.
 
 ### Fallback Explanation
 
@@ -124,6 +132,11 @@ pub struct Molecule {
 The molecule owns two growable lists. One list stores atom records. The other list
 stores bond records. A bond stores atom indices, not direct self-references, because
 graph-like structures are easier to teach safely this way in Rust.
+
+Pause on `BondOrder::Aromatic`. Say: aromatic bonds are a simplified way to mark
+delocalized ring bonding. We are not teaching full aromaticity detection yet; we
+are showing that chemistry software often stores this feature because algorithms
+need to know about it.
 
 ### Student Prompt
 
@@ -279,4 +292,3 @@ if it is honest about what it omits.
 4. A bond connects two atoms in the graph.
 5. Read the molecule without taking ownership or copying it.
 6. 3D shape, electron behavior, environment, and detailed chemistry.
-

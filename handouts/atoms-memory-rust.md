@@ -21,6 +21,9 @@ treated like ordinary stored bits.
 | Ownership | Rust's rule that a value has one owner responsible for it. |
 | Borrowing | Temporary access to a value without taking ownership. |
 | Graph | Nodes plus edges; useful for atoms plus bonds. |
+| Bond | A chemical connection between two atoms; a graph edge in the toy model. |
+| Bond order | A label such as single, double, triple, or aromatic. |
+| Aromaticity | A special delocalized bonding pattern in some rings; not about smell. |
 | Quantum state | A physical state described by amplitudes, not ordinary stored bits. |
 
 ## Atom to Rust Mapping
@@ -72,6 +75,17 @@ struct Molecule {
 }
 ```
 
+## Chemistry Basics
+
+A bond is not a tiny stick between atoms. It is a stable chemical relationship that
+comes from electron density shared between nearby atoms. Chemists draw a line
+because the line is a compact way to say "these atoms are connected."
+
+Aromaticity is a special bonding pattern in some rings, such as benzene. The
+electrons are spread across the ring instead of belonging to one exact single or
+double bond. In this toy Rust model, we store that beginner idea with
+`aromatic: bool` or `BondOrder::Aromatic`.
+
 ## Memory Comparison
 
 | Layer | What it stores or represents |
@@ -100,4 +114,3 @@ Analogy helps you start. Precision helps you finish.
 
 Atoms are not bytes. Bonds are not references. Qubits are not ordinary memory cells.
 But all three domains reward careful thinking about state, structure, and constraints.
-

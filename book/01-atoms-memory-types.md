@@ -7,6 +7,13 @@ facts: element, charge, aromaticity, atom count, bond order, and formula.
 
 Rust makes those rules explicit.
 
+Two beginner chemistry terms matter immediately:
+
+- A bond is a chemical connection between atoms. In a program, we represent it as a
+  graph edge between two atom IDs.
+- Aromaticity is a special delocalized bonding pattern in some rings. In this toy
+  model, we represent it with a boolean atom flag or an aromatic bond order.
+
 If `H2O` tells us "two hydrogen atoms and one oxygen atom," Rust types help us say
 what a hydrogen atom, oxygen atom, bond, and molecule are inside a program.
 
@@ -69,6 +76,21 @@ pub enum Element {
 
 An enum prevents misspellings such as `"cl"`, `"CL"`, or `"chlorene"` inside the
 clean Rust model.
+
+A bond is also typed:
+
+```rust
+pub enum BondOrder {
+    Single,
+    Double,
+    Triple,
+    Aromatic,
+}
+```
+
+This does not mean the program fully understands quantum chemistry. It means the
+toy model has enough vocabulary to distinguish a single bond from a double bond or
+an aromatic connection.
 
 ## Compile And Run
 

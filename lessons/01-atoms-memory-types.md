@@ -145,6 +145,17 @@ The molecule owns its atoms and bonds. A `Bond` stores atom indices instead of d
 references, because graph-like structures are easier to represent safely with stable
 IDs than with many self-references.
 
+Chemistry note:
+
+- A bond is a chemical connection, not a physical stick. The line in a molecule
+  drawing stands for shared electron density and a stable relationship between
+  atoms.
+- `BondOrder::Single`, `Double`, `Triple`, and `Aromatic` are labels in the toy
+  graph model.
+- Aromaticity does not mean smell here. It means a special delocalized bonding
+  pattern in some rings, represented in this course as `aromatic: bool` or
+  `BondOrder::Aromatic`.
+
 ## Part 4: Classical Memory Through Molecules
 
 Use the old Habr article as a historical systems hook: programmers usually work with

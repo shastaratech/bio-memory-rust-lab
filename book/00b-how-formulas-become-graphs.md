@@ -31,6 +31,8 @@ From the chemistry primer:
 | Graph | Nodes plus edges. |
 | Node | One atom in the molecule graph. |
 | Edge | One bond in the molecule graph. |
+| Bond order | The model's label for single, double, triple, or aromatic bonds. |
+| Aromaticity | A special delocalized bonding pattern in some rings, stored as a flag in the toy model. |
 | Isomer | A molecule with the same formula as another molecule, but a different structure. |
 
 ## Formula Is Not Structure
@@ -84,6 +86,7 @@ This structure turns the molecule into a graph:
 - each `Atom` is a node
 - each `Bond` is an edge
 - each bond stores two atom IDs
+- each bond also stores a bond order, such as single or double
 
 ## Water As A Graph
 

@@ -13,13 +13,15 @@ computer science. It does not assume production chemistry software experience.
 
 1. Start with the [self-study book](book/README.md).
 2. Use [Setup](book/00-setup.md) to compile and run the project.
-3. Pick a path in the [course map](course/README.md).
-4. For younger students, start with the [school track](course/school-track.md).
-5. For university students, start with the [university track](course/university-track.md).
-6. Read [Lesson 01: Atoms, Memory, and Types](lessons/01-atoms-memory-types.md).
-7. Use the [student handout](handouts/atoms-memory-rust.md) during class.
-8. Try the [exercise guide](exercises/README.md).
-9. Compile the runnable Rust exercise:
+3. Read the [chemistry primer](book/00-chemistry-primer.md) for atoms, bonds,
+   bond order, aromaticity, formulas, and molecule graphs.
+4. Pick a path in the [course map](course/README.md).
+5. For younger students, start with the [school track](course/school-track.md).
+6. For university students, start with the [university track](course/university-track.md).
+7. Read [Lesson 01: Atoms, Memory, and Types](lessons/01-atoms-memory-types.md).
+8. Use the [student handout](handouts/atoms-memory-rust.md) during class.
+9. Try the [exercise guide](exercises/README.md).
+10. Compile the runnable Rust exercise:
 
 ```bash
 cd exercises/rust-molecule-model
@@ -27,15 +29,15 @@ cargo test
 cargo run -- water summary
 ```
 
-10. Open the [visual language guide](visuals/README.md) and compare a diagram with
+11. Open the [visual language guide](visuals/README.md) and compare a diagram with
    the Rust code it describes.
-11. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
-12. Use the [Molecule Explorer CLI handout](handouts/molecule-explorer-cli.md) for
+12. Try the [Molecule Explorer CLI project](projects/molecule-explorer-cli.md).
+13. Use the [Molecule Explorer CLI handout](handouts/molecule-explorer-cli.md) for
     the capstone lab.
-13. Print or assign the [worksheet pack](worksheets/README.md) for classroom labs.
-14. Use the [course production prompts](prompts/README.md) when asking an assistant
+14. Print or assign the [worksheet pack](worksheets/README.md) for classroom labs.
+15. Use the [course production prompts](prompts/README.md) when asking an assistant
     to review lessons or draft tutor and video materials.
-15. Use the [instructor materials](instructor-materials/README.md) for tutor
+16. Use the [instructor materials](instructor-materials/README.md) for tutor
     scripts, video outlines, and intro review notes.
 
 ## Self-Study Book
