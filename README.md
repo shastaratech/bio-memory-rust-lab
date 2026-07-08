@@ -35,6 +35,8 @@ cargo run -- water summary
 13. Print or assign the [worksheet pack](worksheets/README.md) for classroom labs.
 14. Use the [course production prompts](prompts/README.md) when asking an assistant
     to review lessons or draft tutor and video materials.
+15. Use the [instructor materials](instructor-materials/README.md) for tutor
+    scripts, video outlines, and intro review notes.
 
 ## Self-Study Book
 
