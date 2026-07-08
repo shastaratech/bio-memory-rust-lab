@@ -23,6 +23,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Molecular Library Indexes](molecular-library-indexes.md): organize molecule
   records as vectors, hash maps, formula buckets, sorted lists, merged lists, and
   binary-searchable ranges.
+- [Toy Fingerprints And Similarity Search](toy-fingerprints-similarity.md): turn
+  molecule observations into feature bits, compare shared features, and rank
+  nearest matches.
 
 ## University Worksheets
 
@@ -43,6 +46,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 09 | Visualizing Molecules and Data Algorithms |
 | Lesson 10 | Molecule Design As Data Search |
 | Lesson 11 | Molecular Library Indexes |
+| Lesson 12 | Toy Fingerprints And Similarity Search |
 
 ## Instructor Rule
 

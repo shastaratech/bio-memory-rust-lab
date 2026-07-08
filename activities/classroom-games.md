@@ -248,3 +248,46 @@ Important caution:
 
 A molecule library is a computational model. It can search encoded records, but it
 does not prove chemical usefulness or biological behavior.
+
+## 10. Fingerprint Feature Bits
+
+Give students feature cards:
+
+- has carbon
+- has oxygen
+- has halogen
+- has at least five atoms
+- has at least eight atoms
+- has branching atom
+- has oxygen-hydrogen bond
+- has carbon-carbon bond
+
+Activities:
+
+- mark each feature card `1` or `0` for water, methane, and ethanol
+- place yes/no cards into numbered bit slots
+- count shared yes cards between two molecules
+- count yes cards present in either molecule
+- compute `shared / union`
+- sort molecule cards by similarity to ethanol
+
+Rust reveal:
+
+```rust
+struct ToyFingerprint {
+    bits: u64,
+}
+```
+
+Data-structure prompt:
+
+- boolean: one feature answer
+- bitset: compact set of feature answers
+- intersection: shared features
+- union: features seen in either molecule
+- sorted list: nearest matches first
+
+Important caution:
+
+A fingerprint is a compressed summary. It keeps selected features and discards the
+full atom-and-bond graph.

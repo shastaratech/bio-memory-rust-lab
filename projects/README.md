@@ -17,6 +17,7 @@ For an instructor-led capstone session, use
 4. Molecule validator
 5. Toy analog generator
 6. Molecule library indexer
+7. Toy fingerprint similarity search
 
 The first project is already backed by runnable code in:
 

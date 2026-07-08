@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Eleven-Session Seminar
+## Twelve-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -201,6 +201,24 @@ Implementation focus:
 - sorted `Vec<MoleculeRecord>` by atom count
 - merge and binary-search boundary functions
 
+### Session 12: Toy Fingerprints And Similarity Search
+
+Core questions:
+
+- What molecule information can be represented as yes/no feature bits?
+- How do bitsets model compact sets in memory?
+- How do intersection and union become a similarity score?
+- What information does a fingerprint discard from the full molecule graph?
+
+Implementation focus:
+
+- `Feature` enum
+- `ToyFingerprint { bits: u64 }`
+- bit insertion and membership checks
+- shared and union feature counts
+- `rank_by_similarity` over borrowed molecule-library records
+- sorted nearest-match output
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -211,6 +229,8 @@ Implementation focus:
 - Design memo: choose data structures for visualization, lookup, ranking, and merging.
 - Design memo: choose data structures for a scaffold-to-analog design round.
 - Design memo: choose indexes for a toy molecule library and justify query costs.
+- Design memo: compare full molecule graphs with compact fingerprints and state
+  what each representation can and cannot answer.
 
 ## Capstone Rubric
 
@@ -229,6 +249,7 @@ Implementation focus:
 - [Quantum simulation loop](../visuals/plantuml/quantum-simulation-loop.puml)
 - [Traits and molecular behavior](../visuals/plantuml/traits-and-functions.puml)
 - [Molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
+- [Toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

@@ -29,6 +29,8 @@ Explore:
   `src/design.rs`
 - molecule library records, hash indexes, formula buckets, sorted lists, merge,
   and binary search in `src/index.rs`
+- toy molecular fingerprints, bitsets, shared/union counts, and similarity search
+  in `src/fingerprint.rs`
 
 Commands:
 
@@ -51,3 +53,4 @@ Library-only exercises:
 | `dna` | typed DNA sequence representation and mutation operations |
 | `design` | toy scaffold/substituent candidate generation, scoring, and ranking |
 | `index` | toy molecule library indexing, sorting, merging, and range search |
+| `fingerprint` | toy feature bitsets and similarity ranking |

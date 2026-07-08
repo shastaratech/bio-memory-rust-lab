@@ -49,6 +49,7 @@ Printable worksheets:
 - [Visualizing Molecules and Data Algorithms](../worksheets/visualizing-data-algorithms.md)
 - [Molecule Design As Data Search](../worksheets/molecule-design-data-search.md)
 - [Molecular Library Indexes](../worksheets/molecular-library-indexes.md)
+- [Toy Fingerprints And Similarity Search](../worksheets/toy-fingerprints-similarity.md)
 
 ## Code Moment
 
@@ -141,3 +142,11 @@ Use [Lesson 11](../lessons/11-molecular-libraries-and-search-indexes.md) when
 students are ready to search a library of molecule cards. Put cards on a shelf for
 the vector view, make name labels for hash-map lookup, make formula buckets for
 grouped lookup, sort by atom count, and merge two sorted class lists.
+
+## Toy Fingerprint Extension
+
+Use [Lesson 12](../lessons/12-toy-fingerprints-and-similarity-search.md) when
+students are ready to compare molecules by feature cards. Turn observations into
+yes/no bits, count shared features, count union features, and sort the closest
+matches. Keep the caution explicit: a toy fingerprint is a summary, not the
+complete molecule.

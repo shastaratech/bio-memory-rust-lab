@@ -243,3 +243,28 @@ Tasks:
 5. Sort records by atom count.
 6. Merge two already sorted record lists.
 7. Use binary search to find where `atom_count >= 5` begins.
+
+## Exercise 12: Toy Fingerprints And Similarity Search
+
+Open:
+
+```text
+rust-molecule-model/src/fingerprint.rs
+```
+
+Find:
+
+- `Feature`
+- `ToyFingerprint`
+- `FingerprintMatch`
+- `rank_by_similarity`
+
+Tasks:
+
+1. Build a fingerprint for water, methane, and ethanol.
+2. List feature labels for one molecule.
+3. Count shared features between two fingerprints.
+4. Count union features between two fingerprints.
+5. Compute similarity as `shared / union`.
+6. Rank toy library records by similarity to ethanol.
+7. Explain what information the fingerprint throws away.

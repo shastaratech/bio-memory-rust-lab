@@ -35,6 +35,7 @@ Text diagrams are good teaching material because students can:
 | Data algorithms | Mermaid flowchart | `mermaid/data-algorithms.md` |
 | Molecule design algorithms | Mermaid flowchart | `mermaid/molecule-design-algorithms.md` |
 | Molecular library indexes | Mermaid flowchart | `mermaid/molecular-library-indexes.md` |
+| Toy fingerprints and similarity | Mermaid flowchart | `mermaid/fingerprint-similarity.md` |
 | Traits and functions | Mermaid class/flowchart | `mermaid/traits-and-functions.md` |
 | CLI flow | Mermaid flowchart | `mermaid/cli-flow.md` |
 | 3D molecule teaching view | HTML / Three.js | `html/molecule-3d-viewer.html` |

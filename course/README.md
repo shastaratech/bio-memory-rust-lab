@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Eleven-Session Arc
+## Suggested Twelve-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -31,6 +31,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 09 | Which data shape fits this question? | arrays, lists, maps, sorting, merging | 3D views and molecular records |
 | 10 | How do we explore possible molecules? | search, filters, ranking, queues | scaffolds, substituents, constraints, scores |
 | 11 | How do we search a molecule library? | hash indexes, sorted lists, binary search | compound records, formula buckets, library queries |
+| 12 | How can compact feature memory support similarity search? | bitsets, set operations, ranking | fingerprints, shared features, nearest matches |
 
 ## School Lane
 
@@ -64,6 +65,8 @@ Best outcomes:
   data.
 - Students can build molecule library indexes for direct lookup, grouped formula
   lookup, sorted range search, and merge.
+- Students can explain toy fingerprints as compact feature bitsets and rank
+  library records by feature similarity.
 
 ## Capstone Ideas
 
@@ -78,6 +81,8 @@ Best outcomes:
 - Run a toy scaffold/substituent design round and rank candidates.
 - Build a toy molecule library index and explain which queries each structure
   makes cheap.
+- Build a toy fingerprint similarity search and explain what the representation
+  keeps and discards.
 
 ## Visual Support
 
@@ -94,6 +99,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 10
 - use the [molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
   for Lesson 11
+- use the [toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
+  for Lesson 12
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

@@ -15,4 +15,5 @@
 - [Chapter 09: Visualizing Molecules and Data Algorithms](09-visualizing-molecules-and-data-algorithms.md)
 - [Chapter 10: Designing Molecules as Data Search](10-designing-molecules-as-data-search.md)
 - [Chapter 11: Molecular Libraries And Search Indexes](11-molecular-libraries-and-search-indexes.md)
+- [Chapter 12: Toy Fingerprints And Similarity Search](12-toy-fingerprints-and-similarity-search.md)
 - [Appendix: Command Reference](appendix-command-reference.md)

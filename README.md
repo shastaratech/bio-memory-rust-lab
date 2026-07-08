@@ -56,6 +56,7 @@ Book chapters:
 - [09: Visualizing Molecules and Data Algorithms](book/09-visualizing-molecules-and-data-algorithms.md)
 - [10: Designing Molecules as Data Search](book/10-designing-molecules-as-data-search.md)
 - [11: Molecular Libraries And Search Indexes](book/11-molecular-libraries-and-search-indexes.md)
+- [12: Toy Fingerprints And Similarity Search](book/12-toy-fingerprints-and-similarity-search.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -82,6 +83,7 @@ Book chapters:
 | [09: Visualizing Molecules and Data Algorithms](lessons/09-visualizing-molecules-and-data-algorithms.md) | Use 3D views, buckets, cards, and sorted rows. | Arrays, vectors, lists, sorted lists, hash maps, sorting, merging, and 3D coordinates. |
 | [10: Designing Molecules as Data Search](lessons/10-designing-molecules-as-data-search.md) | Move candidate cards through scaffold, validate, score, and rank stations. | Scaffold states, substituent vectors, filters, hash maps, sorted rankings, queues, and search loops. |
 | [11: Molecular Libraries And Search Indexes](lessons/11-molecular-libraries-and-search-indexes.md) | Arrange molecule cards as shelves, labels, buckets, and sorted rows. | Library records, hash indexes, grouped formula lookup, merge, and binary search. |
+| [12: Toy Fingerprints And Similarity Search](lessons/12-toy-fingerprints-and-similarity-search.md) | Turn molecule observations into feature-bit cards and compare shared features. | Bitsets, set operations, similarity scoring, and sorted nearest matches. |
 
 ## Classroom Energy
 
@@ -103,6 +105,9 @@ the scaffold-to-candidate search lab.
 Use the [molecular library indexes handout](handouts/molecular-library-indexes.md)
 and [worksheet](worksheets/molecular-library-indexes.md) to teach searchable
 compound libraries with vectors, hash maps, sorted lists, merge, and binary search.
+Use the [toy fingerprints handout](handouts/toy-fingerprints-similarity.md) and
+[worksheet](worksheets/toy-fingerprints-similarity.md) to teach bitsets, feature
+sets, similarity scoring, and nearest-match ranking.
 
 ## Projects
 
@@ -125,6 +130,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Data algorithms](visuals/mermaid/data-algorithms.md)
 - [Molecule design algorithms](visuals/mermaid/molecule-design-algorithms.md)
 - [Molecular library indexes](visuals/mermaid/molecular-library-indexes.md)
+- [Toy fingerprints and similarity search](visuals/mermaid/fingerprint-similarity.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)
