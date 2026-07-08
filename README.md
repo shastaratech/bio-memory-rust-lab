@@ -13,8 +13,9 @@ computer science. It does not assume production chemistry software experience.
 
 1. Start with the [self-study book](book/README.md).
 2. Use [Setup](book/00-setup.md) to compile and run the project.
-3. Read the [chemistry primer](book/00-chemistry-primer.md) for atoms, bonds,
-   bond order, aromaticity, formulas, and molecule graphs.
+3. Read the [chemistry primer](book/00-chemistry-primer.md) for protons,
+   neutrons, electron clouds, atoms, bonds, bond order, aromaticity, formulas, and
+   molecule graphs.
 4. Pick a path in the [course map](course/README.md).
 5. For younger students, start with the [school track](course/school-track.md).
 6. For university students, start with the [university track](course/university-track.md).
@@ -49,7 +50,7 @@ expected output, exercises, and checkpoint questions.
 Book chapters:
 
 - [Setup](book/00-setup.md)
-- [00: Atoms, Elements, Bonds, Molecules, And Formulas](book/00-chemistry-primer.md)
+- [00: Protons, Electrons, Atoms, Bonds, Molecules, And Formulas](book/00-chemistry-primer.md)
 - [00b: How Formulas Become Graphs](book/00b-how-formulas-become-graphs.md)
 - [01: Atoms, Memory, and Types](book/01-atoms-memory-types.md)
 - [02: Molecules as Graphs](book/02-molecules-as-graphs.md)

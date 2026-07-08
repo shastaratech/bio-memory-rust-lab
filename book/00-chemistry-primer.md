@@ -1,4 +1,4 @@
-# Chapter 00: Atoms, Elements, Bonds, Molecules, And Formulas
+# Chapter 00: Protons, Electrons, Atoms, Bonds, Molecules, And Formulas
 
 ## Big Idea
 
@@ -6,6 +6,11 @@ Before we model molecules in Rust, we need a small chemistry vocabulary.
 
 This chapter explains:
 
+- protons
+- neutrons
+- atomic nuclei
+- electrons
+- electron clouds
 - atom
 - element
 - bond
@@ -18,6 +23,181 @@ This chapter explains:
 
 You do not need to be a chemist. We are learning enough chemistry to understand the
 data structures.
+
+## Physical Building Blocks
+
+Before we talk about atoms as records in Rust, we need one level of physical
+foundation. These are physics ideas, not programming ideas, but they explain why
+atoms have structure.
+
+### Proton
+
+A proton is a particle found in the atomic nucleus.
+
+Beginner facts:
+
+- it has positive electric charge, written `+1`
+- it has a mass of about one atomic mass unit
+- it is not elementary; it is made of three quarks
+- its quark content is two up quarks and one down quark
+- the quarks are held together by the strong nuclear interaction, carried by gluons
+
+Simple sketch:
+
+```text
+        proton
+
+       up
+        ●
+      /   \
+    ●------●
+   up      down
+```
+
+### Neutron
+
+A neutron is also found in the atomic nucleus. It is almost as heavy as a proton,
+but it has no net electric charge.
+
+Beginner facts:
+
+- it has neutral charge, written `0`
+- it is made of three quarks
+- its quark content is one up quark and two down quarks
+
+Simple sketch:
+
+```text
+       neutron
+
+      down
+        ●
+      /   \
+    ●------●
+ down      up
+```
+
+### Nucleus
+
+The nucleus is the tiny central region of an atom. It contains protons and, for
+most atoms, neutrons.
+
+Examples:
+
+| Atom | Typical nucleus in beginner examples |
+| --- | --- |
+| Hydrogen | 1 proton |
+| Carbon | 6 protons and 6 neutrons |
+| Oxygen | 8 protons and 8 neutrons |
+
+The nucleus is much smaller than the whole atom. A useful scale fact is that the
+nucleus is roughly 100,000 times smaller than the atom.
+
+### Electron
+
+An electron is an elementary particle in the Standard Model of particle physics.
+
+Beginner facts:
+
+- it has negative electric charge
+- it is much lighter than a proton, about 1/1836 of a proton's mass
+- as far as current physics knows, it is not made of smaller components
+
+Electrons are essential for chemistry because chemical bonds depend on how electron
+density is arranged around atomic nuclei.
+
+### Electron Cloud
+
+The old school picture shows electrons orbiting a nucleus like planets around the
+Sun. That picture is useful as a first cartoon, but it is not physically accurate.
+
+In quantum mechanics, an electron is described by a wavefunction. We usually cannot
+say:
+
+> The electron is exactly here.
+
+Instead, we calculate the probability of finding the electron in different regions
+of space. If we measured many identical atoms many times, the results would form a
+probability cloud:
+
+```text
+        .......
+     .............
+   .....  ●  ......
+     .............
+        .......
+```
+
+The `●` is the nucleus. The dots represent regions where the electron is more likely
+to be found.
+
+### How Electron Clouds Form
+
+Electrons have wave-like behavior, and the positively charged nucleus creates an
+electric field. In that field, electrons can occupy only certain stable quantum
+states called atomic orbitals.
+
+An `s` orbital is roughly cloud-shaped around the nucleus:
+
+```text
+      .......
+    ...........
+   ..... ● .....
+    ...........
+      .......
+```
+
+A `p` orbital has two lobes:
+
+```text
+    ....     ....
+  ......  ●  ......
+    ....     ....
+```
+
+These drawings are not flight paths. They are rough maps of where an electron is
+most likely to be found.
+
+### Why Different Elements Exist
+
+The number of protons determines the element.
+
+| Proton count | Element |
+| --- | --- |
+| 1 | Hydrogen |
+| 2 | Helium |
+| 6 | Carbon |
+| 8 | Oxygen |
+| 26 | Iron |
+| 79 | Gold |
+
+Add one proton, and you have a different chemical element.
+
+### Where The Particles Come From
+
+In the modern physics picture, quarks, electrons, and neutrinos are fundamental
+particles in the Standard Model. We do not currently know whether they are made of
+anything smaller.
+
+Early in the universe, matter was extremely hot and energetic. As the universe
+cooled, quarks combined into protons and neutrons. Later, nuclei formed, and
+electrons became bound to nuclei to form atoms.
+
+### Programming Analogy
+
+Use this analogy carefully:
+
+- protons and neutrons are like the "core identity" of an atom; the proton count
+  determines the element
+- the electron cloud is not a fixed list of points; it is a distribution of
+  possible measurement outcomes around the nucleus
+- chemical bonds form because electron clouds from neighboring atoms interact
+
+Limit:
+
+> Electrons are not objects sitting in computer memory. Their behavior is quantum
+> mechanical. The analogy helps us reason about structure, but physics is not
+> literally Rust code.
 
 ## Atom
 

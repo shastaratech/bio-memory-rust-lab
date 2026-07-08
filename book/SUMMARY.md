@@ -2,7 +2,7 @@
 
 - [Bio Memory Rust Lab Book](README.md)
 - [Setup](00-setup.md)
-- [Chapter 00: Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
+- [Chapter 00: Protons, Electrons, Atoms, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
 - [Chapter 00b: How Formulas Become Graphs](00b-how-formulas-become-graphs.md)
 - [Chapter 01: Atoms, Memory, and Types](01-atoms-memory-types.md)
 - [Chapter 02: Molecules as Graphs](02-molecules-as-graphs.md)

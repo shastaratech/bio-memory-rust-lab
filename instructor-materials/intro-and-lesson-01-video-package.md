@@ -18,12 +18,13 @@ tools for representing structure.
 | Time | Segment | Purpose |
 | --- | --- | --- |
 | 0:00-0:30 | Opening question | Ask where information lives in a molecule and a program. |
-| 0:30-1:30 | Water as a first structure | Show `H2O`, atom cards, and a simple graph. |
-| 1:30-2:30 | Bonds and aromaticity | Explain bond lines, electron density, and aromatic ring flags. |
-| 2:30-3:30 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
-| 3:30-4:45 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
-| 4:45-6:00 | Analogy discipline | State where the analogy works and where it fails. |
-| 6:00-7:00 | First action | Run tests and inspect `water summary`. |
+| 0:30-1:45 | Physical building blocks | Explain protons, neutrons, nuclei, electrons, and electron clouds. |
+| 1:45-2:45 | Water as a first structure | Show `H2O`, atom cards, and a simple graph. |
+| 2:45-3:45 | Bonds and aromaticity | Explain bond lines, electron density, and aromatic ring flags. |
+| 3:45-4:45 | Rust as structured data | Show enum, struct, vector, and graph vocabulary. |
+| 4:45-6:00 | Course path | Show setup, Lesson 01, graph lessons, DNA, algorithms, lab data. |
+| 6:00-7:15 | Analogy discipline | State where the analogy works and where it fails. |
+| 7:15-8:00 | First action | Run tests and inspect `water summary`. |
 
 ### Slide Plan
 
@@ -41,7 +42,22 @@ Narration:
 Welcome to Bio Memory Rust Lab. We start with a simple question: what does a
 molecule remember, and how would a program represent it?
 
-#### Slide 2: Chemistry To Computer Science
+#### Slide 2: Before Atoms Become Data
+
+- Protons and neutrons make up the nucleus.
+- Proton count determines the element.
+- Electrons are much lighter and negatively charged.
+- Electron clouds are probability distributions, not planet-like orbits.
+
+Visual direction: show a nucleus with protons/neutrons and a dotted electron cloud.
+
+Narration:
+
+Before an atom becomes a record in code, it is a physical system. The nucleus gives
+the atom its elemental identity, and electrons form quantum probability clouds
+around that nucleus.
+
+#### Slide 3: Chemistry To Computer Science
 
 - Atom -> typed value or record.
 - Bond -> graph edge.
@@ -57,7 +73,7 @@ Narration:
 The mapping is not perfect, but it is useful. An atom can become a typed record. A
 bond can become an edge. A molecule can become a graph-like data structure.
 
-#### Slide 3: What Is A Bond?
+#### Slide 4: What Is A Bond?
 
 - A bond is a chemical connection between atoms.
 - The drawn line is a symbol, not a physical stick.
@@ -72,7 +88,7 @@ When chemists draw a line between atoms, the line is a shortcut. The physical
 picture is electron density shared between nuclei. Our Rust model does not simulate
 that density; it records the connection as data.
 
-#### Slide 4: What Is Aromaticity?
+#### Slide 5: What Is Aromaticity?
 
 - Aromaticity is not about smell in this lesson.
 - It is a special delocalized bonding pattern in some rings.
@@ -87,7 +103,7 @@ Aromaticity is a special ring-bonding pattern where some electrons are spread
 across the ring. Full aromaticity detection is chemistry. Here, we only need to
 understand why software may store an aromatic flag.
 
-#### Slide 5: Rust Makes Structure Explicit
+#### Slide 6: Rust Makes Structure Explicit
 
 - `enum Element` limits valid labels.
 - `struct Atom` groups atom facts.
@@ -106,7 +122,7 @@ pub struct Atom {
 }
 ```
 
-#### Slide 6: Course Roadmap
+#### Slide 7: Course Roadmap
 
 - Setup and chemistry primer.
 - Atoms, memory, and types.
@@ -116,7 +132,7 @@ pub struct Atom {
 
 Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
-#### Slide 7: Analogy Helps, Precision Finishes
+#### Slide 8: Analogy Helps, Precision Finishes
 
 - Atoms are not bytes.
 - Bonds are not Rust references.
@@ -126,7 +142,7 @@ Visual direction: use the course map from `visuals/mermaid/course-map.md`.
 
 Visual direction: warning icon plus "Useful / Limit" columns.
 
-#### Slide 8: Your First Command
+#### Slide 9: Your First Command
 
 - Run tests.
 - List water atoms.
@@ -275,6 +291,11 @@ course starts small so the Rust ideas are visible.
 Programming and chemistry both care about structure. A molecule is not just a bag
 of atoms, and a program is not just a bag of bytes. Structure determines what
 questions we can ask.
+
+Start one level deeper than atoms. Protons and neutrons form the nucleus. The
+number of protons determines the element. Electrons are much lighter and are
+described by quantum probability clouds around nuclei, not fixed planet-like
+orbits.
 
 A chemical bond is a connection between atoms. The line in a molecule drawing is a
 symbol, not a tiny stick. Physically, bonding comes from electron density shared

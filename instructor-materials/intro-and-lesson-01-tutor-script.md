@@ -34,6 +34,11 @@ learn Rust and computer science. We will not pretend that molecules are just cod
 Instead, we will use molecules as a disciplined analogy for typed data,
 relationships, memory, and algorithms.
 
+Start one level below atoms. A nucleus contains protons and usually neutrons. The
+number of protons determines the element: hydrogen has one, carbon has six, and
+oxygen has eight. Electrons are much lighter negatively charged particles described
+by quantum probability clouds around nuclei, not tiny planets on fixed paths.
+
 Start with one molecule: water. Water has one oxygen atom and two hydrogen atoms.
 That formula, `H2O`, is compact. It tells us counts. It does not tell us the full
 graph unless we add bonds.

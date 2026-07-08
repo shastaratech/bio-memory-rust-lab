@@ -9,7 +9,7 @@ open and the exact commands to run.
 ## How To Use This Book
 
 1. Start with [Setup](00-setup.md).
-2. Read the [chemistry notation primer](00-chemistry-primer.md).
+2. Read the [chemistry and atom-physics primer](00-chemistry-primer.md).
 3. Read [how formulas become graphs](00b-how-formulas-become-graphs.md).
 4. Read one chapter at a time.
 5. Run every command.
@@ -19,7 +19,7 @@ open and the exact commands to run.
 ## Table Of Contents
 
 - [Setup](00-setup.md)
-- [Chapter 00: Atoms, Elements, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
+- [Chapter 00: Protons, Electrons, Atoms, Bonds, Molecules, And Formulas](00-chemistry-primer.md)
 - [Chapter 00b: How Formulas Become Graphs](00b-how-formulas-become-graphs.md)
 - [Chapter 01: Atoms, Memory, and Types](01-atoms-memory-types.md)
 - [Chapter 02: Molecules as Graphs](02-molecules-as-graphs.md)
