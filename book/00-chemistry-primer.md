@@ -6,6 +6,7 @@ Before we model molecules in Rust, we need a small chemistry vocabulary.
 
 This chapter explains:
 
+- quarks
 - protons
 - neutrons
 - atomic nuclei
@@ -53,6 +54,118 @@ Simple sketch:
     ●------●
    up      down
 ```
+
+### Quark
+
+A quark is a fundamental particle that helps make up protons, neutrons, and many
+other particles. As far as the Standard Model of particle physics tells us, quarks
+are not made of smaller known components.
+
+Use this scale ladder:
+
+```text
+human
+  ↓
+cell
+  ↓
+molecule
+  ↓
+atom
+  ↓
+nucleus
+  ↓
+proton or neutron
+  ↓
+quark
+```
+
+For a long time, scientists treated the proton as if it were indivisible. In the
+1960s, high-energy scattering experiments showed that protons and neutrons have
+smaller internal components.
+
+A proton contains three valence quarks:
+
+```text
+       up
+        ●
+      /   \
+    ●------●
+   up      down
+```
+
+That is:
+
+- one up quark
+- another up quark
+- one down quark
+
+A neutron also contains three valence quarks:
+
+- one up quark
+- two down quarks
+
+Quarks have fractional electric charge:
+
+| Quark | Electric charge |
+| --- | --- |
+| up | `+2/3` |
+| down | `-1/3` |
+
+So the proton's charge is:
+
+```text
++2/3
++2/3
+-1/3
+-----
++1
+```
+
+And the neutron's charge is:
+
+```text
++2/3
+-1/3
+-1/3
+-----
+ 0
+```
+
+Quarks are held together by the strong nuclear interaction. The force carriers are
+called gluons, from the word "glue":
+
+```text
+quark ===== gluon field ===== quark
+```
+
+This is a very simplified diagram. Inside a proton or neutron, quarks and gluons
+are involved in a complex quantum field interaction.
+
+One strange feature of quarks is confinement: quarks are not observed alone. If an
+experiment tries to pull a quark away, the energy in the field grows until new
+quarks are produced and new particles form. A rough analogy is stretching a very
+strong elastic band: instead of giving you one loose end, the system creates new
+particle pairs.
+
+Physicists know six quark flavors:
+
+| Flavor | Symbol |
+| --- | --- |
+| Up | `u` |
+| Down | `d` |
+| Charm | `c` |
+| Strange | `s` |
+| Top | `t` |
+| Bottom | `b` |
+
+Ordinary matter around us is made mostly from up and down quarks plus electrons.
+The other quark flavors appear in high-energy environments such as particle
+accelerators and cosmic-ray interactions.
+
+What is inside a quark? At present, we do not know of any smaller structure. Some
+hypotheses, such as preon models, propose deeper components, but they have not been
+experimentally confirmed. For this course, treat quarks as fundamental physical
+particles.
 
 ### Neutron
 
@@ -187,6 +300,8 @@ electrons became bound to nuclei to form atoms.
 
 Use this analogy carefully:
 
+- quarks are lower-level building blocks inside protons and neutrons, but they are
+  physical particles, not programming primitives
 - protons and neutrons are like the "core identity" of an atom; the proton count
   determines the element
 - the electron cloud is not a fixed list of points; it is a distribution of
@@ -195,9 +310,9 @@ Use this analogy carefully:
 
 Limit:
 
-> Electrons are not objects sitting in computer memory. Their behavior is quantum
-> mechanical. The analogy helps us reason about structure, but physics is not
-> literally Rust code.
+> Quarks and electrons are not objects sitting in computer memory. Their behavior
+> is quantum mechanical. The analogy helps us reason about structure, but physics
+> is not literally Rust code.
 
 ## Atom
 
