@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Fifteen-Session Arc
+## Suggested Sixteen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -35,6 +35,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 13 | How do predictions improve after experiments? | optional labels, queues, matrices | screening, assays, uncertainty, feedback |
 | 14 | How do we save records reproducibly? | serialization, parsing, errors | lab records, schemas, provenance |
 | 15 | How do units protect measurement meaning? | typed units, validation, normalization | assay observations and response data |
+| 16 | How do repeated measurements show uncertainty? | vectors, summary stats, Option | replicates, variability, confidence |
 
 ## School Lane
 
@@ -76,6 +77,8 @@ Best outcomes:
   explicit parse errors, and round-trip tests.
 - Students can model assay measurements with typed units, range validation,
   normalized values, and response summaries.
+- Students can summarize replicate series and explain why variability changes
+  scientific interpretation.
 
 ## Capstone Ideas
 
@@ -98,6 +101,8 @@ Best outcomes:
   missing from the toy schema.
 - Build a typed assay measurement table that converts units and rejects invalid
   observations.
+- Build a replicate variability report that separates center, spread, and
+  consistency decisions.
 
 ## Visual Support
 
@@ -122,6 +127,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 14
 - use the [typed measurements](../visuals/mermaid/typed-measurements.md)
   for Lesson 15
+- use the [replicates and uncertainty](../visuals/mermaid/replicates-uncertainty.md)
+  for Lesson 16
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

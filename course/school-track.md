@@ -53,6 +53,7 @@ Printable worksheets:
 - [Screening Results And Feedback Loops](../worksheets/screening-feedback-loops.md)
 - [Serialization And Reproducible Lab Records](../worksheets/serialization-lab-records.md)
 - [Typed Measurements, Units, And Assay Observations](../worksheets/typed-measurements.md)
+- [Replicates, Variability, And Uncertainty](../worksheets/replicates-uncertainty.md)
 
 ## Code Moment
 
@@ -174,3 +175,10 @@ Use [Lesson 15](../lessons/15-typed-measurements-units-and-assay-observations.md
 when students are ready to handle numeric chemistry data. Let students sort raw
 measurement cards, then force every value to carry a unit, convert to micromolar,
 validate response percentages, and sort again.
+
+## Replicate Uncertainty Extension
+
+Use [Lesson 16](../lessons/16-replicates-variability-and-uncertainty.md) when
+students are ready to compare repeated measurements. Give two candidates with
+similar means but different spreads, then ask which result should be trusted,
+repeated, or inspected.

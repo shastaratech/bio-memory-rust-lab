@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Fifteen-Session Seminar
+## Sixteen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -277,6 +277,25 @@ Implementation focus:
 - response range validation
 - observation sorting and mean response
 
+### Session 16: Replicates, Variability, And Uncertainty
+
+Core questions:
+
+- Why is one measurement not enough?
+- What does mean hide about variability?
+- Why does sample variance require at least two values?
+- When is coefficient of variation useful?
+- How should noisy replicates affect feedback decisions?
+
+Implementation focus:
+
+- `ReplicateSeries`
+- response-vector validation
+- mean, min, max, and range
+- sample variance and standard deviation
+- coefficient of variation
+- consistency checks under a spread threshold
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -295,6 +314,8 @@ Implementation focus:
   required before it could support real lab use.
 - Design memo: choose typed measurement representations for concentration,
   response, units, replicates, and assay provenance.
+- Design memo: summarize replicate evidence and recommend whether to trust,
+  repeat, or deprioritize a candidate.
 
 ## Capstone Rubric
 
@@ -317,6 +338,7 @@ Implementation focus:
 - [Screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
 - [Serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
 - [Typed measurements](../visuals/mermaid/typed-measurements.md)
+- [Replicates and uncertainty](../visuals/mermaid/replicates-uncertainty.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

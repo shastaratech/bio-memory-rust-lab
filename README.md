@@ -60,6 +60,7 @@ Book chapters:
 - [13: Screening Results And Feedback Loops](book/13-screening-results-and-feedback-loops.md)
 - [14: Serialization And Reproducible Lab Records](book/14-serialization-and-reproducible-lab-records.md)
 - [15: Typed Measurements, Units, And Assay Observations](book/15-typed-measurements-units-and-assay-observations.md)
+- [16: Replicates, Variability, And Uncertainty](book/16-replicates-variability-and-uncertainty.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -90,6 +91,7 @@ Book chapters:
 | [13: Screening Results And Feedback Loops](lessons/13-screening-results-and-feedback-loops.md) | Sort score cards into test/defer piles, then compare predictions with labels. | Thresholds, optional labels, queues, confusion matrices, precision, recall, and feedback loops. |
 | [14: Serialization And Reproducible Lab Records](lessons/14-serialization-and-reproducible-lab-records.md) | Turn molecule summary cards into stable text rows and diagnose bad records. | Serialization, parsing, schemas, parse errors, round trips, Markdown rows, and provenance. |
 | [15: Typed Measurements, Units, And Assay Observations](lessons/15-typed-measurements-units-and-assay-observations.md) | Convert unit cards, validate response cards, and sort observations by normalized dose. | Unit enums, measurement structs, validation errors, normalized values, and assay observations. |
+| [16: Replicates, Variability, And Uncertainty](lessons/16-replicates-variability-and-uncertainty.md) | Compare replicate response cards and decide whether a result is stable or noisy. | Replicate vectors, mean, range, sample variance, standard deviation, coefficient of variation, and consistency checks. |
 
 ## Classroom Energy
 
@@ -123,6 +125,9 @@ round-trip tests, provenance, and reproducible lab records.
 Use the [typed measurements handout](handouts/typed-measurements.md) and
 [worksheet](worksheets/typed-measurements.md) to teach units, validation,
 normalization, assay observations, and response summaries.
+Use the [replicates handout](handouts/replicates-uncertainty.md) and
+[worksheet](worksheets/replicates-uncertainty.md) to teach repeated measurements,
+variability summaries, and uncertainty-aware feedback decisions.
 
 ## Projects
 
@@ -149,6 +154,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Screening feedback loop](visuals/mermaid/screening-feedback-loop.md)
 - [Serialization and lab records](visuals/mermaid/serialization-lab-records.md)
 - [Typed measurements and assay observations](visuals/mermaid/typed-measurements.md)
+- [Replicates and uncertainty](visuals/mermaid/replicates-uncertainty.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)

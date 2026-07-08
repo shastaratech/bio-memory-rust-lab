@@ -35,6 +35,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Typed Measurements, Units, And Assay Observations](typed-measurements.md):
   convert concentration units, validate measurement ranges, sort observations,
   and compute mean response.
+- [Replicates, Variability, And Uncertainty](replicates-uncertainty.md):
+  summarize replicate response series with mean, range, standard deviation, and
+  consistency checks.
 
 ## University Worksheets
 
@@ -59,6 +62,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 13 | Screening Results And Feedback Loops |
 | Lesson 14 | Serialization And Reproducible Lab Records |
 | Lesson 15 | Typed Measurements, Units, And Assay Observations |
+| Lesson 16 | Replicates, Variability, And Uncertainty |
 
 ## Instructor Rule
 

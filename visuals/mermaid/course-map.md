@@ -23,6 +23,7 @@ flowchart TD
     M --> N["Lesson 13: Screening Results and Feedback Loops"]
     N --> O["Lesson 14: Serialization and Reproducible Lab Records"]
     O --> P["Lesson 15: Typed Measurements, Units, and Assay Observations"]
+    P --> Q["Lesson 16: Replicates, Variability, and Uncertainty"]
 
     B --> S1["School: atom cards"]
     C --> S2["School: human bond graph"]
@@ -37,6 +38,7 @@ flowchart TD
     N --> S13["School: screening matrix cards"]
     O --> S14["School: lab record relay"]
     P --> S15["School: unit conversion relay"]
+    Q --> S16["School: replicate spread cards"]
 
     B --> U1["University: type invariants"]
     C --> U2["University: adjacency lists and BFS"]
@@ -53,6 +55,7 @@ flowchart TD
     N --> U13["University: metrics and feedback loops"]
     O --> U14["University: schemas, parsers, provenance"]
     P --> U15["University: typed units and assay data"]
+    Q --> U16["University: variability and uncertainty"]
 ```
 
 Teaching prompt:

@@ -37,6 +37,8 @@ Explore:
   in `src/lab_record.rs`
 - typed concentrations, unit conversion, assay observations, validation, sorting,
   and mean response in `src/measurement.rs`
+- replicate response series, variance, standard deviation, coefficient of
+  variation, and consistency checks in `src/replicate.rs`
 
 Commands:
 
@@ -63,3 +65,4 @@ Library-only exercises:
 | `screening` | score thresholds, labels, confusion matrices, and feedback queues |
 | `lab_record` | toy record serialization, parsing, validation, and Markdown output |
 | `measurement` | typed units, assay observations, validation, and normalized sorting |
+| `replicate` | repeated response summaries and uncertainty-aware consistency checks |

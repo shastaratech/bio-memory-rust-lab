@@ -21,6 +21,7 @@ For an instructor-led capstone session, use
 8. Screening feedback dashboard
 9. Reproducible lab-record exporter
 10. Typed assay measurement table
+11. Replicate variability report
 
 The first project is already backed by runnable code in:
 

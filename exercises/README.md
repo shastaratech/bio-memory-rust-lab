@@ -348,3 +348,31 @@ Tasks:
 5. Sort observations by normalized concentration.
 6. Compute a mean response.
 7. Explain why a bare number is unsafe in chemistry data.
+
+## Exercise 16: Replicates, Variability, And Uncertainty
+
+Open:
+
+```text
+rust-molecule-model/src/replicate.rs
+```
+
+Find:
+
+- `ReplicateSeries`
+- `ReplicateError`
+- `mean_response`
+- `response_range`
+- `sample_variance`
+- `sample_standard_deviation`
+- `coefficient_of_variation`
+
+Tasks:
+
+1. Build a replicate series from three response values.
+2. Reject an empty replicate series.
+3. Compute mean, min, max, and range.
+4. Compute sample variance and standard deviation.
+5. Explain why one replicate has no sample variance.
+6. Check whether a series is consistent under a spread limit.
+7. Explain how noisy replicates should affect a screening decision.

@@ -406,3 +406,38 @@ Important caution:
 
 Units prevent one class of mistake, but real assay interpretation also needs
 replicates, uncertainty, controls, protocols, and provenance.
+
+## 14. Replicate Spread Cards
+
+Give students repeated response cards for two candidates.
+
+Activities:
+
+- compute mean for each candidate
+- compute min, max, and range
+- compare tight and noisy replicate sets
+- discuss why one replicate cannot estimate spread
+- apply a standard-deviation consistency threshold
+- decide whether to trust, repeat, or inspect the result
+
+Rust reveal:
+
+```rust
+struct ReplicateSeries {
+    candidate_name: String,
+    responses_percent: Vec<f64>,
+}
+```
+
+Data-structure prompt:
+
+- vector: repeated observations
+- mean: center summary
+- range: simple spread summary
+- option: sample variance may be unavailable
+- threshold: consistency rule
+
+Important caution:
+
+Statistics summarize evidence. They do not replace experimental design, controls,
+or scientific judgment.

@@ -36,6 +36,7 @@ open and the exact commands to run.
 - [Chapter 13: Screening Results And Feedback Loops](13-screening-results-and-feedback-loops.md)
 - [Chapter 14: Serialization And Reproducible Lab Records](14-serialization-and-reproducible-lab-records.md)
 - [Chapter 15: Typed Measurements, Units, And Assay Observations](15-typed-measurements-units-and-assay-observations.md)
+- [Chapter 16: Replicates, Variability, And Uncertainty](16-replicates-variability-and-uncertainty.md)
 - [Appendix: Command Reference](appendix-command-reference.md)
 
 ## Repo Map
