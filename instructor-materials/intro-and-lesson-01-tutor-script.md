@@ -38,6 +38,8 @@ Start one level below atoms. A nucleus contains protons and usually neutrons. Th
 number of protons determines the element: hydrogen has one, carbon has six, and
 oxygen has eight. Electrons are much lighter negatively charged particles described
 by quantum probability clouds around nuclei, not tiny planets on fixed paths.
+Electron shells do not contain protons. Shells are allowed electron energy levels
+around the nucleus, not physical layers like an eggshell.
 
 Start with one molecule: water. Water has one oxygen atom and two hydrogen atoms.
 That formula, `H2O`, is compact. It tells us counts. It does not tell us the full

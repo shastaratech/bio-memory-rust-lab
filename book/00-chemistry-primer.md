@@ -12,6 +12,7 @@ This chapter explains:
 - atomic nuclei
 - electrons
 - electron clouds
+- electron shells
 - atom
 - element
 - valence
@@ -284,6 +285,115 @@ probability cloud:
 
 The `●` is the nucleus. The dots represent regions where the electron is more likely
 to be found.
+
+### Electron Shell
+
+This is a common point of confusion:
+
+> Are there protons in the electron shell and also protons in the nucleus?
+
+No. Protons are only in the nucleus. Electron shells contain electrons, not
+protons.
+
+A beginner atom sketch looks like this:
+
+```text
+          electron cloud
+     e-        e-        e-
+
+          ┌────────┐
+          │ nucleus│
+          │ p+  n  │
+          │ p+  n  │
+          └────────┘
+
+     e-                 e-
+```
+
+where:
+
+- `p+` means proton
+- `n` means neutron
+- `e-` means electron
+
+The nucleus is the tiny dense center of the atom. For example, an oxygen nucleus
+has 8 protons and, in the common oxygen-16 isotope, 8 neutrons.
+
+The nucleus is extremely small compared with the whole atom. A useful analogy is:
+if an atom were enlarged to the size of a football stadium, the nucleus would be
+roughly like a pea near the center.
+
+An electron shell is the region around the nucleus where electrons occupy allowed
+energy levels. It is not a physical shell like an eggshell. It is a simplified way
+to describe quantum states available to electrons.
+
+Why do we call them shells? Because electrons occupy different energy levels, and
+school diagrams often draw those levels as rings around the nucleus.
+
+For carbon, a simplified shell model is:
+
+```text
+nucleus: 6 protons, usually 6 neutrons
+
+1st shell: 2 electrons
+2nd shell: 4 electrons
+```
+
+Common shell names in the school model:
+
+| Shell number | Shell name | Maximum electrons in the simple model |
+| --- | --- | --- |
+| 1 | K | 2 |
+| 2 | L | 8 |
+| 3 | M | 18 |
+| 4 | N | 32 |
+
+Examples:
+
+| Atom | Nucleus in common beginner example | Electron shells |
+| --- | --- | --- |
+| Hydrogen | 1 proton | 1st shell: 1 electron |
+| Oxygen | 8 protons, 8 neutrons | 1st shell: 2 electrons; 2nd shell: 6 electrons |
+| Chlorine | 17 protons, 18 neutrons | 1st shell: 2; 2nd shell: 8; 3rd shell: 7 |
+
+For chlorine, the 7 electrons in the outer shell are the important beginner fact.
+That is why chlorine often forms one chemical bond: it is close to the stable
+outer-shell count of 8.
+
+Why do electrons not simply fall into the nucleus? Because an electron is not a
+tiny ball orbiting like a planet. In quantum mechanics, an electron occupies a
+quantum state described by a wavefunction. It is better to say:
+
+> An electron occupies an allowed quantum state.
+
+not:
+
+> An electron flies around the nucleus on a tiny circular track.
+
+House analogy:
+
+```text
+4th floor
+3rd floor
+2nd floor
+1st floor
+──────────
+foundation
+```
+
+The nucleus is like the foundation. Electrons are like residents. Shells are like
+floors. The first floor has room for only two residents in the simple model. After
+it is filled, additional residents occupy higher floors.
+
+This matters in chemistry because reactions mostly involve electrons in the outer
+shell. Inner electrons are held more tightly and usually do not directly participate
+in ordinary chemical bonding. The outer-shell electrons are called valence
+electrons.
+
+Important limit:
+
+> Shell diagrams are useful beginner models. Real electron states are orbitals with
+> shapes such as `s`, `p`, `d`, and `f`, and they are not perfect circles.
 
 ### How Electron Clouds Form
 

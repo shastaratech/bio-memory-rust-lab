@@ -24,6 +24,7 @@ treated like ordinary stored bits.
 | Bond | A chemical connection between two atoms; a graph edge in the toy model. |
 | Bond order | A label such as single, double, triple, or aromatic. |
 | Valence | How many bonds an atom commonly forms; like a graph-degree rule. |
+| Electron shell | An allowed energy level around the nucleus where electrons can be found. |
 | Aromaticity | A special delocalized bonding pattern in some rings; not about smell. |
 | Quantum state | A physical state described by amplitudes, not ordinary stored bits. |
 
@@ -77,6 +78,11 @@ struct Molecule {
 ```
 
 ## Chemistry Basics
+
+A nucleus contains protons and usually neutrons. Electron shells do not contain
+protons; they describe where electrons occupy allowed energy levels around the
+nucleus. Shells are not hard physical layers like an eggshell. They are a beginner
+model for quantum states.
 
 A bond is not a tiny stick between atoms. It is a stable chemical relationship that
 comes from electron density shared between nearby atoms. Chemists draw a line

@@ -48,6 +48,7 @@ molecule remember, and how would a program represent it?
 - Protons and neutrons make up the nucleus.
 - Proton count determines the element.
 - Electrons are much lighter and negatively charged.
+- Electron shells contain electrons, not protons.
 - Electron clouds are probability distributions, not planet-like orbits.
 
 Visual direction: show a nucleus with protons/neutrons and a dotted electron cloud.
@@ -56,7 +57,8 @@ Narration:
 
 Before an atom becomes a record in code, it is a physical system. The nucleus gives
 the atom its elemental identity, and electrons form quantum probability clouds
-around that nucleus.
+around that nucleus. Electron shells are allowed energy levels for electrons; they
+are not hard layers and they do not contain protons.
 
 #### Slide 3: Chemistry To Computer Science
 
@@ -317,7 +319,8 @@ questions we can ask.
 Start one level deeper than atoms. Protons and neutrons form the nucleus. The
 number of protons determines the element. Electrons are much lighter and are
 described by quantum probability clouds around nuclei, not fixed planet-like
-orbits.
+orbits. Shells are a simplified way to describe allowed electron energy levels
+around the nucleus.
 
 A chemical bond is a connection between atoms. The line in a molecule drawing is a
 symbol, not a tiny stick. Physically, bonding comes from electron density shared
