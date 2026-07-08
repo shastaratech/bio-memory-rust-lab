@@ -40,6 +40,10 @@ oxygen has eight. Electrons are much lighter negatively charged particles descri
 by quantum probability clouds around nuclei, not tiny planets on fixed paths.
 Electron shells do not contain protons. Shells are allowed electron energy levels
 around the nucleus, not physical layers like an eggshell.
+Electrons are not made of quarks; they are leptons. At atom scale, the nucleus holds
+almost all mass, while the electron cloud describes where electrons may be detected.
+Matter feels solid because electron clouds interact through electromagnetic and
+quantum rules, not because atoms are filled with tiny hard balls.
 
 Start with one molecule: water. Water has one oxygen atom and two hydrogen atoms.
 That formula, `H2O`, is compact. It tells us counts. It does not tell us the full

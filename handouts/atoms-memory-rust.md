@@ -84,6 +84,12 @@ protons; they describe where electrons occupy allowed energy levels around the
 nucleus. Shells are not hard physical layers like an eggshell. They are a beginner
 model for quantum states.
 
+An electron is not made of quarks. It is a lepton, and current physics treats it as
+a fundamental particle with no detected internal structure. The electron cloud is
+not the physical size of the electron; it is a probability map for where the
+electron may be found. Most atom mass is in the nucleus, while electron clouds
+explain much of chemistry and why matter resists passing through other matter.
+
 A bond is not a tiny stick between atoms. It is a stable chemical relationship that
 comes from electron density shared between nearby atoms. Chemists draw a line
 because the line is a compact way to say "these atoms are connected."

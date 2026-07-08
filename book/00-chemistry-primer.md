@@ -261,6 +261,49 @@ Beginner facts:
 Electrons are essential for chemistry because chemical bonds depend on how electron
 density is arranged around atomic nuclei.
 
+### Is An Electron Made Of Quarks?
+
+No. As far as modern experiments show, an electron is not made of quarks.
+
+It helps to separate two particle families:
+
+| Particle family | Examples | What they build or describe |
+| --- | --- | --- |
+| Quarks | up, down, charm, strange, top, bottom | protons, neutrons, and other hadrons |
+| Leptons | electron, muon, tau, neutrinos | particles that are not made of quarks |
+
+A proton is made from quarks:
+
+```text
+proton
+├── up
+├── up
+└── down
+```
+
+An electron is a lepton. Current physics treats it as fundamental: no internal
+substructure has been experimentally found.
+
+### What Kind Of Thing Is An Electron?
+
+An electron is not a tiny hard ball. It is a quantum object. It has particle-like
+properties and wave-like properties.
+
+That is why the planet-orbit picture is misleading. An electron is not a miniature
+planet circling a nucleus. In an atom, it is described by a quantum state.
+
+### Does An Electron Have A Size?
+
+If we ask, "What is the diameter of an electron?", modern experiments answer
+carefully:
+
+> No internal size has been detected.
+
+In experiments, the electron behaves like a point-like particle down to the scales
+we can currently probe. This does not mean we have proven a literal diameter of
+zero. It means that if the electron has internal size or structure, it is smaller
+than current experimental limits.
+
 ### Electron Cloud
 
 The old school picture shows electrons orbiting a nucleus like planets around the
@@ -285,6 +328,72 @@ probability cloud:
 
 The `●` is the nucleus. The dots represent regions where the electron is more likely
 to be found.
+
+Important:
+
+> The electron cloud is not the size of the electron.
+
+The cloud is a map of where the electron may be detected. In hydrogen, there is one
+electron. We cannot say ahead of time exactly where a position measurement will
+find it. We can say where detection is more probable.
+
+### Atomic Scale: If The Nucleus Is A Pea
+
+Imagine enlarging an atom to the size of a football stadium.
+
+In that picture:
+
+- the nucleus is roughly like a pea near the center
+- the electron is not a tiny ball sitting near the stadium seats
+- the electron is better represented by a probability cloud spread through the
+  atom-scale space
+
+If millions of detectors surrounded the atom, one detector might register the
+electron during a measurement. Before measurement, the model gives probabilities,
+not a fixed little ball location.
+
+### Where Is The Atom's Mass?
+
+Almost all atomic mass is in the nucleus.
+
+Why? Protons and neutrons are much heavier than electrons. An electron is about
+1/1836 the mass of a proton.
+
+Beginner summary:
+
+```text
+atomic mass
+  99.95%+
+    ↓
+ nucleus
+```
+
+Electrons are essential for chemistry, but they contribute very little to the
+atom's mass compared with the nucleus.
+
+### If Atoms Are Mostly Empty, Why Is Matter Solid?
+
+At stadium scale, the atom is mostly empty space:
+
+```text
+nucleus = tiny pea
+rest of atom = mostly empty space plus electron probability cloud
+```
+
+So why does your hand not pass through a table?
+
+Because electron clouds interact. When atoms get close, their electrons experience
+electromagnetic repulsion, and quantum rules such as the Pauli exclusion principle
+matter. Electron clouds from two objects cannot simply collapse into the same
+states.
+
+The feeling of solidity does not come from atoms being packed with hard material.
+It comes from electromagnetic interaction and quantum rules that prevent the
+electron structures of matter from passing freely through one another.
+
+This is one of the major conceptual shifts of twentieth-century physics: at atomic
+scale, matter is not built from tiny solid balls. It is described by fields,
+probabilities, interactions, and quantum states.
 
 ### Electron Shell
 
