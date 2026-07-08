@@ -26,6 +26,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Toy Fingerprints And Similarity Search](toy-fingerprints-similarity.md): turn
   molecule observations into feature bits, compare shared features, and rank
   nearest matches.
+- [Screening Results And Feedback Loops](screening-feedback-loops.md): turn scores
+  into test/defer decisions, compare predictions with experimental labels, and
+  compute confusion-matrix metrics.
 
 ## University Worksheets
 
@@ -47,6 +50,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 10 | Molecule Design As Data Search |
 | Lesson 11 | Molecular Library Indexes |
 | Lesson 12 | Toy Fingerprints And Similarity Search |
+| Lesson 13 | Screening Results And Feedback Loops |
 
 ## Instructor Rule
 

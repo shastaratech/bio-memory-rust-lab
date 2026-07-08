@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Twelve-Session Arc
+## Suggested Thirteen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -32,6 +32,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 10 | How do we explore possible molecules? | search, filters, ranking, queues | scaffolds, substituents, constraints, scores |
 | 11 | How do we search a molecule library? | hash indexes, sorted lists, binary search | compound records, formula buckets, library queries |
 | 12 | How can compact feature memory support similarity search? | bitsets, set operations, ranking | fingerprints, shared features, nearest matches |
+| 13 | How do predictions improve after experiments? | optional labels, queues, matrices | screening, assays, uncertainty, feedback |
 
 ## School Lane
 
@@ -67,6 +68,8 @@ Best outcomes:
   lookup, sorted range search, and merge.
 - Students can explain toy fingerprints as compact feature bitsets and rank
   library records by feature similarity.
+- Students can evaluate screening predictions with labels, confusion matrices,
+  precision, recall, and feedback loops.
 
 ## Capstone Ideas
 
@@ -83,6 +86,8 @@ Best outcomes:
   makes cheap.
 - Build a toy fingerprint similarity search and explain what the representation
   keeps and discards.
+- Build a screening feedback dashboard that separates predictions, labels, and
+  next-round priorities.
 
 ## Visual Support
 
@@ -101,6 +106,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 11
 - use the [toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
   for Lesson 12
+- use the [screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
+  for Lesson 13
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

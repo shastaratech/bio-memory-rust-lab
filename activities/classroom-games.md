@@ -291,3 +291,41 @@ Important caution:
 
 A fingerprint is a compressed summary. It keeps selected features and discards the
 full atom-and-bond graph.
+
+## 11. Screening Feedback Matrix
+
+Give students prediction cards with candidate names and scores.
+
+Activities:
+
+- choose a threshold
+- sort cards into `test` and `defer`
+- reveal active/inactive experimental labels
+- place cards into a confusion matrix
+- compute precision, recall, and accuracy
+- identify near-threshold candidates
+- choose what the next experiment should test
+
+Rust reveal:
+
+```rust
+struct Prediction {
+    candidate_name: String,
+    score: f64,
+    label: Option<ExperimentalLabel>,
+}
+```
+
+Data-structure prompt:
+
+- enum: active/inactive label
+- option: label may be missing
+- threshold: numeric boundary
+- queue: selected candidates to test
+- matrix: count prediction outcomes
+- feedback loop: next-round planning
+
+Important caution:
+
+Experimental labels are evidence from a specific setup. They should be interpreted
+with controls, uncertainty, and domain knowledge.

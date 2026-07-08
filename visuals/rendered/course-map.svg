@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1300" viewBox="0 0 1180 1300" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1390" viewBox="0 0 1180 1390" role="img" aria-labelledby="title desc">
   <title id="title">Bio Memory Rust Lab course map</title>
-  <desc id="desc">A twelve lesson path with school activities on the left and university activities on the right.</desc>
+  <desc id="desc">A thirteen lesson path with school activities on the left and university activities on the right.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
@@ -21,9 +21,9 @@
     </style>
   </defs>
 
-  <rect class="bg" width="1180" height="1300" />
+  <rect class="bg" width="1180" height="1390" />
   <text class="title" x="48" y="54">Bio Memory Rust Lab Course Map</text>
-  <text class="subtitle" x="48" y="80">A path from molecule cards to Rust data structures, graph algorithms, traits, quantum state, CLI tools, DNA memory, visual algorithms, design search, library indexes, and fingerprints.</text>
+  <text class="subtitle" x="48" y="80">A path from molecule cards to Rust data structures, graph algorithms, traits, quantum state, CLI tools, DNA memory, visual algorithms, design search, library indexes, fingerprints, and screening feedback.</text>
 
   <text class="lane" x="96" y="124">School studio lane</text>
   <text class="lane" x="470" y="124">Core lesson path</text>
@@ -81,6 +81,10 @@
   <text class="text" x="454" y="1241">Lesson 12</text>
   <text class="small" x="454" y="1261">Fingerprints and Similarity</text>
 
+  <rect class="box lesson" x="430" y="1306" width="320" height="52" />
+  <text class="text" x="454" y="1329">Lesson 13</text>
+  <text class="small" x="454" y="1349">Screening Feedback Loops</text>
+
   <path class="arrow" d="M590 212 L590 236" />
   <path class="arrow" d="M590 302 L590 326" />
   <path class="arrow" d="M590 392 L590 416" />
@@ -93,6 +97,7 @@
   <path class="arrow" d="M590 1006 L590 1038" />
   <path class="arrow" d="M590 1094 L590 1126" />
   <path class="arrow" d="M590 1182 L590 1214" />
+  <path class="arrow" d="M590 1270 L590 1302" />
 
   <rect class="box school" x="70" y="242" width="260" height="54" />
   <text class="text" x="92" y="265">Atom cards</text>
@@ -142,6 +147,10 @@
   <text class="text" x="92" y="1241">Feature bit cards</text>
   <text class="small" x="92" y="1261">shared bits and similarity</text>
 
+  <rect class="box school" x="70" y="1306" width="260" height="52" />
+  <text class="text" x="92" y="1329">Screening matrix cards</text>
+  <text class="small" x="92" y="1349">test, defer, label, learn</text>
+
   <path class="soft-arrow" d="M430 271 L334 271" />
   <path class="soft-arrow" d="M430 361 L334 361" />
   <path class="soft-arrow" d="M430 451 L334 451" />
@@ -154,6 +163,7 @@
   <path class="soft-arrow" d="M430 1068 L334 1068" />
   <path class="soft-arrow" d="M430 1156 L334 1156" />
   <path class="soft-arrow" d="M430 1244 L334 1244" />
+  <path class="soft-arrow" d="M430 1332 L334 1332" />
 
   <rect class="box university" x="850" y="242" width="270" height="54" />
   <text class="text" x="872" y="265">Type invariants</text>
@@ -203,6 +213,10 @@
   <text class="text" x="872" y="1241">Bitsets and similarity ranking</text>
   <text class="small" x="872" y="1261">feature bits, shared / union</text>
 
+  <rect class="box university" x="850" y="1306" width="270" height="52" />
+  <text class="text" x="872" y="1329">Metrics and feedback loops</text>
+  <text class="small" x="872" y="1349">precision, recall, errors</text>
+
   <path class="soft-arrow" d="M750 271 L846 271" />
   <path class="soft-arrow" d="M750 361 L846 361" />
   <path class="soft-arrow" d="M750 451 L846 451" />
@@ -215,4 +229,5 @@
   <path class="soft-arrow" d="M750 1068 L846 1068" />
   <path class="soft-arrow" d="M750 1156 L846 1156" />
   <path class="soft-arrow" d="M750 1244 L846 1244" />
+  <path class="soft-arrow" d="M750 1332 L846 1332" />
 </svg>

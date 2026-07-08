@@ -268,3 +268,30 @@ Tasks:
 5. Compute similarity as `shared / union`.
 6. Rank toy library records by similarity to ethanol.
 7. Explain what information the fingerprint throws away.
+
+## Exercise 13: Screening Results And Feedback Loops
+
+Open:
+
+```text
+rust-molecule-model/src/screening.rs
+```
+
+Find:
+
+- `Prediction`
+- `ExperimentalLabel`
+- `ScreeningDecision`
+- `ConfusionMatrix`
+- `testing_queue`
+- `uncertain_predictions`
+
+Tasks:
+
+1. Convert prediction scores into `Test` or `Defer`.
+2. Add active/inactive labels to tested candidates.
+3. Build a confusion matrix.
+4. Compute precision, recall, and accuracy.
+5. Build a testing queue sorted by score.
+6. Find predictions near the threshold.
+7. Explain why labels are feedback, not just output.

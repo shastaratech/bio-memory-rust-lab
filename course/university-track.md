@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Twelve-Session Seminar
+## Thirteen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -219,6 +219,25 @@ Implementation focus:
 - `rank_by_similarity` over borrowed molecule-library records
 - sorted nearest-match output
 
+### Session 13: Screening Results And Feedback Loops
+
+Core questions:
+
+- How should a score become a test/defer decision?
+- Why are experimental labels optional in the data model?
+- Which errors are false positives and false negatives?
+- How do precision, recall, and accuracy answer different questions?
+- Which candidates should the next feedback round prioritize?
+
+Implementation focus:
+
+- `Prediction` with optional experimental label
+- `ScreeningDecision` thresholding
+- `ConfusionMatrix`
+- precision, recall, and accuracy with zero-denominator handling
+- sorted testing queue
+- near-threshold uncertainty selection
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -231,6 +250,8 @@ Implementation focus:
 - Design memo: choose indexes for a toy molecule library and justify query costs.
 - Design memo: compare full molecule graphs with compact fingerprints and state
   what each representation can and cannot answer.
+- Design memo: evaluate a toy screen and recommend a next experiment based on
+  false positives, false negatives, and uncertain scores.
 
 ## Capstone Rubric
 
@@ -250,6 +271,7 @@ Implementation focus:
 - [Traits and molecular behavior](../visuals/plantuml/traits-and-functions.puml)
 - [Molecular library indexes](../visuals/mermaid/molecular-library-indexes.md)
 - [Toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
+- [Screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

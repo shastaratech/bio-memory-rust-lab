@@ -57,6 +57,7 @@ Book chapters:
 - [10: Designing Molecules as Data Search](book/10-designing-molecules-as-data-search.md)
 - [11: Molecular Libraries And Search Indexes](book/11-molecular-libraries-and-search-indexes.md)
 - [12: Toy Fingerprints And Similarity Search](book/12-toy-fingerprints-and-similarity-search.md)
+- [13: Screening Results And Feedback Loops](book/13-screening-results-and-feedback-loops.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -84,6 +85,7 @@ Book chapters:
 | [10: Designing Molecules as Data Search](lessons/10-designing-molecules-as-data-search.md) | Move candidate cards through scaffold, validate, score, and rank stations. | Scaffold states, substituent vectors, filters, hash maps, sorted rankings, queues, and search loops. |
 | [11: Molecular Libraries And Search Indexes](lessons/11-molecular-libraries-and-search-indexes.md) | Arrange molecule cards as shelves, labels, buckets, and sorted rows. | Library records, hash indexes, grouped formula lookup, merge, and binary search. |
 | [12: Toy Fingerprints And Similarity Search](lessons/12-toy-fingerprints-and-similarity-search.md) | Turn molecule observations into feature-bit cards and compare shared features. | Bitsets, set operations, similarity scoring, and sorted nearest matches. |
+| [13: Screening Results And Feedback Loops](lessons/13-screening-results-and-feedback-loops.md) | Sort score cards into test/defer piles, then compare predictions with labels. | Thresholds, optional labels, queues, confusion matrices, precision, recall, and feedback loops. |
 
 ## Classroom Energy
 
@@ -108,6 +110,9 @@ compound libraries with vectors, hash maps, sorted lists, merge, and binary sear
 Use the [toy fingerprints handout](handouts/toy-fingerprints-similarity.md) and
 [worksheet](worksheets/toy-fingerprints-similarity.md) to teach bitsets, feature
 sets, similarity scoring, and nearest-match ranking.
+Use the [screening feedback handout](handouts/screening-feedback-loops.md) and
+[worksheet](worksheets/screening-feedback-loops.md) to teach thresholds, labels,
+confusion matrices, metrics, and feedback loops.
 
 ## Projects
 
@@ -131,6 +136,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Molecule design algorithms](visuals/mermaid/molecule-design-algorithms.md)
 - [Molecular library indexes](visuals/mermaid/molecular-library-indexes.md)
 - [Toy fingerprints and similarity search](visuals/mermaid/fingerprint-similarity.md)
+- [Screening feedback loop](visuals/mermaid/screening-feedback-loop.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)

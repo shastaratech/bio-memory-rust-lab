@@ -31,6 +31,8 @@ Explore:
   and binary search in `src/index.rs`
 - toy molecular fingerprints, bitsets, shared/union counts, and similarity search
   in `src/fingerprint.rs`
+- screening predictions, thresholds, optional labels, confusion matrices, queues,
+  and feedback loops in `src/screening.rs`
 
 Commands:
 
@@ -54,3 +56,4 @@ Library-only exercises:
 | `design` | toy scaffold/substituent candidate generation, scoring, and ranking |
 | `index` | toy molecule library indexing, sorting, merging, and range search |
 | `fingerprint` | toy feature bitsets and similarity ranking |
+| `screening` | score thresholds, labels, confusion matrices, and feedback queues |

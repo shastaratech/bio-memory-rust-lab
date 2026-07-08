@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="520" viewBox="0 0 1120 520" role="img" aria-labelledby="title desc">
+  <title id="title">Screening feedback loop</title>
+  <desc id="desc">Candidates are scored, thresholded, queued for testing, labeled experimentally, summarized in a confusion matrix, measured, and fed back into the next round.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .subtitle { font: 400 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+      .box { fill: #ffffff; stroke: #355070; stroke-width: 2; rx: 14; ry: 14; }
+      .lab { fill: #eaf7f1; stroke: #2f946d; }
+      .metric { fill: #fff4df; stroke: #d9902f; }
+      .text { font: 700 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #3b4658; }
+      .arrow { stroke: #355070; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+      .loop { stroke: #8391a4; stroke-width: 2.2; fill: none; marker-end: url(#arrow); stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1120" height="520" />
+  <text class="title" x="42" y="52">Screening Results And Feedback Loops</text>
+  <text class="subtitle" x="42" y="78">A score becomes useful when it is tested, labeled, measured, and used to improve the next round.</text>
+
+  <rect class="box" x="46" y="156" width="138" height="76" />
+  <text class="text" x="70" y="186">Candidates</text>
+  <text class="small" x="70" y="208">design or library</text>
+
+  <rect class="box" x="222" y="156" width="126" height="76" />
+  <text class="text" x="246" y="186">Score</text>
+  <text class="small" x="246" y="208">model or rule</text>
+
+  <rect class="box" x="386" y="156" width="138" height="76" />
+  <text class="text" x="410" y="186">Threshold</text>
+  <text class="small" x="410" y="208">test or defer</text>
+
+  <rect class="box metric" x="562" y="156" width="150" height="76" />
+  <text class="text" x="586" y="186">Testing queue</text>
+  <text class="small" x="586" y="208">ranked candidates</text>
+
+  <rect class="box lab" x="750" y="156" width="138" height="76" />
+  <text class="text" x="774" y="186">Experiment</text>
+  <text class="small" x="774" y="208">active / inactive</text>
+
+  <rect class="box metric" x="926" y="156" width="150" height="76" />
+  <text class="text" x="950" y="186">Matrix</text>
+  <text class="small" x="950" y="208">TP FP TN FN</text>
+
+  <rect class="box metric" x="638" y="334" width="154" height="76" />
+  <text class="text" x="662" y="364">Metrics</text>
+  <text class="small" x="662" y="386">precision recall</text>
+
+  <rect class="box lab" x="330" y="334" width="170" height="76" />
+  <text class="text" x="354" y="364">Feedback</text>
+  <text class="small" x="354" y="386">revise threshold</text>
+
+  <path class="arrow" d="M184 194 L218 194" />
+  <path class="arrow" d="M348 194 L382 194" />
+  <path class="arrow" d="M524 194 L558 194" />
+  <path class="arrow" d="M712 194 L746 194" />
+  <path class="arrow" d="M888 194 L922 194" />
+  <path class="arrow" d="M1001 232 C970 306 870 368 796 372" />
+  <path class="arrow" d="M638 372 L504 372" />
+  <path class="loop" d="M330 372 C238 356 202 276 260 236" />
+</svg>

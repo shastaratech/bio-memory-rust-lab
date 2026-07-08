@@ -50,6 +50,7 @@ Printable worksheets:
 - [Molecule Design As Data Search](../worksheets/molecule-design-data-search.md)
 - [Molecular Library Indexes](../worksheets/molecular-library-indexes.md)
 - [Toy Fingerprints And Similarity Search](../worksheets/toy-fingerprints-similarity.md)
+- [Screening Results And Feedback Loops](../worksheets/screening-feedback-loops.md)
 
 ## Code Moment
 
@@ -150,3 +151,10 @@ students are ready to compare molecules by feature cards. Turn observations into
 yes/no bits, count shared features, count union features, and sort the closest
 matches. Keep the caution explicit: a toy fingerprint is a summary, not the
 complete molecule.
+
+## Screening Feedback Extension
+
+Use [Lesson 13](../lessons/13-screening-results-and-feedback-loops.md) when
+students are ready to compare predictions with measured labels. Let students sort
+score cards into test/defer piles, add active/inactive labels, fill a confusion
+matrix, and choose which uncertain cards should guide the next round.
