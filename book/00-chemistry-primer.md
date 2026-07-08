@@ -111,6 +111,26 @@ Quarks have fractional electric charge:
 | up | `+2/3` |
 | down | `-1/3` |
 
+This is unusual. It feels natural to expect charge to be `+1`, `-1`, or `0`,
+because those are the charges students first meet:
+
+| Particle | Relative electric charge |
+| --- | --- |
+| proton | `+1` |
+| electron | `-1` |
+| neutron | `0` |
+
+Electric charge is a fundamental property that determines how particles interact
+with electric and magnetic fields. Physicists measure charge in coulombs, but in
+introductory chemistry and particle physics it is common to use relative units
+where the proton has charge `+1`.
+
+In those units, an up quark has two thirds of the proton's charge, and a down quark
+has negative one third of the proton's charge. These fractional charges were found
+experimentally and are built into the Standard Model. For this course, do not try
+to derive `+2/3` and `-1/3` from a simpler rule. Treat them as measured features of
+nature.
+
 So the proton's charge is:
 
 ```text
@@ -130,6 +150,26 @@ And the neutron's charge is:
 -----
  0
 ```
+
+Why do we not see loose `+2/3` or `-1/3` charges in everyday chemistry? Because
+quarks are confined. They are observed only inside composite particles such as:
+
+- baryons, which contain three quarks, such as protons and neutrons
+- mesons, which contain a quark and an antiquark
+
+The combinations normally produce familiar total charges such as `-1`, `0`, or
+`+1`, though some particles can have charges such as `+2` or `-2`.
+
+Money analogy:
+
+```text
++2/3 coin + +2/3 coin + -1/3 coin = +1 coin
++2/3 coin + -1/3 coin + -1/3 coin =  0 coins
+```
+
+The analogy is imperfect because money is human-made and quark charge is a physical
+property. The useful idea is that fractional parts can combine into a whole-number
+total.
 
 Quarks are held together by the strong nuclear interaction. The force carriers are
 called gluons, from the word "glue":
