@@ -35,6 +35,8 @@ Explore:
   and feedback loops in `src/screening.rs`
 - reproducible lab records, serialization, parsing, round trips, and report rows
   in `src/lab_record.rs`
+- typed concentrations, unit conversion, assay observations, validation, sorting,
+  and mean response in `src/measurement.rs`
 
 Commands:
 
@@ -60,3 +62,4 @@ Library-only exercises:
 | `fingerprint` | toy feature bitsets and similarity ranking |
 | `screening` | score thresholds, labels, confusion matrices, and feedback queues |
 | `lab_record` | toy record serialization, parsing, validation, and Markdown output |
+| `measurement` | typed units, assay observations, validation, and normalized sorting |

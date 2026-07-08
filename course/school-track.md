@@ -52,6 +52,7 @@ Printable worksheets:
 - [Toy Fingerprints And Similarity Search](../worksheets/toy-fingerprints-similarity.md)
 - [Screening Results And Feedback Loops](../worksheets/screening-feedback-loops.md)
 - [Serialization And Reproducible Lab Records](../worksheets/serialization-lab-records.md)
+- [Typed Measurements, Units, And Assay Observations](../worksheets/typed-measurements.md)
 
 ## Code Moment
 
@@ -166,3 +167,10 @@ Use [Lesson 14](../lessons/14-serialization-and-reproducible-lab-records.md) whe
 students are ready to write data down reproducibly. Have them turn molecule
 summary cards into stable text rows, swap rows with another group, parse the rows
 back into fields, and diagnose intentionally broken records.
+
+## Typed Measurement Extension
+
+Use [Lesson 15](../lessons/15-typed-measurements-units-and-assay-observations.md)
+when students are ready to handle numeric chemistry data. Let students sort raw
+measurement cards, then force every value to carry a unit, convert to micromolar,
+validate response percentages, and sort again.

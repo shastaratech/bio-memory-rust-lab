@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Fourteen-Session Arc
+## Suggested Fifteen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -34,6 +34,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 12 | How can compact feature memory support similarity search? | bitsets, set operations, ranking | fingerprints, shared features, nearest matches |
 | 13 | How do predictions improve after experiments? | optional labels, queues, matrices | screening, assays, uncertainty, feedback |
 | 14 | How do we save records reproducibly? | serialization, parsing, errors | lab records, schemas, provenance |
+| 15 | How do units protect measurement meaning? | typed units, validation, normalization | assay observations and response data |
 
 ## School Lane
 
@@ -73,6 +74,8 @@ Best outcomes:
   precision, recall, and feedback loops.
 - Students can serialize and parse toy molecule lab records with schema checks,
   explicit parse errors, and round-trip tests.
+- Students can model assay measurements with typed units, range validation,
+  normalized values, and response summaries.
 
 ## Capstone Ideas
 
@@ -93,6 +96,8 @@ Best outcomes:
   next-round priorities.
 - Build a reproducible lab-record exporter and explain what metadata is still
   missing from the toy schema.
+- Build a typed assay measurement table that converts units and rejects invalid
+  observations.
 
 ## Visual Support
 
@@ -115,6 +120,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 13
 - use the [serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
   for Lesson 14
+- use the [typed measurements](../visuals/mermaid/typed-measurements.md)
+  for Lesson 15
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

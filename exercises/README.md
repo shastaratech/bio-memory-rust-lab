@@ -321,3 +321,30 @@ Tasks:
 5. Trigger one bad field-count error.
 6. Trigger one invalid-number error.
 7. Explain what provenance fields are missing from the toy schema.
+
+## Exercise 15: Typed Measurements, Units, And Assay Observations
+
+Open:
+
+```text
+rust-molecule-model/src/measurement.rs
+```
+
+Find:
+
+- `ConcentrationUnit`
+- `Concentration`
+- `AssayObservation`
+- `MeasurementError`
+- `sort_observations_by_concentration`
+- `mean_response`
+
+Tasks:
+
+1. Convert `500 nM`, `0.5 uM`, and `0.001 mM` into micromolar.
+2. Reject one negative concentration.
+3. Reject one out-of-range response percent.
+4. Normalize a response percent into `0.0..1.0`.
+5. Sort observations by normalized concentration.
+6. Compute a mean response.
+7. Explain why a bare number is unsafe in chemistry data.

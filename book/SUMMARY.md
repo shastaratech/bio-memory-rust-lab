@@ -18,4 +18,5 @@
 - [Chapter 12: Toy Fingerprints And Similarity Search](12-toy-fingerprints-and-similarity-search.md)
 - [Chapter 13: Screening Results And Feedback Loops](13-screening-results-and-feedback-loops.md)
 - [Chapter 14: Serialization And Reproducible Lab Records](14-serialization-and-reproducible-lab-records.md)
+- [Chapter 15: Typed Measurements, Units, And Assay Observations](15-typed-measurements-units-and-assay-observations.md)
 - [Appendix: Command Reference](appendix-command-reference.md)

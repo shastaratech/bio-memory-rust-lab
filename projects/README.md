@@ -20,6 +20,7 @@ For an instructor-led capstone session, use
 7. Toy fingerprint similarity search
 8. Screening feedback dashboard
 9. Reproducible lab-record exporter
+10. Typed assay measurement table
 
 The first project is already backed by runnable code in:
 

@@ -32,6 +32,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Serialization And Reproducible Lab Records](serialization-lab-records.md):
   serialize molecule summaries, parse records back, diagnose bad rows, and explain
   provenance.
+- [Typed Measurements, Units, And Assay Observations](typed-measurements.md):
+  convert concentration units, validate measurement ranges, sort observations,
+  and compute mean response.
 
 ## University Worksheets
 
@@ -55,6 +58,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 12 | Toy Fingerprints And Similarity Search |
 | Lesson 13 | Screening Results And Feedback Loops |
 | Lesson 14 | Serialization And Reproducible Lab Records |
+| Lesson 15 | Typed Measurements, Units, And Assay Observations |
 
 ## Instructor Rule
 

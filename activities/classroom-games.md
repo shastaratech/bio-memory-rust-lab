@@ -370,3 +370,39 @@ Important caution:
 
 A record without context is not reproducible enough for real science. Students
 should ask what provenance, units, conditions, and validation are missing.
+
+## 13. Unit Conversion Relay
+
+Give students concentration cards with mixed units.
+
+Activities:
+
+- sort cards by raw number and notice the mistake
+- attach unit labels to every value
+- convert all values to micromolar
+- reject negative and non-finite values
+- reject response cards outside `0..100`
+- sort assay observations by normalized concentration
+- compute a mean response
+
+Rust reveal:
+
+```rust
+struct Concentration {
+    value: f64,
+    unit: ConcentrationUnit,
+}
+```
+
+Data-structure prompt:
+
+- enum: fixed unit vocabulary
+- struct: value and unit stay together
+- result: constructor can fail
+- normalized value: common comparison scale
+- observation record: candidate, dose, response
+
+Important caution:
+
+Units prevent one class of mistake, but real assay interpretation also needs
+replicates, uncertainty, controls, protocols, and provenance.

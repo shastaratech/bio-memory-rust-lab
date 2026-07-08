@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Fourteen-Session Seminar
+## Fifteen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -257,6 +257,26 @@ Implementation focus:
 - `LabRecordParseError`
 - Markdown report row rendering
 
+### Session 15: Typed Measurements, Units, And Assay Observations
+
+Core questions:
+
+- Why is a bare `f64` not enough for chemistry measurements?
+- Which units should be represented as enum variants?
+- When should constructors return `Result`?
+- Why should sorting normalize units first?
+- What metadata is missing from a toy assay observation?
+
+Implementation focus:
+
+- `ConcentrationUnit`
+- `Concentration`
+- `MeasurementError`
+- `AssayObservation`
+- unit conversion to micromolar
+- response range validation
+- observation sorting and mean response
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -273,6 +293,8 @@ Implementation focus:
   false positives, false negatives, and uncertain scores.
 - Design memo: design a minimal reproducible record schema and name the metadata
   required before it could support real lab use.
+- Design memo: choose typed measurement representations for concentration,
+  response, units, replicates, and assay provenance.
 
 ## Capstone Rubric
 
@@ -294,6 +316,7 @@ Implementation focus:
 - [Toy fingerprints and similarity search](../visuals/mermaid/fingerprint-similarity.md)
 - [Screening feedback loop](../visuals/mermaid/screening-feedback-loop.md)
 - [Serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
+- [Typed measurements](../visuals/mermaid/typed-measurements.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.
