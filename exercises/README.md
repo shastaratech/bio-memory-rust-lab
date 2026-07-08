@@ -376,3 +376,30 @@ Tasks:
 5. Explain why one replicate has no sample variance.
 6. Check whether a series is consistent under a spread limit.
 7. Explain how noisy replicates should affect a screening decision.
+
+## Exercise 17: Dose-Response Curves And Toy Potency
+
+Open:
+
+```text
+rust-molecule-model/src/dose_response.rs
+```
+
+Find:
+
+- `DosePoint`
+- `DoseResponseCurve`
+- `DoseResponseError`
+- `estimated_concentration_at_response`
+- `estimated_half_max_concentration`
+- `is_monotonic_increasing`
+
+Tasks:
+
+1. Build three dose points.
+2. Sort them into a dose-response curve.
+3. Reject duplicate concentrations.
+4. Compute response span.
+5. Check monotonicity.
+6. Estimate where the curve crosses `50 percent`.
+7. Explain why the estimate can be `None`.

@@ -22,6 +22,7 @@ For an instructor-led capstone session, use
 9. Reproducible lab-record exporter
 10. Typed assay measurement table
 11. Replicate variability report
+12. Dose-response curve reporter
 
 The first project is already backed by runnable code in:
 

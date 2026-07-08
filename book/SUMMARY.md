@@ -20,4 +20,5 @@
 - [Chapter 14: Serialization And Reproducible Lab Records](14-serialization-and-reproducible-lab-records.md)
 - [Chapter 15: Typed Measurements, Units, And Assay Observations](15-typed-measurements-units-and-assay-observations.md)
 - [Chapter 16: Replicates, Variability, And Uncertainty](16-replicates-variability-and-uncertainty.md)
+- [Chapter 17: Dose-Response Curves And Toy Potency](17-dose-response-curves-and-toy-potency.md)
 - [Appendix: Command Reference](appendix-command-reference.md)

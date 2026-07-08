@@ -40,6 +40,7 @@ Text diagrams are good teaching material because students can:
 | Serialization and lab records | Mermaid flowchart | `mermaid/serialization-lab-records.md` |
 | Typed measurements | Mermaid flowchart | `mermaid/typed-measurements.md` |
 | Replicates and uncertainty | Mermaid flowchart | `mermaid/replicates-uncertainty.md` |
+| Dose-response curves | Mermaid flowchart | `mermaid/dose-response-curves.md` |
 | Traits and functions | Mermaid class/flowchart | `mermaid/traits-and-functions.md` |
 | CLI flow | Mermaid flowchart | `mermaid/cli-flow.md` |
 | 3D molecule teaching view | HTML / Three.js | `html/molecule-3d-viewer.html` |

@@ -61,6 +61,7 @@ Book chapters:
 - [14: Serialization And Reproducible Lab Records](book/14-serialization-and-reproducible-lab-records.md)
 - [15: Typed Measurements, Units, And Assay Observations](book/15-typed-measurements-units-and-assay-observations.md)
 - [16: Replicates, Variability, And Uncertainty](book/16-replicates-variability-and-uncertainty.md)
+- [17: Dose-Response Curves And Toy Potency](book/17-dose-response-curves-and-toy-potency.md)
 - [Command Reference](book/appendix-command-reference.md)
 
 ## What Students Learn
@@ -92,6 +93,7 @@ Book chapters:
 | [14: Serialization And Reproducible Lab Records](lessons/14-serialization-and-reproducible-lab-records.md) | Turn molecule summary cards into stable text rows and diagnose bad records. | Serialization, parsing, schemas, parse errors, round trips, Markdown rows, and provenance. |
 | [15: Typed Measurements, Units, And Assay Observations](lessons/15-typed-measurements-units-and-assay-observations.md) | Convert unit cards, validate response cards, and sort observations by normalized dose. | Unit enums, measurement structs, validation errors, normalized values, and assay observations. |
 | [16: Replicates, Variability, And Uncertainty](lessons/16-replicates-variability-and-uncertainty.md) | Compare replicate response cards and decide whether a result is stable or noisy. | Replicate vectors, mean, range, sample variance, standard deviation, coefficient of variation, and consistency checks. |
+| [17: Dose-Response Curves And Toy Potency](lessons/17-dose-response-curves-and-toy-potency.md) | Sort dose-response cards and estimate where a target response is crossed. | Dose-point structs, sorted vectors, monotonicity, adjacent-pair search, interpolation, and optional estimates. |
 
 ## Classroom Energy
 
@@ -128,6 +130,9 @@ normalization, assay observations, and response summaries.
 Use the [replicates handout](handouts/replicates-uncertainty.md) and
 [worksheet](worksheets/replicates-uncertainty.md) to teach repeated measurements,
 variability summaries, and uncertainty-aware feedback decisions.
+Use the [dose-response handout](handouts/dose-response-curves.md) and
+[worksheet](worksheets/dose-response-curves.md) to teach sorted dose points,
+monotonicity, interpolation, and optional half-max estimates.
 
 ## Projects
 
@@ -155,6 +160,7 @@ Visuals live in [visuals/](visuals/README.md):
 - [Serialization and lab records](visuals/mermaid/serialization-lab-records.md)
 - [Typed measurements and assay observations](visuals/mermaid/typed-measurements.md)
 - [Replicates and uncertainty](visuals/mermaid/replicates-uncertainty.md)
+- [Dose-response curves](visuals/mermaid/dose-response-curves.md)
 - [Models, contracts, and flows](visuals/mermaid/model-contracts-flows.md)
 - [3D molecule viewer](visuals/html/molecule-3d-viewer.html)
 - [Traits and functions](visuals/mermaid/traits-and-functions.md)

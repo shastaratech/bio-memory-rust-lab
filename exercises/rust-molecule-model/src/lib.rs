@@ -1,5 +1,6 @@
 pub mod design;
 pub mod dna;
+pub mod dose_response;
 pub mod fingerprint;
 pub mod index;
 pub mod lab_record;
@@ -10,6 +11,7 @@ pub mod screening;
 
 pub use design::{Candidate, Substituent};
 pub use dna::{Base, DnaStrand, Mutation};
+pub use dose_response::{DosePoint, DoseResponseCurve, DoseResponseError};
 pub use fingerprint::{rank_by_similarity, Feature, FingerprintMatch, ToyFingerprint};
 pub use index::{MoleculeLibrary, MoleculeRecord};
 pub use lab_record::{LabRecord, LabRecordParseError};

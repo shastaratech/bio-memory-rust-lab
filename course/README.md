@@ -16,7 +16,7 @@ reading, commands, expected outputs, and checkpoints.
 
 For printable labs, use the [worksheet pack](../worksheets/README.md).
 
-## Suggested Sixteen-Session Arc
+## Suggested Seventeen-Session Arc
 
 | Session | Big question | Core Rust idea | Core science idea |
 | --- | --- | --- | --- |
@@ -36,6 +36,7 @@ For printable labs, use the [worksheet pack](../worksheets/README.md).
 | 14 | How do we save records reproducibly? | serialization, parsing, errors | lab records, schemas, provenance |
 | 15 | How do units protect measurement meaning? | typed units, validation, normalization | assay observations and response data |
 | 16 | How do repeated measurements show uncertainty? | vectors, summary stats, Option | replicates, variability, confidence |
+| 17 | How does response change with dose? | sorted vectors, interpolation, Option | dose-response curves and potency |
 
 ## School Lane
 
@@ -79,6 +80,8 @@ Best outcomes:
   normalized values, and response summaries.
 - Students can summarize replicate series and explain why variability changes
   scientific interpretation.
+- Students can build toy dose-response curves and explain the limits of simple
+  interpolation.
 
 ## Capstone Ideas
 
@@ -103,6 +106,8 @@ Best outcomes:
   observations.
 - Build a replicate variability report that separates center, spread, and
   consistency decisions.
+- Build a dose-response reporter that sorts dose points and estimates target
+  crossings.
 
 ## Visual Support
 
@@ -129,6 +134,8 @@ Use [visuals/](../visuals/README.md) throughout the course:
   for Lesson 15
 - use the [replicates and uncertainty](../visuals/mermaid/replicates-uncertainty.md)
   for Lesson 16
+- use the [dose-response curves](../visuals/mermaid/dose-response-curves.md)
+  for Lesson 17
 - use [models, contracts, and flows](../visuals/mermaid/model-contracts-flows.md)
   when diagrams need to render directly on GitHub
 - use [traits and functions](../visuals/mermaid/traits-and-functions.md)

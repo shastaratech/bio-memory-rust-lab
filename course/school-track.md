@@ -54,6 +54,7 @@ Printable worksheets:
 - [Serialization And Reproducible Lab Records](../worksheets/serialization-lab-records.md)
 - [Typed Measurements, Units, And Assay Observations](../worksheets/typed-measurements.md)
 - [Replicates, Variability, And Uncertainty](../worksheets/replicates-uncertainty.md)
+- [Dose-Response Curves And Toy Potency](../worksheets/dose-response-curves.md)
 
 ## Code Moment
 
@@ -182,3 +183,10 @@ Use [Lesson 16](../lessons/16-replicates-variability-and-uncertainty.md) when
 students are ready to compare repeated measurements. Give two candidates with
 similar means but different spreads, then ask which result should be trusted,
 repeated, or inspected.
+
+## Dose-Response Extension
+
+Use [Lesson 17](../lessons/17-dose-response-curves-and-toy-potency.md) when
+students are ready to connect dose and response. Give dose-response cards, sort
+them by concentration, check whether the response increases, and estimate where a
+target response is crossed.

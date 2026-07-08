@@ -39,6 +39,8 @@ Explore:
   and mean response in `src/measurement.rs`
 - replicate response series, variance, standard deviation, coefficient of
   variation, and consistency checks in `src/replicate.rs`
+- dose-response points, sorted curves, monotonicity checks, interpolation, and
+  optional half-max estimates in `src/dose_response.rs`
 
 Commands:
 
@@ -66,3 +68,4 @@ Library-only exercises:
 | `lab_record` | toy record serialization, parsing, validation, and Markdown output |
 | `measurement` | typed units, assay observations, validation, and normalized sorting |
 | `replicate` | repeated response summaries and uncertainty-aware consistency checks |
+| `dose_response` | sorted dose-response curves and toy potency estimates |

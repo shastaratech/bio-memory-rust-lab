@@ -13,7 +13,7 @@ Helpful but not required:
 - basic chemistry vocabulary
 - arrays, structs/classes, and functions
 
-## Sixteen-Session Seminar
+## Seventeen-Session Seminar
 
 ### Session 01: Typed Molecular Data
 
@@ -296,6 +296,26 @@ Implementation focus:
 - coefficient of variation
 - consistency checks under a spread threshold
 
+### Session 17: Dose-Response Curves And Toy Potency
+
+Core questions:
+
+- Why should dose points be sorted by normalized concentration?
+- What makes a curve monotonic?
+- When can an adjacent-point search find a target crossing?
+- Why does interpolation return `Option<f64>`?
+- What does a toy half-max estimate omit from real curve fitting?
+
+Implementation focus:
+
+- `DosePoint`
+- `DoseResponseCurve`
+- sorted dose vectors
+- duplicate concentration validation
+- response span
+- monotonicity check
+- linear interpolation for target crossing
+
 ## Assessment Ideas
 
 - Code review: students explain representation choices in their Rust model.
@@ -316,6 +336,8 @@ Implementation focus:
   response, units, replicates, and assay provenance.
 - Design memo: summarize replicate evidence and recommend whether to trust,
   repeat, or deprioritize a candidate.
+- Design memo: compare toy interpolation with real dose-response requirements
+  such as replicates, controls, uncertainty, and fitted models.
 
 ## Capstone Rubric
 
@@ -339,6 +361,7 @@ Implementation focus:
 - [Serialization and lab records](../visuals/mermaid/serialization-lab-records.md)
 - [Typed measurements](../visuals/mermaid/typed-measurements.md)
 - [Replicates and uncertainty](../visuals/mermaid/replicates-uncertainty.md)
+- [Dose-response curves](../visuals/mermaid/dose-response-curves.md)
 
 For university students, treat diagrams as design artifacts. Ask what each diagram
 forces into the model and what it hides.

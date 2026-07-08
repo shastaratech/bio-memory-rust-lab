@@ -38,6 +38,9 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 - [Replicates, Variability, And Uncertainty](replicates-uncertainty.md):
   summarize replicate response series with mean, range, standard deviation, and
   consistency checks.
+- [Dose-Response Curves And Toy Potency](dose-response-curves.md): sort dose
+  points, check monotonicity, estimate target crossings, and explain toy potency
+  limits.
 
 ## University Worksheets
 
@@ -63,6 +66,7 @@ Use them alongside the book, lessons, and runnable Rust exercise.
 | Lesson 14 | Serialization And Reproducible Lab Records |
 | Lesson 15 | Typed Measurements, Units, And Assay Observations |
 | Lesson 16 | Replicates, Variability, And Uncertainty |
+| Lesson 17 | Dose-Response Curves And Toy Potency |
 
 ## Instructor Rule
 

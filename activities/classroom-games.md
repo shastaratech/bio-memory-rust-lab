@@ -441,3 +441,38 @@ Important caution:
 
 Statistics summarize evidence. They do not replace experimental design, controls,
 or scientific judgment.
+
+## 15. Dose-Response Curve Cards
+
+Give students concentration-response cards.
+
+Activities:
+
+- normalize all concentrations to the same unit
+- sort cards by concentration
+- draw the response curve by hand
+- check whether response increases with dose
+- find adjacent cards that surround a target response
+- estimate the crossing point by interpolation
+- discuss why real curve fitting needs more than this
+
+Rust reveal:
+
+```rust
+struct DosePoint {
+    concentration: Concentration,
+    response_percent: f64,
+}
+```
+
+Data-structure prompt:
+
+- struct: one dose-response point
+- sorted vector: curve order
+- window scan: adjacent-point search
+- option: target crossing may not exist
+- interpolation: estimate between known records
+
+Important caution:
+
+Toy interpolation teaches data flow. It is not a validated potency estimate.

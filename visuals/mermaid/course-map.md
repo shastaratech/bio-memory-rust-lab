@@ -24,6 +24,7 @@ flowchart TD
     N --> O["Lesson 14: Serialization and Reproducible Lab Records"]
     O --> P["Lesson 15: Typed Measurements, Units, and Assay Observations"]
     P --> Q["Lesson 16: Replicates, Variability, and Uncertainty"]
+    Q --> R["Lesson 17: Dose-Response Curves and Toy Potency"]
 
     B --> S1["School: atom cards"]
     C --> S2["School: human bond graph"]
@@ -39,6 +40,7 @@ flowchart TD
     O --> S14["School: lab record relay"]
     P --> S15["School: unit conversion relay"]
     Q --> S16["School: replicate spread cards"]
+    R --> S17["School: dose-response curve cards"]
 
     B --> U1["University: type invariants"]
     C --> U2["University: adjacency lists and BFS"]
@@ -56,6 +58,7 @@ flowchart TD
     O --> U14["University: schemas, parsers, provenance"]
     P --> U15["University: typed units and assay data"]
     Q --> U16["University: variability and uncertainty"]
+    R --> U17["University: interpolation and curve limits"]
 ```
 
 Teaching prompt:

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1660" viewBox="0 0 1180 1660" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="1750" viewBox="0 0 1180 1750" role="img" aria-labelledby="title desc">
   <title id="title">Bio Memory Rust Lab course map</title>
-  <desc id="desc">A sixteen lesson path with school activities on the left and university activities on the right.</desc>
+  <desc id="desc">A seventeen lesson path with school activities on the left and university activities on the right.</desc>
   <defs>
     <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
@@ -21,9 +21,9 @@
     </style>
   </defs>
 
-  <rect class="bg" width="1180" height="1660" />
+  <rect class="bg" width="1180" height="1750" />
   <text class="title" x="48" y="54">Bio Memory Rust Lab Course Map</text>
-  <text class="subtitle" x="48" y="80">A path from molecule cards to Rust data structures, graph algorithms, traits, quantum state, CLI tools, DNA memory, visual algorithms, design search, library indexes, fingerprints, screening feedback, lab records, typed measurements, and uncertainty.</text>
+  <text class="subtitle" x="48" y="80">A path from molecule cards to Rust data structures, graph algorithms, traits, quantum state, CLI tools, DNA memory, visual algorithms, design search, library indexes, fingerprints, screening feedback, lab records, typed measurements, uncertainty, and dose-response curves.</text>
 
   <text class="lane" x="96" y="124">School studio lane</text>
   <text class="lane" x="470" y="124">Core lesson path</text>
@@ -97,6 +97,10 @@
   <text class="text" x="454" y="1593">Lesson 16</text>
   <text class="small" x="454" y="1613">Replicates and Uncertainty</text>
 
+  <rect class="box lesson" x="430" y="1658" width="320" height="52" />
+  <text class="text" x="454" y="1681">Lesson 17</text>
+  <text class="small" x="454" y="1701">Dose-Response Curves</text>
+
   <path class="arrow" d="M590 212 L590 236" />
   <path class="arrow" d="M590 302 L590 326" />
   <path class="arrow" d="M590 392 L590 416" />
@@ -113,6 +117,7 @@
   <path class="arrow" d="M590 1358 L590 1390" />
   <path class="arrow" d="M590 1446 L590 1478" />
   <path class="arrow" d="M590 1534 L590 1566" />
+  <path class="arrow" d="M590 1622 L590 1654" />
 
   <rect class="box school" x="70" y="242" width="260" height="54" />
   <text class="text" x="92" y="265">Atom cards</text>
@@ -178,6 +183,10 @@
   <text class="text" x="92" y="1593">Replicate spread cards</text>
   <text class="small" x="92" y="1613">mean, range, variability</text>
 
+  <rect class="box school" x="70" y="1658" width="260" height="52" />
+  <text class="text" x="92" y="1681">Dose-response curve cards</text>
+  <text class="small" x="92" y="1701">sort, cross, interpolate</text>
+
   <path class="soft-arrow" d="M430 271 L334 271" />
   <path class="soft-arrow" d="M430 361 L334 361" />
   <path class="soft-arrow" d="M430 451 L334 451" />
@@ -194,6 +203,7 @@
   <path class="soft-arrow" d="M430 1420 L334 1420" />
   <path class="soft-arrow" d="M430 1508 L334 1508" />
   <path class="soft-arrow" d="M430 1596 L334 1596" />
+  <path class="soft-arrow" d="M430 1684 L334 1684" />
 
   <rect class="box university" x="850" y="242" width="270" height="54" />
   <text class="text" x="872" y="265">Type invariants</text>
@@ -259,6 +269,10 @@
   <text class="text" x="872" y="1593">Variability and uncertainty</text>
   <text class="small" x="872" y="1613">replicates, spread, confidence</text>
 
+  <rect class="box university" x="850" y="1658" width="270" height="52" />
+  <text class="text" x="872" y="1681">Interpolation and curve limits</text>
+  <text class="small" x="872" y="1701">target crossing, Option</text>
+
   <path class="soft-arrow" d="M750 271 L846 271" />
   <path class="soft-arrow" d="M750 361 L846 361" />
   <path class="soft-arrow" d="M750 451 L846 451" />
@@ -275,4 +289,5 @@
   <path class="soft-arrow" d="M750 1420 L846 1420" />
   <path class="soft-arrow" d="M750 1508 L846 1508" />
   <path class="soft-arrow" d="M750 1596 L846 1596" />
+  <path class="soft-arrow" d="M750 1684 L846 1684" />
 </svg>

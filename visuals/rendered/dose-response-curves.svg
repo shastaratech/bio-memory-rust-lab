@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="470" viewBox="0 0 1080 470" role="img" aria-labelledby="title desc">
+  <title id="title">Dose-response curves</title>
+  <desc id="desc">Dose points are validated, sorted by concentration, stored as a curve vector, checked for monotonicity, searched for target crossings, interpolated, and returned as an optional estimate.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#355070" />
+    </marker>
+    <style>
+      .bg { fill: #f8fafc; }
+      .title { font: 700 28px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .subtitle { font: 400 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #516070; }
+      .box { fill: #ffffff; stroke: #355070; stroke-width: 2; rx: 14; ry: 14; }
+      .curve { fill: #eaf7f1; stroke: #2f946d; }
+      .estimate { fill: #fff4df; stroke: #d9902f; }
+      .label { font: 700 15px system-ui, -apple-system, Segoe UI, sans-serif; fill: #172033; }
+      .small { font: 500 12px system-ui, -apple-system, Segoe UI, sans-serif; fill: #3b4658; }
+      .arrow { stroke: #355070; stroke-width: 2.4; fill: none; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect class="bg" width="1080" height="470" />
+  <text class="title" x="42" y="52">Dose-Response Curves And Toy Potency</text>
+  <text class="subtitle" x="42" y="78">Ordered concentration-response points support monotonicity checks and toy target-crossing estimates.</text>
+
+  <rect class="box" x="42" y="156" width="150" height="78" />
+  <text class="label" x="66" y="186">Dose points</text>
+  <text class="small" x="66" y="208">dose + response</text>
+
+  <rect class="box" x="230" y="156" width="132" height="78" />
+  <text class="label" x="254" y="186">Validate</text>
+  <text class="small" x="254" y="208">0..100 response</text>
+
+  <rect class="box" x="400" y="156" width="142" height="78" />
+  <text class="label" x="424" y="186">Sort</text>
+  <text class="small" x="424" y="208">by concentration</text>
+
+  <rect class="box curve" x="580" y="156" width="150" height="78" />
+  <text class="label" x="604" y="186">Curve vector</text>
+  <text class="small" x="604" y="208">ordered points</text>
+
+  <rect class="box" x="786" y="92" width="170" height="78" />
+  <text class="label" x="810" y="122">Monotonicity</text>
+  <text class="small" x="810" y="144">increase check</text>
+
+  <rect class="box estimate" x="786" y="240" width="170" height="78" />
+  <text class="label" x="810" y="270">Target crossing</text>
+  <text class="small" x="810" y="292">search neighbors</text>
+
+  <rect class="box estimate" x="786" y="354" width="170" height="78" />
+  <text class="label" x="810" y="384">Option result</text>
+  <text class="small" x="810" y="406">Some dose or None</text>
+
+  <path class="arrow" d="M192 195 L226 195" />
+  <path class="arrow" d="M362 195 L396 195" />
+  <path class="arrow" d="M542 195 L576 195" />
+  <path class="arrow" d="M730 184 C756 158 766 136 782 132" />
+  <path class="arrow" d="M730 206 C756 236 766 266 782 278" />
+  <path class="arrow" d="M871 318 L871 350" />
+</svg>
