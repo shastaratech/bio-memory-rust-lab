@@ -47,6 +47,9 @@ The [book](book/README.md) is the best entry point for students working alone. I
 contains chapter-by-chapter reading, repo links, compile commands, run commands,
 expected output, exercises, and checkpoint questions.
 
+The [slide decks](slides/README.md) provide one PowerPoint file per setup/chapter
+for classroom presentation or guided self-study.
+
 Book chapters:
 
 - [Setup](book/00-setup.md)

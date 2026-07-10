@@ -41,6 +41,12 @@ open and the exact commands to run.
 - [Chapter 18: Controls, Baselines, And Normalization](18-controls-baselines-and-normalization.md)
 - [Appendix: Command Reference](appendix-command-reference.md)
 
+## Slide Decks
+
+Each setup/chapter page has a matching PowerPoint deck in
+[`slides/book-chapters/`](../slides/book-chapters/). Use
+[`slides/README.md`](../slides/README.md) as the deck index.
+
 ## Repo Map
 
 | Folder | What it contains |
