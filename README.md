@@ -40,6 +40,8 @@ cargo run -- water summary
     to review lessons or draft tutor and video materials.
 16. Use the [instructor materials](instructor-materials/README.md) for tutor
     scripts, video outlines, and intro review notes.
+17. Use the [video materials](media/videos/README.md) as short silent clips for
+    class presentations, slide decks, and lesson transitions.
 
 ## Self-Study Book
 
@@ -49,6 +51,10 @@ expected output, exercises, and checkpoint questions.
 
 The [slide decks](slides/README.md) provide one PowerPoint file per setup/chapter
 for classroom presentation or guided self-study.
+
+The [video materials](media/videos/README.md) provide short MP4 clips that connect
+chemistry formulas, molecular graphs, Rust data models, graph traversal, CLI
+execution, and feedback-loop design.
 
 Book chapters:
 
@@ -164,6 +170,8 @@ cargo run -- ethanol path 3 8
 ## Visual Learning
 
 Visuals live in [visuals/](visuals/README.md):
+
+- [Video materials](media/videos/README.md)
 
 - [Course map](visuals/mermaid/course-map.md)
 - [Graph algorithms](visuals/mermaid/graph-algorithms.md)
