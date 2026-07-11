@@ -2,6 +2,9 @@
 
 Use this folder when publishing the generated videos to YouTube.
 
+For API-based upload, use [api-upload.md](api-upload.md). It is configured for
+the Google Cloud project `shastara` and keeps OAuth secrets outside Git.
+
 ## Recommended First Pass
 
 - Upload as `Unlisted`.
@@ -29,3 +32,13 @@ Use this folder when publishing the generated videos to YouTube.
 These clips are intentionally silent so an instructor can narrate live, place
 them inside slide decks, or later add voice-over/audio in a separate editing
 pass.
+
+## API Upload Quick Start
+
+```bash
+python3 -m venv .venv-youtube
+source .venv-youtube/bin/activate
+python -m pip install -r requirements-youtube.txt
+python tools/youtube_upload.py
+python tools/youtube_upload.py --execute --limit 1
+```

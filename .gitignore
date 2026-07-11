@@ -2,3 +2,7 @@ target/
 **/target/
 **/*.rs.bk
 .DS_Store
+.venv-youtube/
+client_secret*.json
+token*.json
+media/videos/youtube/upload-results.local.json
