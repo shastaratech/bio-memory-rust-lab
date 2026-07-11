@@ -1,0 +1,62 @@
+[
+  {
+    "video_file": "../generated/01-formula-counts.mp4",
+    "thumbnail_file": "thumbnails/01-formula-counts.png",
+    "title": "Bio Memory Rust Lab 01: Chemical Formulas as Data Tables",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It shows how formulas such as H2O, CH4, and C2H6O preserve element counts before students model atoms and molecules in Rust.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, chemistry, molecules, data types, STEM education, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "Chemistry primer"
+  },
+  {
+    "video_file": "../generated/02-formula-to-graph.mp4",
+    "thumbnail_file": "thumbnails/02-formula-to-graph.png",
+    "title": "Bio Memory Rust Lab 02: From Formula to Molecule Graph",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It turns C2H6O into an atom-and-bond graph so students can see why counts and connectivity are different kinds of data.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, graph algorithms, chemistry, molecule graph, STEM education, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "How formulas become graphs"
+  },
+  {
+    "video_file": "../generated/03-rust-data-model.mp4",
+    "thumbnail_file": "thumbnails/03-rust-data-model.png",
+    "title": "Bio Memory Rust Lab 03: Rust Types for Molecules",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It connects Element enums, Atom structs, Bond structs, Molecule structs, vectors, and traits into one typed model.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, data structures, traits, structs, enums, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "Atoms, memory, and types"
+  },
+  {
+    "video_file": "../generated/04-bfs-path.mp4",
+    "thumbnail_file": "thumbnails/04-bfs-path.png",
+    "title": "Bio Memory Rust Lab 04: BFS Shortest Path in a Molecule",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It visualizes a shortest-path command through a molecule graph and shows how breadth-first search reconstructs a route.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, BFS, graph traversal, algorithms, molecules, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "Molecules as graphs"
+  },
+  {
+    "video_file": "../generated/05-cli-flow.mp4",
+    "thumbnail_file": "thumbnails/05-cli-flow.png",
+    "title": "Bio Memory Rust Lab 05: Rust CLI Flow for Molecule Questions",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It shows how a terminal command becomes parsed arguments, typed molecule data, an algorithm call, and printed output.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, CLI, command line, molecules, teaching programming, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "Molecule Explorer CLI capstone"
+  },
+  {
+    "video_file": "../generated/06-screening-feedback-loop.mp4",
+    "thumbnail_file": "thumbnails/06-screening-feedback-loop.png",
+    "title": "Bio Memory Rust Lab 06: Molecule Design as a Feedback Loop",
+    "description": "Short classroom clip from Bio Memory Rust Lab. It frames molecule design as generate, validate, score, rank, learn, and repeat so students can connect science workflow with data structures and algorithms.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+    "tags": "Rust, molecule design, feedback loop, algorithms, STEM education, Bio Memory Rust Lab",
+    "visibility": "Unlisted",
+    "playlist": "Bio Memory Rust Lab Visual Clips",
+    "lesson": "Screening feedback loops"
+  }
+]

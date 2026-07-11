@@ -26,6 +26,11 @@ PYTHONPATH=/Users/akuksin/.cache/codex-runtimes/codex-primary-runtime/dependenci
 
 The generator uses Pillow plus `ffmpeg` and writes compact MP4 files.
 
+## YouTube Publishing Kit
+
+Use [youtube/](youtube/README.md) for upload titles, descriptions, tags,
+thumbnails, playlist planning, and the URL handoff table.
+
 ## Presentation Notes
 
 - Use these videos as silent loops or short transitions.

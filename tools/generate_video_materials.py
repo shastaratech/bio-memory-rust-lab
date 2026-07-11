@@ -4,6 +4,8 @@
 from __future__ import annotations
 
 import math
+import csv
+import json
 import shutil
 import subprocess
 import tempfile
@@ -15,6 +17,7 @@ from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "media" / "videos" / "generated"
+YOUTUBE_OUT = ROOT / "media" / "videos" / "youtube"
 FPS = 24
 W, H = 1280, 720
 
@@ -318,6 +321,151 @@ VIDEOS = [
 ]
 
 
+YOUTUBE_METADATA = {
+    "01-formula-counts": {
+        "title": "Bio Memory Rust Lab 01: Chemical Formulas as Data Tables",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It shows how formulas such as H2O, CH4, and C2H6O preserve element counts before students model atoms and molecules in Rust.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "chemistry", "molecules", "data types", "STEM education", "Bio Memory Rust Lab"],
+        "lesson": "Chemistry primer",
+    },
+    "02-formula-to-graph": {
+        "title": "Bio Memory Rust Lab 02: From Formula to Molecule Graph",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It turns C2H6O into an atom-and-bond graph so students can see why counts and connectivity are different kinds of data.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "graph algorithms", "chemistry", "molecule graph", "STEM education", "Bio Memory Rust Lab"],
+        "lesson": "How formulas become graphs",
+    },
+    "03-rust-data-model": {
+        "title": "Bio Memory Rust Lab 03: Rust Types for Molecules",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It connects Element enums, Atom structs, Bond structs, Molecule structs, vectors, and traits into one typed model.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "data structures", "traits", "structs", "enums", "Bio Memory Rust Lab"],
+        "lesson": "Atoms, memory, and types",
+    },
+    "04-bfs-path": {
+        "title": "Bio Memory Rust Lab 04: BFS Shortest Path in a Molecule",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It visualizes a shortest-path command through a molecule graph and shows how breadth-first search reconstructs a route.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "BFS", "graph traversal", "algorithms", "molecules", "Bio Memory Rust Lab"],
+        "lesson": "Molecules as graphs",
+    },
+    "05-cli-flow": {
+        "title": "Bio Memory Rust Lab 05: Rust CLI Flow for Molecule Questions",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It shows how a terminal command becomes parsed arguments, typed molecule data, an algorithm call, and printed output.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "CLI", "command line", "molecules", "teaching programming", "Bio Memory Rust Lab"],
+        "lesson": "Molecule Explorer CLI capstone",
+    },
+    "06-screening-feedback-loop": {
+        "title": "Bio Memory Rust Lab 06: Molecule Design as a Feedback Loop",
+        "description": "Short classroom clip from Bio Memory Rust Lab. It frames molecule design as generate, validate, score, rank, learn, and repeat so students can connect science workflow with data structures and algorithms.\n\nCourse repo: https://github.com/shastaratech/bio-memory-rust-lab",
+        "tags": ["Rust", "molecule design", "feedback loop", "algorithms", "STEM education", "Bio Memory Rust Lab"],
+        "lesson": "Screening feedback loops",
+    },
+}
+
+
+def youtube_metadata_rows() -> list[dict[str, str]]:
+    rows = []
+    for slug, _duration, _draw_func in VIDEOS:
+        item = YOUTUBE_METADATA[slug]
+        rows.append({
+            "video_file": f"../generated/{slug}.mp4",
+            "thumbnail_file": f"thumbnails/{slug}.png",
+            "title": item["title"],
+            "description": item["description"],
+            "tags": ", ".join(item["tags"]),
+            "visibility": "Unlisted",
+            "playlist": "Bio Memory Rust Lab Visual Clips",
+            "lesson": item["lesson"],
+        })
+    return rows
+
+
+def write_youtube_package():
+    thumb_dir = YOUTUBE_OUT / "thumbnails"
+    thumb_dir.mkdir(parents=True, exist_ok=True)
+    rows = youtube_metadata_rows()
+
+    for slug, _duration, draw_func in VIDEOS:
+        draw_func(0.72).save(thumb_dir / f"{slug}.png")
+
+    with (YOUTUBE_OUT / "metadata.csv").open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+        writer.writeheader()
+        writer.writerows(rows)
+
+    (YOUTUBE_OUT / "metadata.json").write_text(json.dumps(rows, indent=2) + "\n")
+
+    playlist = """# YouTube Playlist Plan
+
+Recommended playlist name: `Bio Memory Rust Lab Visual Clips`
+
+Recommended visibility while drafting: `Unlisted`
+
+Playlist description:
+
+Short visual clips for Bio Memory Rust Lab, a course that teaches Rust, data
+structures, graph algorithms, molecular representation, and scientific feedback
+loops through atoms, bonds, formulas, and molecule design.
+
+Upload order:
+
+1. Chemical Formulas as Data Tables
+2. From Formula to Molecule Graph
+3. Rust Types for Molecules
+4. BFS Shortest Path in a Molecule
+5. Rust CLI Flow for Molecule Questions
+6. Molecule Design as a Feedback Loop
+"""
+    (YOUTUBE_OUT / "playlist.md").write_text(playlist)
+
+    checklist = """# YouTube Upload Checklist
+
+Use this folder when publishing the generated videos to YouTube.
+
+## Recommended First Pass
+
+- Upload as `Unlisted`.
+- Put all clips into one playlist: `Bio Memory Rust Lab Visual Clips`.
+- Use the title, description, tags, and lesson notes from `metadata.csv` or
+  `metadata.json`.
+- Upload the matching PNG from `thumbnails/` as the custom thumbnail.
+- Choose the audience setting according to the channel owner's policy for
+  educational material.
+- After upload, paste the final URLs into `youtube-links.md`.
+
+## Manual Upload Steps
+
+1. Open YouTube Studio.
+2. Select Create, then Upload videos.
+3. Upload one file from `../generated/`.
+4. Copy the matching title and description from `metadata.csv`.
+5. Add the matching thumbnail from `thumbnails/`.
+6. Add the video to the playlist.
+7. Publish as `Unlisted` until the class team reviews it.
+8. Repeat for the remaining clips.
+
+## Notes
+
+These clips are intentionally silent so an instructor can narrate live, place
+them inside slide decks, or later add voice-over/audio in a separate editing
+pass.
+"""
+    (YOUTUBE_OUT / "README.md").write_text(checklist)
+
+    links = """# YouTube Links
+
+Paste uploaded URLs here after publishing.
+
+| Clip | YouTube URL |
+| --- | --- |
+| 01 Formula Counts | |
+| 02 Formula To Graph | |
+| 03 Rust Data Model | |
+| 04 BFS Path | |
+| 05 CLI Flow | |
+| 06 Screening Feedback Loop | |
+"""
+    (YOUTUBE_OUT / "youtube-links.md").write_text(links)
+
+
 def write_readme(outputs: list[Path]):
     lines = [
         "# Video Materials",
@@ -347,6 +495,11 @@ def write_readme(outputs: list[Path]):
         "```",
         "",
         "The generator uses Pillow plus `ffmpeg` and writes compact MP4 files.",
+        "",
+        "## YouTube Publishing Kit",
+        "",
+        "Use [youtube/](youtube/README.md) for upload titles, descriptions, tags,",
+        "thumbnails, playlist planning, and the URL handoff table.",
         "",
         "## Presentation Notes",
         "",
@@ -401,8 +554,8 @@ def main():
         print(path.relative_to(ROOT))
     write_readme(outputs)
     write_storyboards()
+    write_youtube_package()
 
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,19 @@
+video_file,thumbnail_file,title,description,tags,visibility,playlist,lesson
+../generated/01-formula-counts.mp4,thumbnails/01-formula-counts.png,Bio Memory Rust Lab 01: Chemical Formulas as Data Tables,"Short classroom clip from Bio Memory Rust Lab. It shows how formulas such as H2O, CH4, and C2H6O preserve element counts before students model atoms and molecules in Rust.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, chemistry, molecules, data types, STEM education, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,Chemistry primer
+../generated/02-formula-to-graph.mp4,thumbnails/02-formula-to-graph.png,Bio Memory Rust Lab 02: From Formula to Molecule Graph,"Short classroom clip from Bio Memory Rust Lab. It turns C2H6O into an atom-and-bond graph so students can see why counts and connectivity are different kinds of data.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, graph algorithms, chemistry, molecule graph, STEM education, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,How formulas become graphs
+../generated/03-rust-data-model.mp4,thumbnails/03-rust-data-model.png,Bio Memory Rust Lab 03: Rust Types for Molecules,"Short classroom clip from Bio Memory Rust Lab. It connects Element enums, Atom structs, Bond structs, Molecule structs, vectors, and traits into one typed model.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, data structures, traits, structs, enums, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,"Atoms, memory, and types"
+../generated/04-bfs-path.mp4,thumbnails/04-bfs-path.png,Bio Memory Rust Lab 04: BFS Shortest Path in a Molecule,"Short classroom clip from Bio Memory Rust Lab. It visualizes a shortest-path command through a molecule graph and shows how breadth-first search reconstructs a route.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, BFS, graph traversal, algorithms, molecules, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,Molecules as graphs
+../generated/05-cli-flow.mp4,thumbnails/05-cli-flow.png,Bio Memory Rust Lab 05: Rust CLI Flow for Molecule Questions,"Short classroom clip from Bio Memory Rust Lab. It shows how a terminal command becomes parsed arguments, typed molecule data, an algorithm call, and printed output.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, CLI, command line, molecules, teaching programming, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,Molecule Explorer CLI capstone
+../generated/06-screening-feedback-loop.mp4,thumbnails/06-screening-feedback-loop.png,Bio Memory Rust Lab 06: Molecule Design as a Feedback Loop,"Short classroom clip from Bio Memory Rust Lab. It frames molecule design as generate, validate, score, rank, learn, and repeat so students can connect science workflow with data structures and algorithms.
+
+Course repo: https://github.com/shastaratech/bio-memory-rust-lab","Rust, molecule design, feedback loop, algorithms, STEM education, Bio Memory Rust Lab",Unlisted,Bio Memory Rust Lab Visual Clips,Screening feedback loops
